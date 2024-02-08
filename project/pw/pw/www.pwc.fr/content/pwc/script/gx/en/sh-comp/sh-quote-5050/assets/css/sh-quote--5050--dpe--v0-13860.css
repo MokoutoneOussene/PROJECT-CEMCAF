@@ -1,0 +1,120 @@
+.sh-5050-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .sh-5050-component__section {
+    width: 50%; }
+  .sh-5050-component__image {
+    padding-top: 28.125%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .sh-5050-component__text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #d04a02;
+    padding: 120px calc((100% / 24) + 15px) 140px calc((100% / 24) + 15px); }
+    .sh-5050-component__text-wrapper--main-text {
+      position: relative;
+      margin: 0px;
+      font-size: 40px;
+      font-size: 2.499875rem;
+      line-height: 1.55em;
+      color: #ffffff;
+      font-family: "PwC Helvetica Neue Light", "Helvetica Neue Light", helvetica, arial, sans-serif;
+      font-weight: lighter; }
+      .sh-5050-component__text-wrapper--main-text::before {
+        color: #ffffff;
+        margin-bottom: 20px;
+        content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMjAgMTA5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjAgMTA5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTS0wLjExNCwxMDguNDgxVjU2Ljc3NWMtMC4yMjctNy40MzUsMC44NDUtMTQuNDE2LDMuMjExLTIwLjk1M2MyLjM2Ni02LjUzMiw1LjY4Ny0xMi4yNzcsOS45NjktMTcuMjM0CgkJYzQuMjc3LTQuOTU0LDkuNDA1LTkuMDY3LDE1LjM3Ny0xMi4zMzZDMzQuNDA5LDIuOTg5LDQwLjg4OCwwLjkwMyw0Ny44NzQsMHYyMi4zMDRjLTguNTY0LDIuOTMxLTE0LjQyMSw3LjI2Ni0xNy41NzMsMTMuMDExCgkJYy0zLjE1OCw1Ljc0NS00LjczMSwxMi43OS00LjczMSwyMS4xMjJoMjIuMzA0djUyLjA0NEgtMC4xMTR6IE03MS44NjgsMTA4LjQ4MVY1Ni43NzVjLTAuMjI2LTcuNDM1LDAuODQ1LTE0LjQxNiwzLjIxMS0yMC45NTMKCQljMi4zNjYtNi41MzIsNS42ODctMTIuMjc3LDkuOTY5LTE3LjIzNGM0LjI3Ny00Ljk1NCw5LjQwNS05LjA2NywxNS4zNzctMTIuMzM2QzEwNi4zOTEsMi45ODksMTEyLjg3LDAuOTAzLDExOS44NTYsMHYyMi4zMDQKCQljLTguNTY0LDIuOTMxLTE0LjQyLDcuMjY2LTE3LjU3MywxMy4wMTFjLTMuMTU4LDUuNzQ1LTQuNzMxLDEyLjc5LTQuNzMxLDIxLjEyMmgyMi4zMDR2NTIuMDQ0SDcxLjg2OHoiLz4KPC9nPgo8L3N2Zz4K");
+        height: 46px;
+        width: 46px;
+        display: block; }
+    .sh-5050-component__text-wrapper footer {
+      padding-top: 80px;
+      margin-bottom: 0px; }
+    .sh-5050-component__text-wrapper blockquote {
+      margin: 0px;
+      border-top: none;
+      border-bottom: none;
+      padding: 0px; }
+      .sh-5050-component__text-wrapper blockquote p {
+        margin: 0px; }
+  .sh-5050-component__attribute {
+    font-size: 18px;
+    font-size: 1.12525rem;
+    font-family: "PwC Helvetica Neue", "Helvetica Neue", helvetica, arial, sans-serif;
+    line-height: 1.55em;
+    color: #ffffff; }
+    .sh-5050-component__attribute--author {
+      font-weight: bold; }
+  .sh-5050-component footer::before {
+    content: none; }
+
+@media (max-width: 1440px) {
+  .sh-5050-component__text-wrapper--main-text {
+    font-size: 34px;
+    font-size: 2.125375rem; }
+    .sh-5050-component__text-wrapper--main-text::before {
+      height: 40px;
+      width: 40px; } }
+
+@media (max-width: 1336px) {
+  .sh-5050-component__text-wrapper {
+    padding: 100px calc(100% / 24) 120px calc(100% / 24); }
+    .sh-5050-component__text-wrapper--main-text {
+      font-size: 30px;
+      font-size: 1.875125rem; }
+  .sh-5050-component footer {
+    padding-top: 60px; } }
+
+@media (max-width: 768px) {
+  .sh-5050-component {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .sh-5050-component__text-wrapper {
+      padding: 0px 20px 0px 20px; }
+      .sh-5050-component__text-wrapper--main-text {
+        font-size: 22px;
+        font-size: 1.6041375rem;
+        line-height: 1.4em;
+        position: relative; }
+        .sh-5050-component__text-wrapper--main-text::before {
+          height: 65px;
+          width: 70px;
+          display: block;
+          position: absolute;
+          left: -20px;
+          top: -100px;
+          background-position: center;
+          background-color: #d04a02;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 20px; }
+    .sh-5050-component__section {
+      width: 100%; }
+    .sh-5050-component__image {
+      padding-top: 56.25%; }
+    .sh-5050-component__attribute {
+      font-size: 15px;
+      font-size: 1.09375rem;
+      font-family: "PwC Helvetica Neue", "Helvetica Neue", helvetica, arial, sans-serif;
+      line-height: 1.4em;
+      color: #ffffff;
+      padding-top: 0px; }
+    .sh-5050-component footer {
+      padding-bottom: 40px;
+      padding-top: 0px; }
+    .sh-5050-component blockquote p {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin: 0; } }

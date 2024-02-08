@@ -1,0 +1,110 @@
+.panel-collapse.collapse.in[data-v-232e2439]{border-top:4px solid #e0301e}
+.page-dir--rtl .sr-search-col.col-sm-offset-3[data-v-fb4d80f8]{margin-left:50%}
+@media screen and (max-width:768px){.page-dir--rtl .sr-search-col.col-sm-offset-3[data-v-fb4d80f8]{margin-left:0}
+}
+.sr-search[data-v-fb4d80f8]{max-width:1140px;margin:0 auto;padding:2rem 0}
+.page-dir--rtl .sr-search[data-v-fb4d80f8]{direction:rtl}
+.sr-search #frmsearch[data-v-fb4d80f8],.sr-search #frmsearch .input-group[data-v-fb4d80f8]{width:100%;display:flex}
+.sr-search #searchfield-srp[data-v-fb4d80f8]{border:0;border-bottom:1px solid #6d6e71;display:inline-block;margin-right:20px;padding:8px 0 5px 10px;box-shadow:none;font-size:1.3rem;box-sizing:content-box}
+.page-dir--rtl .sr-search #searchfield-srp[data-v-fb4d80f8]{direction:rtl;margin-right:0;margin-left:20px;padding:8px 10px 5px 0}
+.sr-search #searchfield-srp[data-v-fb4d80f8]:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}
+.sr-search .btn-searchagain[data-v-fb4d80f8]{display:inline-block}
+#srp h2[data-v-fb4d80f8]{font-size:1.43rem;color:#2d2d2d;margin-top:1rem;padding-bottom:.25rem}
+#srp .refine[data-v-fb4d80f8]{position:sticky;top:0}
+#srp .pull-right[data-v-fb4d80f8]{position:relative;max-height:0;min-height:0;opacity:0;transform-origin:top;overflow:hidden;animation:fadein-data-v-fb4d80f8 2s;animation-delay:.5s;animation-fill-mode:forwards}
+.page-dir--rtl #srp .pull-right[data-v-fb4d80f8]{float:left !important}
+#srp .pull-right .srp-promo[data-v-fb4d80f8]{display:block;margin-top:0;margin-bottom:1rem;padding:20px 20px 20px 5px;background:#f2f2f2;font-size:1.145rem;padding-left:265px;min-height:10.5rem;position:relative;cursor:pointer}
+#srp .pull-right .srp-promo:hover .sr-img img[data-v-fb4d80f8]{transform:scale(1.04)}
+#srp .pull-right .srp-promo a[data-v-fb4d80f8]{display:block}
+#srp .pull-right .srp-promo a[data-v-fb4d80f8]:hover{border:0;text-decoration:none}
+#srp .pull-right .srp-promo a:hover .srp-promo-link[data-v-fb4d80f8]{border-bottom:2px solid #e0301e;padding-bottom:0}
+#srp .pull-right .srp-promo .sr-img[data-v-fb4d80f8]{width:230px;position:absolute;top:20px;left:20px;overflow:hidden}
+@media screen and (max-width:480px){#srp .pull-right .srp-promo .sr-img[data-v-fb4d80f8]{display:block;position:relative;width:100%;left:0;top:0;margin-bottom:1rem}
+}
+#srp .pull-right .srp-promo .srp-promo-text[data-v-fb4d80f8]{font-size:1.15rem;display:block;padding:1.25rem 0}
+@media screen and (max-width:480px){#srp .pull-right .srp-promo[data-v-fb4d80f8]{margin-top:0;margin-bottom:2rem;padding:0 0 20px;background:#fff}
+}
+#srp .pull-right .sr-img[data-v-fb4d80f8]{max-height:0;animation:fadein-data-v-fb4d80f8 .2s,fadeinmh-data-v-fb4d80f8 1s;animation-delay:.2s;animation-fill-mode:forwards}
+#srp .pull-right .sr-img img[data-v-fb4d80f8]{width:100%;display:block;transition:.3s ease-in-out;cursor:pointer}
+#srp p a[data-v-fb4d80f8],#srp .srp-promo-link[data-v-fb4d80f8]{color:#e0301e;font:1.285rem/1.7rem "PwC ITC Charter",Georgia,sans-serif;padding-bottom:2px;text-decoration:none}
+#srp .srp-list[data-v-fb4d80f8]{padding:2rem 0}
+#srp .srp-list>div[data-v-fb4d80f8]{padding-top:1rem;padding-bottom:1rem;transition:background .3s ease-out;cursor:pointer}
+#srp .srp-list>div:hover a[data-v-fb4d80f8]:not(.sr-img){border-bottom:2px solid #e0301e;padding-bottom:0}
+#srp .srp-list>div .gxtag[data-v-fb4d80f8]{padding:.1rem 0;margin:0}
+#srp .srp-list>div .gxtag>span[data-v-fb4d80f8]{background:#7d7d7d;color:#fff;padding:2px 10px;border-radius:20px;font-size:.9rem}
+#srp .srp-list>div:not(.srp-results):hover .sr-img img[data-v-fb4d80f8]{transform:scale(1.04)}
+#srp .srp-list>div .srp-date[data-v-fb4d80f8]{color:#7d7d7d;padding-right:.5em}
+@media screen and (max-width:480px){#srp .srp-list>div[data-v-fb4d80f8]{padding-bottom:.5rem}
+}
+#srp .srp-list .sr-with-img[data-v-fb4d80f8]{padding-left:185px;position:relative;min-height:115px}
+.page-dir--rtl #srp .srp-list .sr-with-img[data-v-fb4d80f8]{padding-left:0;padding-right:185px}
+#srp .srp-list .sr-with-img .sr-img[data-v-fb4d80f8]{position:absolute;left:15px;width:150px;overflow:hidden}
+.page-dir--rtl #srp .srp-list .sr-with-img .sr-img[data-v-fb4d80f8]{left:auto;right:15px}
+@media screen and (max-width:480px){.page-dir--rtl #srp .srp-list .sr-with-img .sr-img[data-v-fb4d80f8]{float:unset;position:absolute}
+}
+@media screen and (max-width:480px){#srp .srp-list .sr-with-img .sr-img[data-v-fb4d80f8]{width:130px;float:right;padding:0 15px 10px 10px;position:relative}
+}
+#srp .srp-list .sr-with-img.sr-contact[data-v-fb4d80f8]{padding-left:135px;min-height:145px}
+#srp .srp-list .sr-with-img.sr-contact .sr-img[data-v-fb4d80f8]{width:100px;height:100px}
+@media screen and (max-width:480px){#srp .srp-list .sr-with-img.sr-contact .sr-img[data-v-fb4d80f8]{width:100px;float:right;padding:0 15px 10px 10px;position:relative}
+}
+@media screen and (max-width:480px){#srp .srp-list .sr-with-img.sr-contact[data-v-fb4d80f8]{padding-left:15px;min-height:100px}
+}
+@media screen and (max-width:480px){#srp .srp-list .sr-with-img[data-v-fb4d80f8]{padding-left:15px;min-height:100px}
+.page-dir--rtl #srp .srp-list .sr-with-img[data-v-fb4d80f8]{padding-left:15px}
+}
+#srp .sr-video a.sr-img[data-v-fb4d80f8]:before{display:block;content:"";position:absolute;left:55px;top:22px;width:40px;height:40px;background-image:url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjQwcHgiIGhlaWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCA0MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGNpcmNsZSBvcGFjaXR5PSIwLjUiIGZpbGw9IiMyMzFGMjAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBjeD0iMjAiIGN5PSIyMCIgcj0iMTguODk3Ii8+PGNpcmNsZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBjeD0iMjAiIGN5PSIyMCIgcj0iMTguODk3Ii8+PGxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjE0LjY2IiB5MT0iMjkuNjY4IiB4Mj0iMTQuNjYiIHkyPSIxMC4zMzIiLz48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iMTQuNjYiIHkxPSIxMC41MDEiIHgyPSIyOC4yMSIgeTI9IjIwIi8+PGxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjI4LjM5MSIgeTE9IjE5Ljg5MiIgeDI9IjE0LjY2IiB5Mj0iMjkuNDg2Ii8+PC9zdmc+");background-position:center center;background-size:contain;transition:opacity .3s ease-out;z-index:10}
+@media screen and (max-width:480px){#srp .sr-video a.sr-img[data-v-fb4d80f8]:before{top:13px;left:49px;width:30px;height:30px}
+}
+#srp .sr-video a.sr-img[data-v-fb4d80f8]:hover::before{opacity:.5}
+#srp .srp-pagination[data-v-fb4d80f8]{margin-top:2rem;margin-bottom:40px;display:flex;align-items:baseline}
+#srp .srp-pagination a span[data-v-fb4d80f8]{font-size:1.5rem}
+#srp .srp-pagination a[data-v-fb4d80f8],#srp .srp-pagination b[data-v-fb4d80f8]{min-width:40px;padding:5px 0;display:block;color:#464646;text-align:center}
+@media screen and (max-width:480px){#srp .srp-pagination a[data-v-fb4d80f8],#srp .srp-pagination b[data-v-fb4d80f8]{min-width:30px;padding:10px 0}
+}
+#srp .srp-pagination b[data-v-fb4d80f8],#srp .srp-pagination a[data-v-fb4d80f8]:hover{background-color:#464646;color:#fff;text-decoration:none}
+@media screen and (max-width:480px){#srp .srp-pagination[data-v-fb4d80f8]{float:left !important}
+}
+@keyframes fadein-data-v-fb4d80f8{0{max-height:0;opacity:0}
+100%{max-height:500px;opacity:1}
+}
+@keyframes fadeinmh-data-v-fb4d80f8{0{min-height:0}
+100%{min-height:145px}
+}
+@media screen and (max-width:480px){#srp .srp-results[data-v-fb4d80f8]{border-top:1px solid #dedede}
+}
+.page-dir--rtl #srp[data-v-fb4d80f8]{direction:rtl}
+.menu-mobile.menu-hidden[data-v-1f10bb43],.menu-mobile1.menu-hidden[data-v-1f10bb43]{height:0;-webkit-transition:height,0.5s linear;-moz-transition:height,0.5s linear;-ms-transition:height,0.5s linear;-o-transition:height,0.5s linear;transition:height,0.5s linear}
+.menu-mobile[data-v-1f10bb43]{overflow:hidden;height:320px;-webkit-transition:height,0.5s linear;-moz-transition:height,0.5s linear;-ms-transition:height,0.5s linear;-o-transition:height,0.5s linear;transition:height,0.5s linear}
+.menu-mobile1[data-v-1f10bb43]{overflow:hidden;height:352px;-webkit-transition:height,0.5s linear;-moz-transition:height,0.5s linear;-ms-transition:height,0.5s linear;-o-transition:height,0.5s linear;transition:height,0.5s linear}
+p a[data-v-1f10bb43]{color:#e0301e;font:1.285rem/1.7rem "PwC ITC Charter",Georgia,sans-serif;padding-bottom:2px;text-decoration:none}
+.refine[data-v-1f10bb43]{color:#404041;padding-right:35px}
+.page-dir--rtl .refine[data-v-1f10bb43]{float:right}
+.refine h2[data-v-1f10bb43]{font-size:1.43rem;color:#2d2d2d;margin-top:1rem;padding-bottom:.25rem}
+.refine h2 .glyphicon[data-v-1f10bb43]{display:none}
+@media screen and (max-width:759px){.refine h2 .glyphicon[data-v-1f10bb43]{display:inline-block}
+}
+@media screen and (max-width:759px){.refine h2.clickable[data-v-1f10bb43]{display:inline-block;box-shadow:0 1px 0 0 #ccc;cursor:pointer}
+}
+.refine h3[data-v-1f10bb43]{margin:2rem 0 1.25rem;color:#7d7d7d;font-size:1.1rem}
+@media screen and (max-width:480px){.refine h3[data-v-1f10bb43]{margin-top:1rem}
+}
+.refine p[data-v-1f10bb43]{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem}
+.refine p:not(.tgl) a[data-v-1f10bb43]::before{display:block;width:20px;height:20px;content:" ";background:#fff;position:absolute;left:0;border:1px solid #ccc;border-radius:50%}
+.page-dir--rtl .refine p:not(.tgl) a[data-v-1f10bb43]::before{left:auto;right:0}
+.refine p:hover a[data-v-1f10bb43]::before{background:#f0f0f0}
+.refine p a.selected[data-v-1f10bb43]::before{background:#464646 url("../../../../etc/clientlibs/pwc/rebrand-clientlibs/components-colors/images/forms-icons/icon-radio.html") no-repeat center center;border-color:#464646}
+.refine .tgl[data-v-1f10bb43]{align-items:stretch}
+.refine .tgl a[data-v-1f10bb43]{border-bottom:1px solid #7d7d7d;color:#464646;padding:5px 20px;text-align:center;width:100%;margin:0 0 1rem}
+.page-dir--rtl .refine .tgl a[data-v-1f10bb43]{padding:5px 20px}
+.refine .tgl a[data-v-1f10bb43]:hover{border-bottom-width:4px}
+.refine .tgl a.selected[data-v-1f10bb43]{border-bottom-width:4px;font-weight:bold}
+@media screen and (max-width:480px){.refine .tgl a[data-v-1f10bb43]{padding:10px}
+}
+.refine a[data-v-1f10bb43],.refine span[data-v-1f10bb43]{font-weight:normal;font-size:.9rem;line-height:1.25em}
+@media screen and (max-width:480px){.refine a[data-v-1f10bb43],.refine span[data-v-1f10bb43]{font-size:1rem;line-height:1.5rem;padding-top:.25rem;padding-bottom:.25rem}
+}
+.refine a[data-v-1f10bb43]{font-family:"PwC Helvetica Neue",Arial,sans-serif;position:relative;cursor:pointer;padding-left:30px;flex-grow:2}
+.page-dir--rtl .refine a[data-v-1f10bb43]{padding-left:0;padding-right:30px}
+@media screen and (max-width:480px){.refine[data-v-1f10bb43]{background:#f2f2f2;padding-right:15px;margin-bottom:1rem;z-index:1}
+}

@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*	Quote (common) 
+********************/
+.sh-quote-component {
+  background-color: #d04a02; }
+  .sh-quote-component .bsui-hlight {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .sh-quote-component .bsui-hlight--lg {
+      border-left-width: 10px;
+      padding-left: 10px;
+      padding-right: 10px; }
+      @media (min-width: 768px) {
+        .sh-quote-component .bsui-hlight--lg {
+          border-left-width: 15px;
+          padding-left: 15px;
+          padding-right: 15px; } }
+      @media (min-width: 1600px) {
+        .sh-quote-component .bsui-hlight--lg {
+          border-left-width: 20px;
+          padding-left: 20px;
+          padding-right: 20px; } }
+  .sh-quote-component .bsui-hlight__inner {
+    background: #2d2d2d;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-box-shadow: 10px 0 0 #2d2d2d, -10px 0 0 #2d2d2d;
+            box-shadow: 10px 0 0 #2d2d2d, -10px 0 0 #2d2d2d;
+    color: white;
+    display: inline;
+    padding: 0;
+    vertical-align: middle;
+    line-height: 1.6;
+    padding-top: 5px;
+    padding-bottom: 6px; }
+    @media (min-width: 768px) {
+      .sh-quote-component .bsui-hlight__inner {
+        padding-top: 6px;
+        padding-bottom: 7px; } }
+    @media (min-width: 1600px) {
+      .sh-quote-component .bsui-hlight__inner {
+        padding-top: 8px;
+        padding-bottom: 9px; } }
+  .sh-quote-component .bsui-hlight--lg .bsui-hlight__inner {
+    -webkit-box-shadow: 10px 0 0 #2d2d2d, -10px 0 0 #2d2d2d;
+            box-shadow: 10px 0 0 #2d2d2d, -10px 0 0 #2d2d2d;
+    padding-top: 9px;
+    padding-bottom: 11px; }
+    @media (min-width: 768px) {
+      .sh-quote-component .bsui-hlight--lg .bsui-hlight__inner {
+        -webkit-box-shadow: 15px 0 0 #2d2d2d, -15px 0 0 #2d2d2d;
+                box-shadow: 15px 0 0 #2d2d2d, -15px 0 0 #2d2d2d;
+        padding-top: 10px;
+        padding-bottom: 16px; } }
+    @media (min-width: 1600px) {
+      .sh-quote-component .bsui-hlight--lg .bsui-hlight__inner {
+        -webkit-box-shadow: 20px 0 0 #2d2d2d, -20px 0 0 #2d2d2d;
+                box-shadow: 20px 0 0 #2d2d2d, -20px 0 0 #2d2d2d;
+        padding-top: 10px;
+        padding-bottom: 16px; } }
+  .sh-quote-component__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .sh-quote-component__content {
+        min-height: 550px; } }
+    @media (min-width: 1280px) {
+      .sh-quote-component__content {
+        min-height: 560px; } }
+  .sh-quote-component__text-wrapper {
+    padding: 40px 15px; }
+    @media (min-width: 768px) {
+      .sh-quote-component__text-wrapper {
+        padding: 160px calc((100% /24 * 3) + 15px) 140px; } }
+    @media (min-width: 1280px) {
+      .sh-quote-component__text-wrapper {
+        padding: 160px calc((100% /24 * 4) + 15px) 140px; } }
+    @media (min-width: 1366px) {
+      .sh-quote-component__text-wrapper {
+        padding: 160px calc((100% /24 * 4) + 15px) 140px; } }
+    @media (min-width: 1440px) {
+      .sh-quote-component__text-wrapper {
+        padding: 160px calc((100% /24 * 4) + 15px) 140px; } }
+    @media (min-width: 1600px) {
+      .sh-quote-component__text-wrapper {
+        padding: 160px calc((100% /24 * 4) + 15px) 140px; } }
+    .sh-quote-component__text-wrapper .container {
+      padding: 0 !important;
+      width: 100% !important; }
+    .sh-quote-component__text-wrapper blockquote {
+      /* remove existing styling from blockquote and footer */
+      border: 0;
+      margin: 0;
+      padding: 0;
+      quotes: "“" "”" "‘" "’"; }
+      .sh-quote-component__text-wrapper blockquote footer:before {
+        content: '';
+        line-height: 1;
+        font-size: 100%;
+        color: inherit; }
+      .sh-quote-component__text-wrapper blockquote .sh-quote-component__text:first-child .bsui-hlight__inner:before {
+        content: '“';
+        content: open-quote; }
+      .sh-quote-component__text-wrapper blockquote .sh-quote-component__text:last-of-type .bsui-hlight__inner:after {
+        content: '”';
+        content: close-quote; }
+    .sh-quote-component__text-wrapper .sh-quote-component__text {
+      color: #ffffff;
+      font-family: "PwC Helvetica Neue Light", "Helvetica Neue Light", helvetica, arial, sans-serif;
+      font-weight: 300;
+      margin: 0;
+      /* mobile specific */
+      line-height: 1.55;
+      font-size: 22px;
+      font-size: 1.603875rem; }
+      @media (min-width: 768px) {
+        .sh-quote-component__text-wrapper .sh-quote-component__text {
+          line-height: 1.75;
+          font-size: 30px;
+          font-size: 1.87425rem; } }
+      @media (min-width: 1366px) {
+        .sh-quote-component__text-wrapper .sh-quote-component__text {
+          font-size: 36px;
+          font-size: 2.249625rem; } }
+      @media (min-width: 1600px) {
+        .sh-quote-component__text-wrapper .sh-quote-component__text {
+          font-size: 40px;
+          font-size: 2.499875rem; } }
+    .sh-quote-component__text-wrapper footer {
+      margin: 46px 0 0 0; }
+      @media (min-width: 768px) {
+        .sh-quote-component__text-wrapper footer {
+          margin-top: 72px; } }
+      @media (min-width: 1920px) {
+        .sh-quote-component__text-wrapper footer {
+          margin-top: 90px; } }
+  .sh-quote-component__attribute {
+    font: 18px/1.55 "PwC Helvetica Neue", "Helvetica Neue", helvetica, arial, sans-serif;
+    color: #ffffff;
+    font-size: 1.124375rem; }
+    @media (max-width: 767px) {
+      .sh-quote-component__attribute {
+        line-height: 1.5;
+        font-size: 15px;
+        font-size: 1.09375rem; } }
+    .sh-quote-component__attribute--author {
+      font-weight: 700; }
+  .page-primary-col--orange .sh-quote-component {
+    background-color: #d04a02; }
+  .page-primary-col--red .sh-quote-component {
+    background-color: #e0301e; }
+  .page-primary-col--burgundy .sh-quote-component {
+    background-color: #e0301e; }
+  .page-primary-col--maroon .sh-quote-component {
+    background-color: #e0301e; }
+  .page-primary-col--rose .sh-quote-component {
+    background-color: #d93954; }
+  .sh-quote-component.component--col-red {
+    background: #e0301e; }
+  .sh-quote-component.component--col-orange {
+    background: #d04a02; }
+  .sh-quote-component.component--col-rose {
+    background: #d93954; }
+  .sh-quote-component.component--col-dark-grey {
+    background: #2d2d2d; }
+  .sh-quote-component--photo-bg {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+/*	End Quote (common) 
+********************/

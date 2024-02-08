@@ -1,0 +1,235 @@
+/*	Superhero title (common) 
+********************/
+.sh-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .sh-title .sh-title__img-panel {
+    background-size: cover;
+    z-index: 1; }
+  .sh-title .sh-title__textpanel {
+    padding: 25px 15px 35px;
+    position: relative;
+    z-index: 2; }
+  .sh-title .sh-title__textpanel-title-primary {
+    color: #ffffff;
+    font-family: "PwC ITC Charter", "Charter ITC", georgia, serif;
+    font-size: 1.89525rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0 0 30px; }
+  .sh-title .sh-title__textpanel-title-sub {
+    color: #ffffff;
+    font-size: 30px;
+    font-size: 1.02025rem;
+    font-weight: 700;
+    margin: 0; }
+  .sh-title .sh-title__textpanel-cta {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+    display: inline-block;
+    font-family: "PwC Helvetica Neue", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 40px;
+    padding: 14px 20px;
+    position: relative;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .sh-title .sh-title__textpanel-cta > svg {
+      margin-left: 8px;
+      -webkit-transform: translate(0, 1px);
+              transform: translate(0, 1px);
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      -webkit-transition-delay: 0.2s;
+              transition-delay: 0.2s; }
+      .sh-title .sh-title__textpanel-cta > svg .bs-sml-chev-icon--right {
+        stroke: #000000; }
+      .page-dir--rtl .sh-title .sh-title__textpanel-cta > svg {
+        margin-left: auto;
+        margin-right: 8px;
+        -webkit-transform: translate(0, -1px) rotate(180deg);
+                transform: translate(0, -1px) rotate(180deg); }
+    .sh-title .sh-title__textpanel-cta:link, .sh-title .sh-title__textpanel-cta :visited {
+      color: #000000; }
+    .sh-title .sh-title__textpanel-cta:hover, .sh-title .sh-title__textpanel-cta:focus {
+      color: #ffffff;
+      background-color: #000000;
+      border-color: #000000;
+      text-decoration: none; }
+      .sh-title .sh-title__textpanel-cta:hover > svg, .sh-title .sh-title__textpanel-cta:focus > svg {
+        margin-left: 23px; }
+        .sh-title .sh-title__textpanel-cta:hover > svg .bs-sml-chev-icon--right, .sh-title .sh-title__textpanel-cta:focus > svg .bs-sml-chev-icon--right {
+          stroke: #ffffff; }
+        .page-dir--rtl .sh-title .sh-title__textpanel-cta:hover > svg, .page-dir--rtl .sh-title .sh-title__textpanel-cta:focus > svg {
+          margin-left: auto;
+          margin-right: 23px; }
+  @media (min-width: 768px) {
+    .sh-title .sh-title__textpanel-title-primary {
+      font-size: 2.714rem;
+      line-height: 1.3; } }
+  @media (max-width: 991px) {
+    .sh-title .sh-title__img-panel {
+      height: 0;
+      padding-top: 56.25%;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .sh-title {
+      min-height: calc(100vh -  127px); }
+    .sh-title .sh-title__img-panel {
+      background-position: 100% 50%;
+      background-size: cover;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1; }
+    .sh-title .sh-title__textpanel {
+      padding: 40px;
+      width: 50%; }
+    .sh-title .sh-title__textpanel-title-primary {
+      font-size: 3.749375rem;
+      line-height: 1.1;
+      margin-bottom: 50px; }
+    .sh-title .sh-title__textpanel-title-sub {
+      font-size: 24px;
+      font-size: 1.49975rem; }
+    .sh-title .sh-title__textpanel-cta {
+      font-size: 1.000125rem;
+      margin-top: 40px;
+      padding: 22px 30px; } }
+  @media (min-width: 1300px) {
+    .sh-title .sh-title__textpanel {
+      padding-top: 120px;
+      padding-right: calc((100% / 24) + 15px);
+      padding-bottom: 120px;
+      padding-left: calc((100% / 24) + 15px); }
+    .sh-title .sh-title__textpanel-title-primary {
+      font-size: 67px;
+      font-size: 4.18775rem;
+      line-height: 1.34;
+      margin-bottom: 50px; }
+    .sh-title .sh-title__textpanel-title-sub {
+      font-size: 26px;
+      font-size: 1.624875rem; }
+    .sh-title .sh-title__textpanel-cta {
+      font-size: 1.000125rem;
+      margin-top: 60px; } }
+
+.page-primary-col--orange .sh-title__textpanel {
+  background-color: #d04a02; }
+
+.page-primary-col--red .sh-title__textpanel {
+  background-color: #e0301e; }
+
+.page-primary-col--rose .sh-title__textpanel {
+  background-color: #d93954; }
+
+/*	end Superhero title (common) 
+********************/
+/*	Superhero title (simple) 
+********************/
+@media (min-width: 992px) {
+  .sh-title--simple .sh-title__textpanel {
+    margin-top: 13vh; } }
+
+/*	end Superhero title (simple) 
+********************/
+/*	Superhero title (simple + intro i.e. pinned) 
+********************/
+.sh-title--simple-has-intro .sh-title__textpanel-intro {
+  padding-top: 40px; }
+  .sh-title--simple-has-intro .sh-title__textpanel-intro p {
+    color: #ffffff;
+    font-size: 1.09375rem;
+    line-height: 1.5;
+    margin-bottom: 30px; }
+    .sh-title--simple-has-intro .sh-title__textpanel-intro p:last-child {
+      margin-bottom: 0; }
+
+@media (min-width: 992px) {
+  .sh-title--simple-has-intro {
+    padding-top: calc(50vh -  170px); }
+  .sh-title--simple-has-intro .sh-title__img-panel {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 0; }
+    .sh-title--simple-has-intro .sh-title__img-panel--align-top {
+      background-position: 100% 0%; }
+    .sh-title--simple-has-intro .sh-title__img-panel--align-middle {
+      background-position: 100% 50%; }
+    .sh-title--simple-has-intro .sh-title__img-panel--align-bottom {
+      background-position: 100% 100%; }
+    .cq-wcm-edit .sh-title--simple-has-intro .sh-title__img-panel {
+      /* admin mode overrides */
+      position: absolute; }
+  .sh-title--simple-has-intro .sh-title__textpanel-intro {
+    padding-top: 60px; }
+    .sh-title--simple-has-intro .sh-title__textpanel-intro p {
+      font-size: 1.49975rem;
+      line-height: 1.55;
+      margin-bottom: 40px; } }
+
+@media (min-width: 1300px) {
+  .sh-title--simple-has-intro .sh-title__textpanel {
+    padding-top: 120px;
+    padding-right: calc((100% / 24) + 15px);
+    padding-bottom: 120px;
+    padding-left: calc((100% / 24) + 15px); }
+  .sh-title--simple-has-intro .sh-title__textpanel-intro {
+    padding-top: 80px; }
+    .sh-title--simple-has-intro .sh-title__textpanel-intro p {
+      font-size: 26px;
+      font-size: 1.624875rem;
+      line-height: 1.55;
+      margin-bottom: 50px; }
+      .sh-title--simple-has-intro .sh-title__textpanel-intro p:last-child {
+        margin-bottom: 0; } }
+
+/*	end Superhero title (simple + intro i.e. pinned) 
+********************/
+/*	Superhero title (colour blocked) 
+********************/
+/*	end Superhero title (colour blocked) 
+********************/
+
+/*	Authoring admin mode and authoring preview 
+********************/
+
+@media (min-width: 992px) {
+  .cq-Editable-dom .sh-title {
+  background: url(../../../../../../../../dam/pwc/gx/en/sh-comp/authoring-mode/scroll-placeholder.jpg) bottom right repeat-y;
+  background-size: contain;
+  height: 530px;
+  min-height: 530px;
+  }
+
+  .cq-Editable-dom .sh-title .sh-title__img-panel {
+  height: 500px;
+  position: absolute;
+  }
+
+
+  .cq-Editable-dom .sh-title--simple-has-intro {
+  height: auto;
+  padding-top: 100px; 
+  }
+}
+
+/*	end Authoring admin mode and authoring preview 
+********************/
+

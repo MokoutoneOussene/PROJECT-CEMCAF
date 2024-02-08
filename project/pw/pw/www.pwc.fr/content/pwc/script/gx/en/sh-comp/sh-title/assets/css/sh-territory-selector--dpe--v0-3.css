@@ -1,0 +1,186 @@
+/*	Superhero territory selector 
+********************/
+.sh-territory-sel {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 25px 15px 35px;
+  position: relative;
+  z-index: 2; }
+  .sh-territory-sel .sh-territory-sel__drop-wrap {
+    position: relative;
+    width: 100%; }
+  .sh-territory-sel .sh-territory-sel__text {
+    color: inherit;
+    display: block;
+    font-size: 1.3125rem;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 10px; }
+  .sh-territory-sel .sh-territory-sel__select {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d04a02;
+    color: #2d2d2d;
+    cursor: pointer;
+    font-size: 1.3125rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 5px 40px 5px 0;
+    width: 100%; }
+    .sh-territory-sel .sh-territory-sel__select:focus, .sh-territory-sel .sh-territory-sel__select:hover {
+      border-bottom-color: #2d2d2d;
+      -webkit-box-shadow: 0 1px 0 #2d2d2d;
+              box-shadow: 0 1px 0 #2d2d2d; }
+    .sh-territory-sel .sh-territory-sel__select[disabled="disabled"] {
+      cursor: default;
+      opacity: 0.7; }
+      .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:focus, .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:hover {
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+  .sh-territory-sel .sh-territory-sel__select-display {
+    background: #ffffff;
+    bottom: 1px;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    font-size: 1.3125rem;
+    font-weight: 700;
+    left: 0;
+    line-height: 1.2;
+    overflow: hidden;
+    padding: 5px 40px 5px 0;
+    pointer-events: none;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 2; }
+  .sh-territory-sel .sh-territory-sel__select:hover + .sh-territory-sel__select-display,
+  .sh-territory-sel .sh-territory-sel__select:focus + .sh-territory-sel__select-display {
+    color: #2d2d2d; }
+  .sh-territory-sel .sh-territory-sel__select[disabled="disabled"] + .sh-territory-sel__select-display {
+    cursor: default;
+    opacity: 0; }
+  .sh-territory-sel .sh-territory-sel__icon {
+    bottom: 4px;
+    display: block;
+    height: 18px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    width: 18px;
+    z-index: 3; }
+  @media (min-width: 992px) {
+    .sh-territory-sel {
+      padding: 40px;
+      width: 50%; }
+    .sh-territory-sel .sh-territory-sel__text {
+      font-size: 30px;
+      font-size: 1.8725rem;
+      margin-bottom: 10px; }
+    .sh-territory-sel .sh-territory-sel__select {
+      font-size: 20px;
+      font-size: 1.250375rem;
+      padding: 20px 70px 24px 0; }
+    .sh-territory-sel .sh-territory-sel__select-display {
+      font-size: 40px;
+      font-size: 2.499875rem;
+      padding: 6px 50px 15px 0; }
+    .sh-territory-sel .sh-territory-sel__icon {
+      bottom: 15px;
+      height: 38px;
+      width: 38px; } }
+  @media (min-width: 1200px) {
+    .sh-territory-sel .sh-territory-sel__select {
+      font-size: 18px;
+      font-size: 1.12525rem;
+      padding-top: 24px; }
+    .sh-territory-sel .sh-territory-sel__select-display {
+      font-size: 40px;
+      font-size: 2.499875rem; } }
+  @media (min-width: 1300px) {
+    .sh-territory-sel {
+      padding-top: 60px;
+      padding-right: calc((100% / 24) + 15px);
+      padding-bottom: 60px;
+      padding-left: calc((100% / 24) + 15px); } }
+  @media (min-width: 1660px) {
+    .sh-territory-sel .sh-territory-sel__select {
+      font-size: 18px;
+      font-size: 1.12525rem;
+      padding-top: 33px; }
+    .sh-territory-sel .sh-territory-sel__select-display {
+      font-size: 48px;
+      font-size: 3.000375rem; } }
+
+.page-primary-col--orange .sh-territory-sel {
+  color: #d04a02; }
+  .page-primary-col--orange .sh-territory-sel .sh-territory-sel__icon svg path {
+    fill: #d04a02; }
+  .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select {
+    border-bottom-color: #d04a02; }
+    .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select:focus, .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select:hover {
+      border-bottom-color: #2d2d2d;
+      -webkit-box-shadow: 0 1px 0 #2d2d2d;
+              box-shadow: 0 1px 0 #2d2d2d; }
+    .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:focus, .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-bottom-color: #d04a02; }
+      .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:focus ~ .sh-territory-sel__icon svg path, .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:hover ~ .sh-territory-sel__icon svg path {
+        fill: #d04a02; }
+  .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select:hover ~ .sh-territory-sel__icon svg path,
+  .page-primary-col--orange .sh-territory-sel .sh-territory-sel__select:focus ~ .sh-territory-sel__icon svg path {
+    fill: #2d2d2d; }
+
+.page-primary-col--red .sh-territory-sel {
+  color: #e0301e; }
+  .page-primary-col--red .sh-territory-sel .sh-territory-sel__icon svg path {
+    fill: #e0301e; }
+  .page-primary-col--red .sh-territory-sel .sh-territory-sel__select {
+    border-bottom-color: #e0301e; }
+    .page-primary-col--red .sh-territory-sel .sh-territory-sel__select:focus, .page-primary-col--red .sh-territory-sel .sh-territory-sel__select:hover {
+      border-bottom-color: #2d2d2d;
+      -webkit-box-shadow: 0 1px 0 #2d2d2d;
+              box-shadow: 0 1px 0 #2d2d2d; }
+    .page-primary-col--red .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:focus, .page-primary-col--red .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-bottom-color: #e0301e; }
+      .page-primary-col--red .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:focus ~ .sh-territory-sel__icon svg path, .page-primary-col--red .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:hover ~ .sh-territory-sel__icon svg path {
+        fill: #e0301e; }
+  .page-primary-col--red .sh-territory-sel .sh-territory-sel__select:hover ~ .sh-territory-sel__icon svg path,
+  .page-primary-col--red .sh-territory-sel .sh-territory-sel__select:focus ~ .sh-territory-sel__icon svg path {
+    fill: #2d2d2d; }
+
+.page-primary-col--rose .sh-territory-sel {
+  color: #d93954; }
+  .page-primary-col--rose .sh-territory-sel .sh-territory-sel__icon svg path {
+    fill: #d93954; }
+  .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select {
+    border-bottom-color: #d93954; }
+    .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select:focus, .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select:hover {
+      border-bottom-color: #2d2d2d;
+      -webkit-box-shadow: 0 1px 0 #2d2d2d;
+              box-shadow: 0 1px 0 #2d2d2d; }
+    .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:focus, .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-bottom-color: #d93954; }
+      .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:focus ~ .sh-territory-sel__icon svg path, .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select[disabled="disabled"]:hover ~ .sh-territory-sel__icon svg path {
+        fill: #d93954; }
+  .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select:hover ~ .sh-territory-sel__icon svg path,
+  .page-primary-col--rose .sh-territory-sel .sh-territory-sel__select:focus ~ .sh-territory-sel__icon svg path {
+    fill: #2d2d2d; }
+
+/*	end Superhero territory selector 
+********************/

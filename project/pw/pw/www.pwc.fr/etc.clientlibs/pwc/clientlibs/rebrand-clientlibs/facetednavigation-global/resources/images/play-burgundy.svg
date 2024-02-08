@@ -1,0 +1,17 @@
+<svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="24" height="24" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1" transform="rotate(45 6.370369911193852,11.370369911193846) ">
+   <defs fill="#a32020">
+    <path id="path-15955816364413456" d="m15.91712,20.74074c0,0 -15.91712,-15.91712 -15.91712,-15.91712c0,0 20.74074,-4.82362 20.74074,-4.82362c0,0 -4.82362,20.74074 -4.82362,20.74074z" fill="#a32020"/>
+   </defs>
+   <g stroke="null" id="svg_2">
+    <path d="m11.91712,21.74074c0,0 -15.91712,-15.91712 -15.91712,-15.91712c0,0 20.74074,-4.82362 20.74074,-4.82362c0,0 -4.82362,20.74074 -4.82362,20.74074z" id="svg_3" fill="#a32020"/>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,310 @@
+/*-----------------------------*/
+/* COLUMN DIVIDER */
+/* 66-33 */
+.column-divider .parsys_column .pwccol2-longformb-c0, .column-divider .parsys_column .pwccol2-longformb-c1 { /* cancel padding of each column */
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.column-divider .pwccol2-longformb { /* get back column padding */
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.column-divider .parsys_column .pwccol2-longformb-c1 { /* column divider line*/
+	border: 0px #CCCCCC solid;
+	border-left-width:1px;
+}
+/* increased padding for divider*/
+.column-divider .pwccol2-longformb-c0 {
+	padding-right: 35px;
+}
+.column-divider .pwccol2-longformb-c1 {
+	padding-left: 35px;
+}
+@media screen and (max-width: 768px) {
+   /* remove column padding and divider */
+  .column-divider .pwccol2-longformb-c0 {
+    padding-right: initial;
+  }
+  .column-divider .pwccol2-longformb-c1 {
+    padding-left: initial;
+  }
+  .column-divider .parsys_column .pwccol2-longformb-c1 { /* column divider line*/
+    border-left-width:0px;
+  }
+}
+
+/*----------------------------------------*/
+/* TIMELINE */
+/*----------------------------------------*/
+
+.standard-reading .page-section.timeline .parsys.sectionpar > .text.parbase.section .text-component {
+	width: 100%;
+}
+
+
+.timeline h2, .timeline h3, .timeline h4, .timeline h5 { /* bold headlines */
+	font-weight: bold;
+}
+
+
+.timeline h2 strong b, .timeline h3 b, .timeline h4 b, .timeline h5 b {/* colored part headline text*/
+  color: #e0301e !important;
+}
+.timeline h2 strong br + b, .timeline h3 br + b, .timeline h4 br + b, .timeline h5 br + b {/* colored part headline text*/
+	color:#e0301e !important;
+  display:block;
+  font-size:85%;
+  line-height: 1.8rem;
+  margin-top:7px;
+  margin-bottom:15px;
+}
+
+/* UL */
+.timeline .sectionpar {
+} 
+/* LI */
+.timeline .sectionpar .text { /* line */
+  position: relative;
+  width: 6px !important;
+  margin: 0 auto;
+  background: #e0301e;
+}
+.timeline .sectionpar .text::after { /* circles */
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 3px solid #e0301e;
+  -moz-border-radius:50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  top: -15px;
+}
+.timeline .sectionpar .text:first-child::after { /* solid colour circle */
+  background: #e0301e;
+  border: 3px solid #e0301e;
+  top:-15px;
+}
+/* TEXT */
+.timeline .sectionpar .text .text-component { /* text boxes */
+  position: relative;
+  bottom: 0;
+  padding: 15px;
+  border-top-width: 1px;
+  border-top-style: dashed;
+  border-top-color: #6d6c71;
+  background-color: #ffffff;
+  background-color:none;
+  background-color:transparent;
+}
+/* first and last child text boxes */
+.timeline .sectionpar .text:first-child .text-component, .timeline .sectionpar .text:last-child .text-component { /* text boxes first child */
+  top:0px;
+}
+/* left text boxes */
+.timeline .sectionpar .text:nth-child(even) .text-component {
+  left: 18px;
+}
+/* right text boxes */
+.timeline .sectionpar .text:nth-child(odd) .text-component {
+}
+
+
+/* last text component aka last child arrow */
+.timeline .text.spacer_before {
+	border-top-width: 0px;
+}
+.timeline .text-component h5 {
+	margin-top: 0px;
+}
+.timeline .sectionpar .text:last-child .text-component h5 {
+	font-size: 20px !important;
+	font-size: 1.429rem !important;
+	color: #e0301e !important;
+	margin: 15px 0 15px;
+}
+
+.timeline .sectionpar .text:last-child::after { /* arrow */
+  right: -15px;
+  top:-3px;
+  -moz-border-radius:0%;
+  -webkit-border-radius: 0%;
+  border-radius: 0%;
+  background: none;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #e0301e;
+  border-bottom-width:0px;
+}
+.timeline .sectionpar .text:last-child .text-component {
+  border-top-width: 0px;
+}
+.timeline .sectionpar .text:last-child { /* line for list child */
+  width: 0px;
+  background: none;
+}
+.timeline .sectionpar .text:last-child .text-component { 
+  background:none;
+  text-align: center;
+}
+.timeline .sectionpar .text:last-child .text-component p { 
+  font-family: "PwC Helvetica Neue",Arial,Sans-Serif;
+  line-height: 1.5em;
+  font-size: 1.25rem;
+  font-size:115%;
+  margin: 0 0 10px;
+}
+/* MOBILE TIMELINE */
+@media screen and (max-width: 750px) {
+  .timeline .sectionpar {
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+  .timeline h2, .timeline h3, .timeline h4, .timeline h5 { /* bold headlines */
+    margin: 0 0 10px;
+  }
+  .timeline .sectionpar .text { /* line */
+    width: 100% !important;
+    background: none;
+    display:block;
+    border-left: 4px solid #e0301e;
+  }
+  .timeline .sectionpar .text::after { /* circles */
+    left: -0.3%;
+  }
+  /* first and last child text boxes */
+  .timeline .sectionpar .text:first-child .text-component, .timeline .sectionpar .text:nth-last-child(2) .text-component { /* text boxes first child */
+    top:0px;
+  }
+  /* left text boxes */
+  .timeline .sectionpar .text:nth-child(even) .text-component {
+    left: initial;
+  }
+  /* right text boxes */
+  .timeline .sectionpar .text:nth-child(odd) .text-component {
+    left: initial;
+  }
+  /* second to last child arrow */
+  .timeline .sectionpar .text:last-child {
+    border-left-width: 0px;
+    background: none;
+    width:100%;
+    left: 0.6%;
+  }
+  .timeline .sectionpar .text:last-child .text-component {  
+    padding-top:10px;
+    position:relative;
+    text-align:left;
+    left: -4.5%;
+  }
+    /* show/hide timeline */  
+  .timeline-show-hide {
+    margin: 10px 0 30px;
+    position: relative;
+    left:-1.5%;
+    top:0;
+    cursor:pointer;
+  }
+  .timeline-show-hide .timeline-more, .timeline-show-hide .timeline-less {/* link text */
+    display: inline-block;
+    position:absolute;
+    padding-bottom: 4px;
+    margin-left:7%;
+    top:auto;
+    bottom:0;
+    /* font-family: Georgia,serif; */
+	font-family: "PwC ITC Charter",Georgia,Serif;
+    color: #404041;
+    font-size: 16px;
+    font-size: 1.342rem;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    transition: all 200ms ease-in-out;
+  }
+  .timeline-show-hide.timeline-collapsed:before
+  { /* overlay */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 320px;
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -moz-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    bottom:-20px;
+  }
+  .timeline .sectionpar .text:last-child .text-component p { 
+    font-size:100%;
+  }
+}
+
+
+/* other screens for timeline */
+@media screen and (min-width: 751px) {
+  .timeline .sectionpar .text .text-component { /* text boxes */
+    width: 340px !important;
+  }
+  /* right text boxes */
+  .timeline .sectionpar .text:nth-child(odd) .text-component {
+    left: -340px;
+  }
+  /* arrow text */
+  .timeline .sectionpar .text:last-child .text-component {
+    left:-168px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .timeline .sectionpar .text .text-component { /* text boxes */
+    width: 445px !important;
+  }
+  /* right text boxes */
+  .timeline .sectionpar .text:nth-child(odd) .text-component {
+    left: -460px;
+  }
+  /* arrow text */
+  .timeline .sectionpar .text:last-child .text-component {
+    left:-218px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .timeline .sectionpar .text .text-component { /* text boxes */
+    width: 545px !important;
+  }
+  /* right text boxes */
+  .timeline .sectionpar .text:nth-child(odd) .text-component {
+    left: -545px;
+  }
+  /* arrow text */
+  .timeline .sectionpar .text:last-child .text-component {
+    left:-270px;
+  }
+}
+
+/*---------------------------*/
+/* SECONDARY NAVIGATION */
+
+.page-primary-col--burgundy .secnav-tabs .secnav-tabs__navigation .secnav-tabs__tab.active, .page-primary-col--burgundy .secnav-tabs .secnav-tabs__navigation .secnav-tabs__tab.active:hover {
+  border-bottom-color: #e0301e;
+}

@@ -1,0 +1,3584 @@
+
+<!DOCTYPE HTML>
+<html lang="fr">
+    
+<!-- Mirrored from www.pwc.fr/fr/vos-enjeux/transformation-cloud/developper-une-approche-finops-et-greenops.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Jul 2023 23:47:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="icon" href="../../../etc.clientlibs/pwc/clientlibs/css_common/resources/image/favicon.ico" type="image/x-icon"/>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery.min.f65891607efbe75b84a8031849cec6c7.js"></script>
+<script src="../../../etc.clientlibs/clientlibs/granite/utils.min.308082b4c347f4fec37ffef277d39d0e.js"></script>
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite.min.d9075d4175ab7b0e3ccf4305a4089645.js"></script>
+<script src="../../../etc.clientlibs/foundation/clientlibs/jquery.min.dd9b395c741ce2784096e26619e14910.js"></script>
+<script src="../../../etc.clientlibs/pwc/clientlibs/components-digitaldataanalytics.min.594e86bc3088dca581ea8df9b0eafa46.js"></script>
+
+
+
+<title>D&eacute;velopper une approche FinOps &amp; GreenOps | Conseils en strat&eacute;gie PwC
+</title>
+<meta http-equiv="content-language" content="fr_fr"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:title" content="D&eacute;velopper une approche FinOps &amp; GreenOps"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="PwC"/>
+<meta property="og:description" content="Unifiez vos donn&eacute;es financi&egrave;res, pilotez vos co&ucirc;ts et am&eacute;liorez la ma&icirc;trise de votre impact environnementa"/>
+
+<meta property="og:image" content="https://www.pwc.com/gx/en/brand-simplified/hero-images-1600/financial-services/damil-gettyimages-935644310-1600.jpg"/>
+
+
+<meta name="robots" content="index"/>
+<meta name="keywords" content=""/>
+<meta name="description" content="Unifiez vos donn&eacute;es financi&egrave;res, pilotez vos co&ucirc;ts et am&eacute;liorez la ma&icirc;trise de votre impact environnementa"/>
+<meta name="author" content="PricewaterhouseCoopers"/>
+<meta name="pwcTitle" content="Développer une approche FinOps & GreenOps"/>
+<meta name="pwcLocale" content="fr_fr"/>
+<meta name="pwcCountry" content='fr'/>
+
+
+<meta name="pwcGeo.default" content="FR"/>
+<meta name="pwcLang" content="fr"/>
+<meta name="pwcTag" content="France||, Issue||">
+<meta name="pwcHideLevel" content="0,2"/>
+<meta name="target" content=""/>
+<meta name="pwcReleaseDate" content="2022-04-01T16:13:00.000+02:00"/>	
+<meta name="pwcLastModifiedDate" content="2023-03-10T13:04:47.174Z"/>	
+<meta name="pwcselectednav" content="5"/>
+<meta name="viewport" id="pwcviewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" href="../../../content/pwc/script/network/apple-touch-icon.png"/>
+
+<link rel="canonical" href="developper-une-approche-finops-et-greenops.html"/>
+<meta property="og:url" content="https://www.pwc.fr/fr/vos-enjeux/transformation-cloud/developper-une-approche-finops-et-greenops.html"/>
+
+
+<script>
+    var  page ="D&eacute;velopper une approche FinOps &amp; GreenOps | Conseils en strat&eacute;gie PwC";
+    var anlyticsEscapeTitle = "D&eacute;velopper une approche FinOps &amp; GreenOps";
+    var anlyticsunescapeTitle = $('<textarea />').html(anlyticsEscapeTitle).text();
+    var  templatePath ="/conf/pwc/settings/wcm/templates/longform-campaign-one-pager";
+    var pwcReleaseDate = "2022-04-01T16:13:00.000+02:00";
+    var pageNameUnescape = $('<textarea />').html(page).text();
+    createObject('page.pageInfo.pageName', pageNameUnescape);
+    createObject("page.pageInfo.pageType",templatePath.substring(templatePath.lastIndexOf('../../../index.html')  + 1));
+    createObject('page.content.publishDate', pwcReleaseDate);
+    createObject('page.content.contentTitle', anlyticsunescapeTitle);
+    createObject('page.content.contentType', "article");
+    createObject('page.content.contentFullPath',"../../../content/pwc/fr/fr/vos-enjeux/transformation-cloud/developper-une-approche-finops-et-greenops.html")
+    //Added old dataLayer object value in digitalData.site object.
+    digitalData.site ={"SiteValues":{"los":"","industry":"","subLos":"","folderDirectory":"pwc/fr/fr/vos-enjeux/transformation-cloud","contentType":"issue"},"additionalTags":"geography/europe/france","business":{"businessChallenge":"","businessTopic":""},"accountRegistration":false};
+</script>
+<script type="application/ld+json">
+{
+    "@type": "Thing",
+    "@context": "http://schema.org",
+    "image": "https://www.pwc.com/gx/en/brand-simplified/hero-images-1600/financial-services/damil-gettyimages-935644310-1600.jpg",
+    "name":"Développer une approche FinOps & GreenOps | Conseils en stratégie PwC",
+    "description":"Unifiez vos données financières, pilotez vos coûts et améliorez la maîtrise de votre impact environnementa"
+}
+</script>
+
+    
+	<script>
+		var currentPageTerritory = 'fr';
+	</script>
+    <script>
+        createObject('page.skipOptanonCall',true);
+    </script>
+    
+
+	
+    <script src="../../../etc.clientlibs/foundation/clientlibs/shared.min.d8eee0685f08a5253a1d753a2619a08f.js"></script>
+
+
+	
+    
+    
+        <!-- OneTrust Cookies Consent Notice start for www.pwc.fr -->
+
+<script src="../../../../cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-language="fr-FR" type="text/javascript" charset="UTF-8" data-domain-script="49cc3ef2-a4fc-48e7-9b4f-cc88fac2559c"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for www.pwc.fr -->
+    
+    
+    
+
+	
+    
+
+	
+    
+
+    
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+	
+	
+
+	
+	
+
+  
+  
+
+    
+
+	
+
+    
+    
+        <script>
+            (function(win, doc, style, timeout) {
+                var STYLE_ID = 'at-body-style';
+                function getParent() {
+                    return doc.getElementsByTagName('head')[0];
+                }
+                function addStyle(parent, id, def) {
+                    if (!parent) {
+                        return;
+                    }
+                    var style = doc.createElement('style');
+                    style.id = id;
+                    style.innerHTML = def;
+                    parent.appendChild(style);
+                }
+                function removeStyle(parent, id) {
+                    if (!parent) {
+                        return;
+                    }
+                    var style = doc.getElementById(id);
+                    if (!style) {
+                        return;
+                    }
+                    parent.removeChild(style);
+                }
+                addStyle(getParent(), STYLE_ID, style);
+                setTimeout(function() {
+                    removeStyle(getParent(), STYLE_ID);
+                }, timeout);
+            }(window, document, "body {opacity: 0 !important}", 3000));
+        </script>
+    
+	
+    
+        <script>
+            var pageTerritoryForDTM = 'fr';
+        </script>
+        <script src="../../../../assets.adobedtm.com/94ed34440bb5/527900b2ae4b/launch-519328edb4b5.min.js" type="text/javascript" async></script>
+        <script src="../../../etc.clientlibs/pwc/clientlibs/components-analytics.min.a3ab2d7ea94e61324e5ec082386b52cd.js"></script>
+
+    
+    
+
+    
+    	
+    
+
+    
+
+    
+<script src="../../../etc.clientlibs/pwc/clientlibs/handlebars.min.25dbbd6993a041605ec4deaec873a530.js"></script>
+
+
+
+
+    
+<script src="../../../etc.clientlibs/pwc/clientlibs/purify.min.3379e6726488550db7a6c54c0dcfda3c.js"></script>
+
+
+
+
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/pwc/clientlibs/longform/style-colors-rebrand.min.1ba72a15ee11df4c7a7e0ec1d1ae802e.css" type="text/css">
+<link rel="stylesheet" href="../../../etc.clientlibs/pwc/clientlibs/rebrand-clientlibs/components-colors.min.a820b2b548e0505107bf5dadcea77cc2.css" type="text/css">
+
+
+       
+
+
+
+
+<!-- <script src="//assets.adobedtm.com/c1b096e48fc8/1825f4c13961/launch-05a1756607c1-development.min.js" async></script>  -->
+
+<input id="modnavigationid" type="hidden" value="/fr/vos-enjeux/transformation-cloud/developper-une-approche-finops-et-greenops/"/>
+<input type="hidden" id="navmode" value="publish"/>
+<input type="hidden" id="premiumPage" value="false"/>
+<input class="currentPagePath" type="hidden" value="/content/pwc/fr/fr/vos-enjeux/transformation-cloud/developper-une-approche-finops-et-greenops"/>
+<input type="hidden" id="isUserReg" value="false"/>
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-6f2b5a45-68d3-47cf-8035-71f402d81136","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GZCM9-CJ7UJ-QXSTX-ZGJFD-8QHDY",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"GZCM9-CJ7UJ-QXSTX-ZGJFD-8QHDY";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n="false"=="true"?1:0,t="cookiepresent",a="mylscayxjcqqmzfau4ia-f-85e638911-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"403535","ak.ai":parseInt("256182",10),"ak.ol":"0","ak.cr":228,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"d4e361a","ak.r":41423,"ak.a2":n,"ak.m":"x","ak.n":"essl","ak.bpcip":"102.23.33.0","ak.cport":10026,"ak.gh":"2.23.5.189","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1688250128","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==bagDDWVI/bjum30Y1eq1KDzum5afFL/nIXw+0SnJry67JBvVYJ/rGgF4f5x24yGqsa/tKCKX7mvehDmB/8Kp/ZI53mbu9I3eYbp+7QaH5hHUN8wFEL+zNEyRvDT9z2WCe2B21jWYWIZXw+DCI0qhtbQs/IR3Pi9eJZABXEN3+F+hDkb8G3qJWQuyYagJEHosyz9tLR+skAejpd4vdzQUCtK2I1dVUdm/cXiad0QG+wnF4wQH0am9OyeNBoV63ZU6A5+VDI1MzCPfwqQobusi/dEKuhfqChPmYNZzZnn9aEAWAACuOPH1gG2h0mU0aeInPxusGu60Bgvep1OIcFVhOzAfKCbSntMmE11WkmhTl5Q7OCeK5hhoIfP0SpSnupH+d9c8IFtHaNdl2gLBKL69Dge1T8XYSMjQTCvSOfS955k=","ak.pv":"240","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.html","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak-2.html","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+    <body class="basepage page basicpage red-burgundy-maroon standard-reading longform-campaign-one-pager page-primary-col--red page-secondary-col--red page-tertiary-col--red  publish standard-spacing pwcscrolling longformcontent cmp-base-modernized">
+        
+             
+            
+
+
+
+			<div id="wrapper">
+            
+<div class="root container responsivegrid">
+
+    
+    
+    
+    <div id="container-afb7e668e5" class="cmp-container">
+        
+        <div class="ixfsection experiencefragment"><div class="mod-ixf-page-section"></div>
+
+
+	<section id="header" style="height: auto" class="cmp-experiencefragment cmp-experiencefragment--fr-fr fullwidth ">
+
+
+    
+    <div id="container-4d29e6cc98" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="slim-page-header-v2 parbase aem-GridColumn aem-GridColumn--default--12"><!-- SDI include (path: /content/experience-fragments/pwc/fr/fr/header/fr-fr/master/_jcr_content/root/slim_page_header_v2.dynamic.html/pwc/components/modernized/content/slim-page-header-v2, resourceType: pwc/components/modernized/content/slim-page-header-v2) -->
+
+<nav id="skipNav" aria-label="Skip Links">
+   <a id="skipToContent" href="#" class="sr-only sr-only-focusable skip-content" aria-label="Skip to content">Skip to content</a>
+   <a id="skipToFooter" href="#pgFooter" class="sr-only sr-only-focusable skip-content" aria-label="Skip to footer">Skip to footer</a>   
+</nav>
+<div class="headerv2-container" data-current-level=""> 
+  <header class="slimheader-v2 mod__header-v2">
+      <input type='hidden' id='checkUserLoginOrNot' value='false'/>
+      <a id="logoUrl" tabindex="3" href="../../../fr.html" aria-label="PwC" class="slim-logo search-hide levelOneLink ">
+      </a>
+      <img class="mobile-search-btn " alt="Site Search" src="../../../etc.clientlibs/pwc/clientlibs/rebrand-clientlibs/components-colors/resources/images/slim-header-v2/search-icon.svg"/>
+      <div id="slim-hamburger" class="slim-hamburger-ico" aria-label="Menu ">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+      <div class="slim-navigation" style="opacity:0;">
+         <nav class="nav-primary search-hide" data-tab-index-start="9" aria-label="Main Navigation">
+    <a aria-controls="vos_enjeux-subnav-1" link-href="https://www.pwc.fr/fr/vos-enjeux.html" href="#" data-has-subnav="true" data-nav-index="1" class="levelOneLink " nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux.html" navigation-title="Vos enjeux">Vos enjeux</a>
+            
+         
+    <a aria-controls="votre_secteur-subnav-2" link-href="https://www.pwc.fr/fr/industries.html" href="#" data-has-subnav="true" data-nav-index="2" class="levelOneLink " nextpage-canonical-url="https://www.pwc.fr/fr/industries.html" navigation-title="Votre secteur">Votre secteur</a>
+            
+         
+    <a aria-controls="expertises-subnav-3" link-href="https://www.pwc.fr/fr/expertises.html" href="#" data-has-subnav="true" data-nav-index="3" class="levelOneLink " nextpage-canonical-url="https://www.pwc.fr/fr/expertises.html" navigation-title="Expertises">Expertises</a>
+            
+         
+    <a aria-controls="solutions_digitales-subnav-4" link-href="https://www.pwc.fr/fr/expertises/conseil/technology/pwc-store.html" href="../../expertises/conseil/technology/pwc-store.html" data-has-subnav="false" data-nav-index="4" class="levelOneLink " nextpage-canonical-url="https://store.pwc.fr" navigation-title="Solutions digitales">Solutions digitales</a>
+            
+         
+    <a aria-controls="qui_sommes_nous__-subnav-5" link-href="https://www.pwc.fr/fr/qui-sommes-nous.html" href="#" data-has-subnav="true" data-nav-index="5" class="levelOneLink " nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous.html" navigation-title="Qui sommes-nous ?">Qui sommes-nous ?</a>
+            
+         
+    <a aria-controls="carrières-subnav-6" link-href="https://carrieres.pwc.fr/fr/" href="#" target="_blank" data-has-subnav="true" data-nav-index="6" class="levelOneLink " nextpage-canonical-url="https://carrieres.pwc.fr/fr/" navigation-title="Carrières">Carrières</a>
+            
+         
+    <a aria-controls="_letsgofrance-subnav-7" link-href="https://letsgofrance.pwc.fr/fr/" href="https://letsgofrance.pwc.fr/fr/" target="_blank" data-has-subnav="false" data-nav-index="7" class="levelOneLink " nextpage-canonical-url="https://letsgofrance.pwc.fr" navigation-title="#LetsgoFrance">#LetsgoFrance</a>
+            
+               <div class="nav-more" style="display: none;">
+                  <p>Plus</p>
+                  <div class="levelOneLink nav-more-dropdown">
+                  </div>
+               </div>
+            
+         </nav>
+         
+            
+    <nav class="nav-secondary search-hide" aria-label="Secondary Navigation">
+        
+            
+	<script id="overlay-template" type="text/x-handlebars-template">
+		<div class="authenticated-user-options hidden">
+			<div class="user-option-list">
+				<a tabindex="3"  class="register myaccount levelOneLink" href="{{myAccountHref}}">My Account</a>
+				<a tabindex="4" class="sign-in signout levelOneLink" onclick="logOffUser(window.location.href)">Sign Out</a>
+			</div>
+		</div>
+		<div class="user-options hidden">
+			<a tabindex="3" class="sign-in userreg levelOneLink" data-href="{{signInHref}}" href="javascript:void(0);"> Sign in</a>
+			<a tabindex="4" class="register userreg levelOneLink" href="{{createAccountHref}}"> Register</a>
+		</div>
+	</script>
+
+        
+        <div class="login-data"></div>
+        <!--<div data-sly-test="false" class="user-options hidden">
+            <a tabindex="3" data-sly-test.loginLink="/bin/saml/internal/auth" data-href="" href="javascript:void(0);" class="sign-in userreg levelOneLink">Sign in</a>
+            <a tabindex="4" data-sly-test.registerLink="https://login.pwc.com/identity/register?goto=" data-register-link="" href="javascript:void(0);" class="register userreg levelOneLink">Register</a>
+        </div>-->
+        <div class="location-options">
+            <script id="language-selector-template" type="text/x-handlebars-template">
+    <div class="options-language">
+        <button tabindex="7" class="open-lang-options">{{languageCode}} <img alt="" src="../../../etc.clientlibs/pwc/clientlibs/rebrand-clientlibs/components-colors/resources/images/slim-header-v2/Chevron.svg"></button>
+        <img class="close-options" alt="" src="../../../etc.clientlibs/pwc/clientlibs/rebrand-clientlibs/components-colors/resources/images/slim-header-v2/close-icon-white.svg">
+    </div>
+    <div class="slim-language-selector" id="langDialog" aria-label="{{langSelectorTitleText}}" role="dialog" aria-modal="true">
+        <p>{{langSelectorTitleText}}</p>
+        <div class="language-selector-list levelOneLink " id="lstLang" role="listbox" aria-labelledby="langDialog">
+            {{#each languageSelectorData.alternateLanguages}}
+            <a id="lang_{{@index}}" role="option" {{#if this.isCurrentLanguage}} class="is-active" {{/if}} href="{{this.linkURL}}" data-lang="{{this.linkText}}"> {{this.linkText}} </a>
+            {{/each}}
+        </div>
+    </div>
+</script>
+            
+                
+<script id="territory-selector-template" type="text/x-handlebars-template">
+	<button tabindex="6">
+		<span>{{currentPageTerritoryName}} <img alt="" src="../../../etc.clientlibs/pwc/clientlibs/rebrand-clientlibs/components-colors/resources/images/slim-header-v2/Chevron.svg"></span>
+		<img class="close-options" alt="" src="../../../etc.clientlibs/pwc/clientlibs/rebrand-clientlibs/components-colors/resources/images/slim-header-v2/close-icon-white.svg">
+	</button>
+	<!-- territory dialog box starts here -->
+	<div class="territory-selector" aria-label="{{findATerritoryText}}" id="lst-territory-selector" role="dialog" aria-modal="true">
+		<div class="territory-selector-search">
+				<label class="sr-only" for="searchField"> {{findATerritoryText}} </label>
+				<input id="countrySearch" class="levelOneLink" name="country" type="text" placeholder="{{findATerritoryText}}">
+		</div>
+		<div class="territory-selector-list levelOneLink" id="lstTerritory" role="listbox" aria-labelledby="lst-territory-selector">
+			{{#each territories}}
+			{{#if territoryFinder}}
+                    <a id="option_{{@index}}" role="option" class="{{#ifEquals name 'Global'}}region-global {{/ifEquals}}{{#ifEquals name ../currentPageTerritoryName}}is-active {{/ifEquals}}"
+                    href="{{domain}}" data-value="{{name}}">{{name}}</a>
+			{{#each alias}}
+                    <a id="option_{{this}}_{{@index}}" role="option" class="{{#ifEquals name 'Global'}}region-global {{/ifEquals}}{{#ifEquals ../name ../../currentPageTerritoryName}}is-active {{/ifEquals}}"
+                    href="{{../domain}}" data-value="{{this}}">{{this}}</a>
+			{{/each}}
+			{{#if @last}}
+			<p id="option_noresult" role="option" class="territory-no-results">{{territoryNotFoundText}}</p>
+			{{/if}}
+			{{/if}}
+			{{/each}}
+
+		</div>
+	</div>
+</script>
+
+            
+            <div class="lo-backsplash"></div>
+            <span class="option-country levelOneLink">
+      </span>
+            <span class="option-language">
+      </span>
+        </div>
+    </nav>
+
+         
+         
+         <div class="nav-search search-hide ">
+            <button aria-expanded="false" class="search-hide levelOneLink">Recherche</button>
+            <div class="search-hide searchbox">
+               <form id="slimSearchForm" role="search" action="https://www.pwc.fr/fr/search-results.html" method="get">
+	               <input id="slimSearch" class="slim-search" type="text" name="searchfield" placeholder="Recherche rapide"/>
+	                <input type="hidden" value="pwc_fr" name="pwcSiteSection" autocomplete="off"/>
+                    <input type="hidden" name="pwcLang" value="" autocomplete="off"/>
+                    <input type="hidden" name="pwcGeo" value="" autocomplete="off"/>
+                  <input type="submit" class="submit-search" value=""/>
+               </form>
+               <button id="close-search" aria-label="Fermer la recherche"></button>
+            </div>
+         </div>
+      </div>
+   </header>
+   
+	<script id="breadcrumb-template" type="text/x-handlebars-template">
+
+            <button class="slimnav-v2-bc-toggle is-hidden">
+	           <label class="sr-only">Show full breadcrumb</label>
+	        </button>
+				<div class="slimnav-v2-breadcrumbs">
+				{{#each breadcrumbs}}
+				 <a href="{{this.linkURL}}">{{this.linkText}}</a>
+				{{/each}}
+			    </div>
+
+	</script>
+        <div class="slimnav-breadcrumb"> </div>
+	
+   
+   <div class="slimheader-sublevel-slide" data-nav-level="2">
+      <div class="slide-shadow search-hide"></div>
+      <div class="slide-bg"></div>
+      
+      
+         <div id="vos_enjeux-subnav-1" class="sublevel-container search-hide show-subnav">
+            <button class="slimheader-close search-hide" aria-label="Menu Close"></button>
+            <div class="sublevel-navs">
+               <div class="slimnav-level2 slimheader-slide-nav">
+                  <div class="slide-nav-contain">
+                     <div class="sublevel-title-container search-hide">
+                        <div class="slimnav-mobile-header">
+                           <p> Menu</p>
+                        </div>
+                        <div class="slimheader-breadcrumb is-hidden">
+                           <a href="#">Vos enjeux</a>
+                        </div>
+                        <a href="../../vos-enjeux.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux.html" navigation-title="Vos enjeux">Vos enjeux</a>
+                     </div>
+                     <nav>
+    					<a class="levelTwoLink " data-breadcrumb="Vos enjeux" href="../transition-ecologique-et-societale.html" aria-controls="transition_écologique_et_sociétale-subnav-1-1" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/transition-ecologique-et-societale.html" navigation-title="Transition écologique et sociétale">Transition écologique et sociétale</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Vos enjeux" href="../technologie-et-performance.html" aria-controls="technologie_et_performance-subnav-1-2" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/technologie-et-performance.html" navigation-title="Technologie et performance">Technologie et performance</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Vos enjeux" href="../culture-et-responsabilite-entreprise.html" aria-controls="culture_et_responsabilité_d_entreprise-subnav-1-3" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/culture-et-responsabilite-entreprise.html" navigation-title="Culture et responsabilité d&#39;entreprise">Culture et responsabilité d&#39;entreprise</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Vos enjeux" href="../transparence-et-maitrise-des-risques.html" aria-controls="transparence_et_maîtrise_des_risques-subnav-1-4" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/transparence-et-maitrise-des-risques.html" navigation-title="Transparence et maîtrise des risques">Transparence et maîtrise des risques</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Vos enjeux" href="../strategies-de-croissance.html" aria-controls="création_et_préservation_de_valeur-subnav-1-5" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/strategies-de-croissance.html" navigation-title="Création et préservation de valeur">Création et préservation de valeur</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Vos enjeux" href="../transformation-des-business-models.html" aria-controls="transformation_des_business_models-subnav-1-6" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/transformation-des-business-models.html" navigation-title="Transformation des business models">Transformation des business models</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Vos enjeux" href="../les-entreprises-eti.html" aria-controls="croissance_des_eti-subnav-1-7" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/les-entreprises-eti.html" navigation-title="Croissance des ETI">Croissance des ETI</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Vos enjeux" href="../startups-and-innovation.html" aria-controls="startups_et_innovation-subnav-1-8" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/startups-and-innovation.html" navigation-title="Startups et innovation">Startups et innovation</a>
+                     </nav>
+                  </div>
+               </div>
+               <span class="slimnav-level3">
+                  <div id="transition_écologique_et_sociétale-subnav-1-1" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Vos enjeux</a>
+                           </div>
+                           <a href="../transition-ecologique-et-societale.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/transition-ecologique-et-societale.html" navigation-title="Transition écologique et sociétale">Transition écologique et sociétale</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="technologie_et_performance-subnav-1-2" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Vos enjeux</a>
+                           </div>
+                           <a href="../technologie-et-performance.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/technologie-et-performance.html" navigation-title="Technologie et performance">Technologie et performance</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="culture_et_responsabilité_d_entreprise-subnav-1-3" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Vos enjeux</a>
+                           </div>
+                           <a href="../culture-et-responsabilite-entreprise.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/culture-et-responsabilite-entreprise.html" navigation-title="Culture et responsabilité d&#39;entreprise">Culture et responsabilité d&#39;entreprise</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="transparence_et_maîtrise_des_risques-subnav-1-4" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Vos enjeux</a>
+                           </div>
+                           <a href="../transparence-et-maitrise-des-risques.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/transparence-et-maitrise-des-risques.html" navigation-title="Transparence et maîtrise des risques">Transparence et maîtrise des risques</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="création_et_préservation_de_valeur-subnav-1-5" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Vos enjeux</a>
+                           </div>
+                           <a href="../strategies-de-croissance.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/strategies-de-croissance.html" navigation-title="Création et préservation de valeur">Création et préservation de valeur</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="transformation_des_business_models-subnav-1-6" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Vos enjeux</a>
+                           </div>
+                           <a href="../transformation-des-business-models.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/transformation-des-business-models.html" navigation-title="Transformation des business models">Transformation des business models</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="croissance_des_eti-subnav-1-7" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Vos enjeux</a>
+                           </div>
+                           <a href="../les-entreprises-eti.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/les-entreprises-eti.html" navigation-title="Croissance des ETI">Croissance des ETI</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="startups_et_innovation-subnav-1-8" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Vos enjeux</a>
+                           </div>
+                           <a href="../startups-and-innovation.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/startups-and-innovation.html" navigation-title="Startups et innovation">Startups et innovation</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </span>
+               <div class="slim-featured search-hide">
+                  <p class="slim-featured-heading">A la une</p>
+                  
+                     <div class="slim-featured-item">
+                        <a class="featuredLink" href="../../actualites.html" nextpage-canonical-url="https://www.pwc.fr/fr/actualites.html" navigation-title="Actualités et perspectives">
+                           <img src="../../../../www.pwc.com/gx/en/brand-simplified/teaser-images-670/governance/damil-gettyimages-565975441-670.jpg.pwcimage.150.100.jpg" alt=""/>
+                           <p>Actualités et perspectives</p>
+                        </a>
+                     </div>
+                  
+               </div>
+            </div>
+         </div>
+      
+         <div id="votre_secteur-subnav-2" class="sublevel-container search-hide show-subnav">
+            <button class="slimheader-close search-hide" aria-label="Menu Close"></button>
+            <div class="sublevel-navs">
+               <div class="slimnav-level2 slimheader-slide-nav">
+                  <div class="slide-nav-contain">
+                     <div class="sublevel-title-container search-hide">
+                        <div class="slimnav-mobile-header">
+                           <p> Menu</p>
+                        </div>
+                        <div class="slimheader-breadcrumb is-hidden">
+                           <a href="#">Votre secteur</a>
+                        </div>
+                        <a href="../../industries.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries.html" navigation-title="Votre secteur">Votre secteur</a>
+                     </div>
+                     <nav>
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/aeronautique-defense-spatial.html" aria-controls="aéronautique__défense_et_sécurité-subnav-2-1" nextpage-canonical-url="https://www.pwc.fr/fr/industries/aeronautique-defense-spatial.html" navigation-title="Aéronautique, défense et sécurité">Aéronautique, défense et sécurité</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/assurance.html" aria-controls="assurance-subnav-2-2" nextpage-canonical-url="https://www.pwc.fr/fr/industries/assurance.html" navigation-title="Assurance">Assurance</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/automobile.html" aria-controls="automobile-subnav-2-3" nextpage-canonical-url="https://www.pwc.fr/fr/industries/automobile.html" navigation-title="Automobile">Automobile</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/banques-marches-de-capitaux.html" aria-controls="banques_et_marchés_de_capitaux-subnav-2-4" nextpage-canonical-url="https://www.pwc.fr/fr/industries/banques-marches-de-capitaux.html" navigation-title="Banques et marchés de capitaux">Banques et marchés de capitaux</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/distribution-biens-de-consommation.html" aria-controls="distribution_et_biens_de_consommation-subnav-2-5" nextpage-canonical-url="https://www.pwc.fr/fr/industries/distribution-biens-de-consommation.html" navigation-title="Distribution et biens de consommation">Distribution et biens de consommation</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/energies-utilities.html" aria-controls="énergie_et_ressources-subnav-2-6" nextpage-canonical-url="https://www.pwc.fr/fr/industries/energies-utilities.html" navigation-title="Énergie et ressources">Énergie et ressources</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/immobilier-et-hotellerie.html" aria-controls="immobilier_et_hôtellerie-subnav-2-7" nextpage-canonical-url="https://www.pwc.fr/fr/industries/immobilier-et-hotellerie.html" navigation-title="Immobilier et hôtellerie">Immobilier et hôtellerie</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/sante.html" aria-controls="industries_de_santé-subnav-2-8" nextpage-canonical-url="https://www.pwc.fr/fr/industries/sante.html" navigation-title="Industries de santé">Industries de santé</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/ingenierie-construction.html" aria-controls="ingénierie_et_construction-subnav-2-9" nextpage-canonical-url="https://www.pwc.fr/fr/industries/ingenierie-construction.html" navigation-title="Ingénierie et construction">Ingénierie et construction</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/loisirs-medias.html" aria-controls="médias_et_loisirs-subnav-2-10" nextpage-canonical-url="https://www.pwc.fr/fr/industries/loisirs-medias.html" navigation-title="Médias et loisirs">Médias et loisirs</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/capital-investissement-private-equity.html" aria-controls="private_equity-subnav-2-11" nextpage-canonical-url="https://www.pwc.fr/fr/industries/capital-investissement-private-equity.html" navigation-title="Private Equity">Private Equity</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/technologie.html" aria-controls="technologie-subnav-2-12" nextpage-canonical-url="https://www.pwc.fr/fr/industries/technologie.html" navigation-title="Technologie">Technologie</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/telecommunications.html" aria-controls="télécommunications-subnav-2-13" nextpage-canonical-url="https://www.pwc.fr/fr/industries/telecommunications.html" navigation-title="Télécommunications">Télécommunications</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Votre secteur" href="../../industries/autres-secteurs.html" aria-controls="autres_secteurs-subnav-2-14" nextpage-canonical-url="https://www.pwc.fr/fr/industries/autres-secteurs.html" navigation-title="Autres secteurs">Autres secteurs</a>
+                     </nav>
+                  </div>
+               </div>
+               <span class="slimnav-level3">
+                  <div id="aéronautique__défense_et_sécurité-subnav-2-1" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/aeronautique-defense-spatial.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/aeronautique-defense-spatial.html" navigation-title="Aéronautique, défense et sécurité">Aéronautique, défense et sécurité</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="assurance-subnav-2-2" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/assurance.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/assurance.html" navigation-title="Assurance">Assurance</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="automobile-subnav-2-3" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/automobile.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/automobile.html" navigation-title="Automobile">Automobile</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="banques_et_marchés_de_capitaux-subnav-2-4" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/banques-marches-de-capitaux.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/banques-marches-de-capitaux.html" navigation-title="Banques et marchés de capitaux">Banques et marchés de capitaux</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="distribution_et_biens_de_consommation-subnav-2-5" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/distribution-biens-de-consommation.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/distribution-biens-de-consommation.html" navigation-title="Distribution et biens de consommation">Distribution et biens de consommation</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="énergie_et_ressources-subnav-2-6" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/energies-utilities.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/energies-utilities.html" navigation-title="Énergie et ressources">Énergie et ressources</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="immobilier_et_hôtellerie-subnav-2-7" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/immobilier-et-hotellerie.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/immobilier-et-hotellerie.html" navigation-title="Immobilier et hôtellerie">Immobilier et hôtellerie</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="industries_de_santé-subnav-2-8" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/sante.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/sante.html" navigation-title="Industries de santé">Industries de santé</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="ingénierie_et_construction-subnav-2-9" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/ingenierie-construction.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/ingenierie-construction.html" navigation-title="Ingénierie et construction">Ingénierie et construction</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="médias_et_loisirs-subnav-2-10" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/loisirs-medias.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/loisirs-medias.html" navigation-title="Médias et loisirs">Médias et loisirs</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="private_equity-subnav-2-11" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/capital-investissement-private-equity.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/capital-investissement-private-equity.html" navigation-title="Private Equity">Private Equity</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="technologie-subnav-2-12" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/technologie.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/technologie.html" navigation-title="Technologie">Technologie</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="télécommunications-subnav-2-13" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/telecommunications.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/telecommunications.html" navigation-title="Télécommunications">Télécommunications</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="autres_secteurs-subnav-2-14" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Votre secteur</a>
+                           </div>
+                           <a href="../../industries/autres-secteurs.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/industries/autres-secteurs.html" navigation-title="Autres secteurs">Autres secteurs</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </span>
+               <div class="slim-featured search-hide">
+                  <p class="slim-featured-heading">A la une</p>
+                  
+                     <div class="slim-featured-item">
+                        <a class="featuredLink" href="../../actualites.html" nextpage-canonical-url="https://www.pwc.fr/fr/actualites.html" navigation-title="Actualités et perspectives">
+                           <img src="../../../../www.pwc.com/gx/en/brand-simplified/teaser-images-670/governance/damil-gettyimages-565975441-670.jpg.pwcimage.150.100.jpg" alt=""/>
+                           <p>Actualités et perspectives</p>
+                        </a>
+                     </div>
+                  
+               </div>
+            </div>
+         </div>
+      
+         <div id="expertises-subnav-3" class="sublevel-container search-hide show-subnav">
+            <button class="slimheader-close search-hide" aria-label="Menu Close"></button>
+            <div class="sublevel-navs">
+               <div class="slimnav-level2 slimheader-slide-nav">
+                  <div class="slide-nav-contain">
+                     <div class="sublevel-title-container search-hide">
+                        <div class="slimnav-mobile-header">
+                           <p> Menu</p>
+                        </div>
+                        <div class="slimheader-breadcrumb is-hidden">
+                           <a href="#">Expertises</a>
+                        </div>
+                        <a href="../../expertises.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/expertises.html" navigation-title="Expertises">Expertises</a>
+                     </div>
+                     <nav>
+    					<a class="levelTwoLink " data-breadcrumb="Expertises" href="../../expertises/audit.html" aria-controls="audit-subnav-3-1" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/audit.html" navigation-title="Audit">Audit</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Expertises" href="../../expertises/conseil.html" aria-controls="conseil_aux_organisations-subnav-3-2" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/conseil.html" navigation-title="Conseil aux organisations">Conseil aux organisations</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Expertises" href="../../expertises/gestion-des-risques.html" aria-controls="conseil_en_gestion_des_risques-subnav-3-3" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/gestion-des-risques.html" navigation-title="Conseil en gestion des risques">Conseil en gestion des risques</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Expertises" href="https://www.strategyand.pwc.com/fr/fr.html" target="_blank" aria-controls="conseil_en_stratégie-subnav-3-4" nextpage-canonical-url="https://www.strategyand.pwc.com/fr/fr.html" navigation-title="Conseil en stratégie">Conseil en stratégie</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Expertises" href="https://www.pwcavocats.com/fr/" target="_blank" aria-controls="expertise_juridique_et_fiscale-subnav-3-5" nextpage-canonical-url="https://www.pwcavocats.com" navigation-title="Expertise juridique et fiscale">Expertise juridique et fiscale</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Expertises" href="../../expertises/transactions.html" aria-controls="transactions-subnav-3-6" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/transactions.html" navigation-title="Transactions">Transactions</a>
+                     </nav>
+                  </div>
+               </div>
+               <span class="slimnav-level3">
+                  <div id="audit-subnav-3-1" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Expertises</a>
+                           </div>
+                           <a href="../../expertises/audit.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/audit.html" navigation-title="Audit">Audit</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="conseil_aux_organisations-subnav-3-2" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Expertises</a>
+                           </div>
+                           <a href="../../expertises/conseil.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/conseil.html" navigation-title="Conseil aux organisations">Conseil aux organisations</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="conseil_en_gestion_des_risques-subnav-3-3" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Expertises</a>
+                           </div>
+                           <a href="../../expertises/gestion-des-risques.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/gestion-des-risques.html" navigation-title="Conseil en gestion des risques">Conseil en gestion des risques</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="conseil_en_stratégie-subnav-3-4" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Expertises</a>
+                           </div>
+                           <a href="https://www.strategyand.pwc.com/fr/fr.html" target="_blank" class="lv2-label" nextpage-canonical-url="https://www.strategyand.pwc.com/fr/fr.html" navigation-title="Conseil en stratégie">Conseil en stratégie</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="expertise_juridique_et_fiscale-subnav-3-5" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Expertises</a>
+                           </div>
+                           <a href="https://www.pwcavocats.com/fr/" target="_blank" class="lv2-label" nextpage-canonical-url="https://www.pwcavocats.com" navigation-title="Expertise juridique et fiscale">Expertise juridique et fiscale</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="transactions-subnav-3-6" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Expertises</a>
+                           </div>
+                           <a href="../../expertises/transactions.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/transactions.html" navigation-title="Transactions">Transactions</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </span>
+               <div class="slim-featured search-hide">
+                  <p class="slim-featured-heading">A la une</p>
+                  
+                     <div class="slim-featured-item">
+                        <a class="featuredLink" href="../../actualites.html" nextpage-canonical-url="https://www.pwc.fr/fr/actualites.html" navigation-title="Actualités et perspectives">
+                           <img src="../../../../www.pwc.com/gx/en/brand-simplified/teaser-images-670/governance/damil-gettyimages-565975441-670.jpg.pwcimage.150.100.jpg" alt=""/>
+                           <p>Actualités et perspectives</p>
+                        </a>
+                     </div>
+                  
+               </div>
+            </div>
+         </div>
+      
+         <div id="solutions_digitales-subnav-4" class="sublevel-container search-hide show-subnav">
+            <button class="slimheader-close search-hide" aria-label="Menu Close"></button>
+            <div class="sublevel-navs">
+               <div class="slimnav-level2 slimheader-slide-nav">
+                  <div class="slide-nav-contain">
+                     <div class="sublevel-title-container search-hide">
+                        <div class="slimnav-mobile-header">
+                           <p> Menu</p>
+                        </div>
+                        <div class="slimheader-breadcrumb is-hidden">
+                           <a href="#">Solutions digitales</a>
+                        </div>
+                        <a href="../../expertises/conseil/technology/pwc-store.html" class="lv2-label" nextpage-canonical-url="https://store.pwc.fr" navigation-title="Solutions digitales">Solutions digitales</a>
+                     </div>
+                     
+                  </div>
+               </div>
+               
+               
+            </div>
+         </div>
+      
+         <div id="qui_sommes_nous__-subnav-5" class="sublevel-container search-hide show-subnav">
+            <button class="slimheader-close search-hide" aria-label="Menu Close"></button>
+            <div class="sublevel-navs">
+               <div class="slimnav-level2 slimheader-slide-nav">
+                  <div class="slide-nav-contain">
+                     <div class="sublevel-title-container search-hide">
+                        <div class="slimnav-mobile-header">
+                           <p> Menu</p>
+                        </div>
+                        <div class="slimheader-breadcrumb is-hidden">
+                           <a href="#">Qui sommes-nous ?</a>
+                        </div>
+                        <a href="../../qui-sommes-nous.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous.html" navigation-title="Qui sommes-nous ?">Qui sommes-nous ?</a>
+                     </div>
+                     <nav>
+    					<a class="levelTwoLink has-lv3" data-breadcrumb="Qui sommes-nous ?" href="../../actualites.html" aria-controls="actualités_et_perspectives-subnav-5-1" nextpage-canonical-url="https://www.pwc.fr/fr/actualites.html" navigation-title="Actualités et perspectives">Actualités et perspectives</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Qui sommes-nous ?" href="../../qui-sommes-nous/notre-strategie.html" aria-controls="stratégie-subnav-5-2" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/notre-strategie.html" navigation-title="Stratégie">Stratégie</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Qui sommes-nous ?" href="../../qui-sommes-nous/raison-d-etre-et-valeurs.html" aria-controls="raison_d_être_et_valeurs-subnav-5-3" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/raison-d-etre-et-valeurs.html" navigation-title="Raison d’être et valeurs">Raison d’être et valeurs</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Qui sommes-nous ?" href="../../qui-sommes-nous/notre-strategie/agir-collectivement-pour-un-impact-positif.html" aria-controls="agir_collectivement_pour_un_impact_positif-subnav-5-4" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/notre-strategie/agir-collectivement-pour-un-impact-positif.html" navigation-title="Agir collectivement pour un impact positif">Agir collectivement pour un impact positif</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Qui sommes-nous ?" href="../../qui-sommes-nous/pwc-france-et-paris-2024.html" aria-controls="pwc_france_et_paris_2024-subnav-5-5" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/pwc-france-et-paris-2024.html" navigation-title="PwC France et Paris 2024">PwC France et Paris 2024</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Qui sommes-nous ?" href="../../qui-sommes-nous/ethique-et-conformite.html" aria-controls="ethique_et_conformité-subnav-5-6" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/ethique-et-conformite.html" navigation-title="Ethique et conformité">Ethique et conformité</a>
+                     
+    					<a class="levelTwoLink has-lv3" data-breadcrumb="Qui sommes-nous ?" href="../../qui-sommes-nous.html/index.html#gouvernance" aria-controls="gouvernance-subnav-5-7" navigation-title="Gouvernance">Gouvernance</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Qui sommes-nous ?" href="../../qui-sommes-nous/publications-institutionnelles.html" aria-controls="publications_institutionnelles-subnav-5-8" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/publications-institutionnelles.html" navigation-title="Publications institutionnelles">Publications institutionnelles</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Qui sommes-nous ?" href="../../qui-sommes-nous/ou-nous-trouver.html" aria-controls="où_nous_trouver__-subnav-5-9" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/ou-nous-trouver.html" navigation-title="Où nous trouver ?">Où nous trouver ?</a>
+                     </nav>
+                  </div>
+               </div>
+               <span class="slimnav-level3">
+                  <div id="actualités_et_perspectives-subnav-5-1" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../actualites.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/actualites.html" navigation-title="Actualités et perspectives">Actualités et perspectives</a>
+                        </div>
+                        <nav>
+                           <a class="levelThreeLink" href="../../publications.html" nextpage-canonical-url="https://www.pwc.fr/fr/publications.html" navigation-title="Etudes et analyses">Etudes et analyses</a>
+                        
+                           <a class="levelThreeLink" href="../../espace-presse.html" nextpage-canonical-url="https://www.pwc.fr/fr/espace-presse.html" navigation-title="Espace presse">Espace presse</a>
+                        
+                           <a class="levelThreeLink" href="../../decryptages.html" nextpage-canonical-url="https://www.pwc.fr/fr/decryptages.html" navigation-title="Décryptages">Décryptages</a>
+                        
+                           <a class="levelThreeLink" target="_blank" href="https://evenements.pwc.fr/eventscalendar" navigation-title="Evénements">Evénements</a>
+                        
+                           <a class="levelThreeLink" href="../pwc-en-direct-le-podcast.html" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/pwc-en-direct-le-podcast.html" navigation-title="PwC en direct, le podcast">PwC en direct, le podcast</a>
+                        
+                           <a class="levelThreeLink" href="../pwc-en-direct.html" nextpage-canonical-url="https://www.pwc.fr/fr/vos-enjeux/pwc-en-direct.html" navigation-title="PwC en direct, le live">PwC en direct, le live</a>
+                        
+                           <a class="levelThreeLink" href="../../expertises/pwc-focus.html" nextpage-canonical-url="https://www.pwc.fr/fr/expertises/pwc-focus.html" navigation-title="PwC Focus">PwC Focus</a>
+                        </nav>
+                     </div>
+                  </div>
+               
+                  <div id="stratégie-subnav-5-2" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../qui-sommes-nous/notre-strategie.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/notre-strategie.html" navigation-title="Stratégie">Stratégie</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="raison_d_être_et_valeurs-subnav-5-3" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../qui-sommes-nous/raison-d-etre-et-valeurs.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/raison-d-etre-et-valeurs.html" navigation-title="Raison d’être et valeurs">Raison d’être et valeurs</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="agir_collectivement_pour_un_impact_positif-subnav-5-4" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../qui-sommes-nous/notre-strategie/agir-collectivement-pour-un-impact-positif.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/notre-strategie/agir-collectivement-pour-un-impact-positif.html" navigation-title="Agir collectivement pour un impact positif">Agir collectivement pour un impact positif</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="pwc_france_et_paris_2024-subnav-5-5" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../qui-sommes-nous/pwc-france-et-paris-2024.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/pwc-france-et-paris-2024.html" navigation-title="PwC France et Paris 2024">PwC France et Paris 2024</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="ethique_et_conformité-subnav-5-6" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../qui-sommes-nous/ethique-et-conformite.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/ethique-et-conformite.html" navigation-title="Ethique et conformité">Ethique et conformité</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="gouvernance-subnav-5-7" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../qui-sommes-nous.html/index.html#gouvernance" class="lv2-label" navigation-title="Gouvernance">Gouvernance</a>
+                        </div>
+                        <nav>
+                           <a class="levelThreeLink" href="../../qui-sommes-nous/notre-organisation.html" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/notre-organisation.html" navigation-title="Comité de direction">Comité de direction</a>
+                        
+                           <a class="levelThreeLink" href="../../qui-sommes-nous/conseil-de-surveillance.html" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/conseil-de-surveillance.html" navigation-title="Conseil de surveillance">Conseil de surveillance</a>
+                        </nav>
+                     </div>
+                  </div>
+               
+                  <div id="publications_institutionnelles-subnav-5-8" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../qui-sommes-nous/publications-institutionnelles.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/publications-institutionnelles.html" navigation-title="Publications institutionnelles">Publications institutionnelles</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="où_nous_trouver__-subnav-5-9" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Qui sommes-nous ?</a>
+                           </div>
+                           <a href="../../qui-sommes-nous/ou-nous-trouver.html" class="lv2-label" nextpage-canonical-url="https://www.pwc.fr/fr/qui-sommes-nous/ou-nous-trouver.html" navigation-title="Où nous trouver ?">Où nous trouver ?</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </span>
+               
+            </div>
+         </div>
+      
+         <div id="carrières-subnav-6" class="sublevel-container search-hide show-subnav">
+            <button class="slimheader-close search-hide" aria-label="Menu Close"></button>
+            <div class="sublevel-navs">
+               <div class="slimnav-level2 slimheader-slide-nav">
+                  <div class="slide-nav-contain">
+                     <div class="sublevel-title-container search-hide">
+                        <div class="slimnav-mobile-header">
+                           <p> Menu</p>
+                        </div>
+                        <div class="slimheader-breadcrumb is-hidden">
+                           <a href="#">Carrières</a>
+                        </div>
+                        <a href="https://carrieres.pwc.fr/fr/" target="_blank" class="lv2-label" nextpage-canonical-url="https://carrieres.pwc.fr/fr/" navigation-title="Carrières">Carrières</a>
+                     </div>
+                     <nav>
+    					<a class="levelTwoLink " data-breadcrumb="Carrières" href="https://carrieres.pwc.fr/fr/decouvrir-pwc.html" aria-controls="pourquoi_faire_le_choix_de_pwc__-subnav-6-1" nextpage-canonical-url="https://carrieres.pwc.fr/fr/decouvrir-pwc.html" navigation-title="Pourquoi faire le choix de PwC ?">Pourquoi faire le choix de PwC ?</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Carrières" href="https://carrieres.pwc.fr/fr/des-metiers-captivants.html" aria-controls="quel_métier_est_fait_pour_moi__-subnav-6-2" nextpage-canonical-url="https://carrieres.pwc.fr/fr/des-metiers-captivants.html" navigation-title="Quel métier est fait pour moi ?">Quel métier est fait pour moi ?</a>
+                     
+    					<a class="levelTwoLink " data-breadcrumb="Carrières" href="https://carrieres.pwc.fr/fr/ghosts/posezvosquestions.html" aria-controls="échanger_avec_nos_collaborateurs-subnav-6-3" nextpage-canonical-url="https://carrieres.pwc.fr/fr/ghosts/posezvosquestions.html" navigation-title="Échanger avec nos collaborateurs">Échanger avec nos collaborateurs</a>
+                     
+    					<a class="levelTwoLink has-lv3" data-breadcrumb="Carrières" href="https://carrieres.pwc.fr/fr/postuler.html" aria-controls="postuler-subnav-6-4" nextpage-canonical-url="https://carrieres.pwc.fr/fr/postuler.html" navigation-title="Postuler">Postuler</a>
+                     </nav>
+                  </div>
+               </div>
+               <span class="slimnav-level3">
+                  <div id="pourquoi_faire_le_choix_de_pwc__-subnav-6-1" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Carrières</a>
+                           </div>
+                           <a href="https://carrieres.pwc.fr/fr/decouvrir-pwc.html" class="lv2-label" nextpage-canonical-url="https://carrieres.pwc.fr/fr/decouvrir-pwc.html" navigation-title="Pourquoi faire le choix de PwC ?">Pourquoi faire le choix de PwC ?</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="quel_métier_est_fait_pour_moi__-subnav-6-2" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Carrières</a>
+                           </div>
+                           <a href="https://carrieres.pwc.fr/fr/des-metiers-captivants.html" class="lv2-label" nextpage-canonical-url="https://carrieres.pwc.fr/fr/des-metiers-captivants.html" navigation-title="Quel métier est fait pour moi ?">Quel métier est fait pour moi ?</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="échanger_avec_nos_collaborateurs-subnav-6-3" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Carrières</a>
+                           </div>
+                           <a href="https://carrieres.pwc.fr/fr/ghosts/posezvosquestions.html" class="lv2-label" nextpage-canonical-url="https://carrieres.pwc.fr/fr/ghosts/posezvosquestions.html" navigation-title="Échanger avec nos collaborateurs">Échanger avec nos collaborateurs</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               
+                  <div id="postuler-subnav-6-4" class="slimheader-slide-nav">
+                     <div class="slide-nav-contain">
+                        <div class="sublevel-title-container search-hide">
+                           <div class="slimnav-mobile-header">
+                              <p> Menu</p>
+                           </div>
+                           <div class="slimheader-breadcrumb is-hidden">
+                              <a href="#">Carrières</a>
+                           </div>
+                           <a href="https://carrieres.pwc.fr/fr/postuler.html" class="lv2-label" nextpage-canonical-url="https://carrieres.pwc.fr/fr/postuler.html" navigation-title="Postuler">Postuler</a>
+                        </div>
+                        <nav>
+                           <a class="levelThreeLink" href="https://carrieres.pwc.fr/fr/stage-offres.html" nextpage-canonical-url="https://carrieres.pwc.fr/fr/stage-offres.html" navigation-title="Stagiaire / apprenti">Stagiaire / apprenti</a>
+                        
+                           <a class="levelThreeLink" href="https://carrieres.pwc.fr/fr/jeunes-diplomes-offres.html" nextpage-canonical-url="https://carrieres.pwc.fr/fr/jeunes-diplomes-offres.html" navigation-title="Jeune diplômé">Jeune diplômé</a>
+                        
+                           <a class="levelThreeLink" href="https://carrieres.pwc.fr/fr/experimentes-offres.html" nextpage-canonical-url="https://carrieres.pwc.fr/fr/experimentes-offres.html" navigation-title="Expérimenté">Expérimenté</a>
+                        </nav>
+                     </div>
+                  </div>
+               </span>
+               
+            </div>
+         </div>
+      
+         <div id="_letsgofrance-subnav-7" class="sublevel-container search-hide show-subnav">
+            <button class="slimheader-close search-hide" aria-label="Menu Close"></button>
+            <div class="sublevel-navs">
+               <div class="slimnav-level2 slimheader-slide-nav">
+                  <div class="slide-nav-contain">
+                     <div class="sublevel-title-container search-hide">
+                        <div class="slimnav-mobile-header">
+                           <p> Menu</p>
+                        </div>
+                        <div class="slimheader-breadcrumb is-hidden">
+                           <a href="#">#LetsgoFrance</a>
+                        </div>
+                        <a href="https://letsgofrance.pwc.fr/fr/" target="_blank" class="lv2-label" nextpage-canonical-url="https://letsgofrance.pwc.fr" navigation-title="#LetsgoFrance">#LetsgoFrance</a>
+                     </div>
+                     
+                  </div>
+               </div>
+               
+               
+            </div>
+         </div>
+      
+      
+      
+      <div class="sublevel-search-container search-hide">
+         <div class="search-loading">
+            <div class="slim-search-loader"></div>
+            <p>Chargement des résultats</p>
+         </div>
+         <p class="slim-search-no-results is-hidden">No Match Found</p>
+         <div class="slim-search-results">
+            <button class="btn view-all-search is-hidden" href="../../search-results.html">
+            Voir tous les résultats
+            </button>
+         </div>
+      </div>
+      
+   </div>
+   
+</div>
+
+       
+<input type="hidden" id="locale" value='fr_fr'/>
+<input type="hidden" name="mod_signInHref" class="mod_signInHref"/>
+<input type="hidden" name="mod_createAccountHref" class="mod_createAccountHref"/>
+<input type="hidden" name="mod_userLoginStatus" class="mod_userLoginStatus"/>
+
+<script>
+	//Analytics : Triggers loginSuccessful event on inter user's login
+    $(document).ready(function(){
+    	var prepareUserRegLinks;
+        var internal_login_status_cookie = Cookies.get("internal-login-status");
+        if(internal_login_status_cookie){
+            $(document).trigger("loginSuccessful");
+            rmvCookie("internal-login-status","../../../index.html");
+        }
+
+        //PR-2366: User Access Control landing page's requestAccess button link updates based on user's request.
+        if ($('#access-control-section').length > 0) {
+            var accessControlSection = $('#access-control-section');
+            var accessControlButtonWrapper = $('#access-control-section').find($('#pwc-access-button'));
+            var accessControlButton = $(accessControlButtonWrapper).find('a');
+            const requestClasses = {requestAccess:"request-access", requestPending : "request-pending", requestApproved : "request-approved"};
+            $(accessControlSection).find('.help-block').html('Some error occured with creating access control request');
+            var userLoginStatus, approvalStatus="";
+            
+            var currentPagePath = $('.currentPagePath').val();
+            var currLocale= "fr_fr";
+            var randomNo = Math.round(new Date().getTime() + (Math.random() * 100));
+            var datapp = 'currentPagePath='+ encodeURIComponent(currentPagePath) + '&currLocale='+ encodeURIComponent(currLocale) + '&'+randomNo+'=';
+            
+            $.ajax('/bin/dpe/logindata', {
+                data: datapp,
+                type: "GET",
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                mimeType: 'application/json; charset=utf-8',
+                success: function (rawData, status, xhr) {
+                    SuccessCode = rawData.SuccessCode;
+                    switch (SuccessCode) {
+                        case '[0000]':
+                            $(accessControlSection).find($('#accessControl_GeneralError')).hide();
+                            userLoginStatus = rawData.userLoginStatus;
+                            if(rawData.approvalStatus && rawData.approvalStatus !== "undefined"){
+                            	approvalStatus = rawData.approvalStatus;
+                            }
+                            $(".mod_userLoginStatus").attr("value",userLoginStatus);
+                            prepareUserRegLinks(userLoginStatus, approvalStatus);
+                            break;
+                        case '[1111]':
+                        default:
+                            $(accessControlSection).find($('#accessControl_GeneralError')).show();
+                    }
+                },
+                error: function (xhr, status, err) {
+                    $(accessControlSection).find($('#accessControl_GeneralError')).show();
+                    $(accessControlButton).button('reset');
+                    
+                    prepareUserRegLinks(false, approvalStatus);
+                }
+                
+            });
+            
+            prepareUserRegLinks = function(userLoginStatus, approvalStatus) {
+            	if (!userLoginStatus) {
+				if($(".mod_signInHref").val()==''){
+						$(".mod_signInHref").val($('.login-data .sign-in.userreg').attr('href'));
+                    }
+                    if($(".mod_createAccountHref").val()==''){
+						$(".mod_createAccountHref").val($('.login-data .register.userreg').attr('href'));
+                    }
+                    $(accessControlButton).attr('href', $('.login-data .sign-in.userreg').attr('data-href'));
+                    $(accessControlSection).find('#access-control-footer a').attr('href', $('.login-data .register.userreg').attr('href'));
+                } else {
+                	accessControlSection.removeClass("promo-banner--logged-out").addClass("promo-banner--logged-in");
+                    switch (approvalStatus) {
+                        case "":
+    					case 'rejected':
+                            var reqObj = new Object();
+                            reqObj.accessControlRequestedGroup = $(accessControlSection).data('accessControlGroup');
+                            reqObj.accessControlLandingPage = currentPagePath;
+                            reqObj.accessControlRequestedPage = $(accessControlButton).attr('href');
+                            reqObj.locale = 'fr_fr';
+                            $(accessControlButton).attr('href', 'javascript:void(0);');
+                            $('#pwc-access-button a').click(function () {
+                                if ($(accessControlButtonWrapper).hasClass(requestClasses.requestAccess)) {
+                                    $(accessControlButton).button('loading');
+                                    reqObj.accessControlRequestedTime = "1688249983310";
+                                    $.ajax('/bin/requestAccessServlet', {
+                                        data: JSON.stringify(reqObj),
+                                        type: "POST",
+                                        dataType: 'json',
+                                        contentType: 'application/json; charset=utf-8',
+                                        mimeType: 'application/json; charset=utf-8',
+                                        success: function (rawData, status, xhr) {
+                                            SuccessCode = rawData.result.SuccessCode;
+                                            $(accessControlButton).button('reset');
+                                            switch (SuccessCode) {
+                                                case '[0000]':
+                                                    $(accessControlSection).find($('#accessControl_GeneralError')).hide();
+                                                    $(accessControlButtonWrapper).removeClass(requestClasses.requestAccess).addClass(requestClasses.requestPending);
+                                                    $(accessControlButton).html('Access pending approval');
+                                                    break;
+                                                case '[1111]':
+                                                default:
+                                                    $(accessControlSection).find($('#accessControl_GeneralError')).show();
+                                            }
+                                        },
+                                        error: function (xhr, status, err) {
+                                            $(accessControlSection).find($('#accessControl_GeneralError')).show();
+                                            $(accessControlButton).button('reset');
+                                        }
+                                    });
+                                }
+                            });
+                            break;
+                        case  'pending-approval':
+                            $(accessControlButtonWrapper).removeClass(requestClasses.requestAccess).addClass(requestClasses.requestPending);
+                            $(accessControlButton).html('Access pending approval');
+                            $(accessControlButton).attr('href', 'javascript:void(0);');
+                            break;
+                        case  'approved':
+                            $(accessControlButtonWrapper).removeClass(requestClasses.requestAccess).addClass(requestClasses.requestApproved);
+                            $(accessControlButton).addClass('unlocked').removeClass('locked');
+                            break;
+                        default:
+                            $(accessControlButton).attr('href', 'javascript:void(0);');
+                    }
+                }
+            };
+          
+        }
+    });
+</script>
+
+<script>
+     var cookieI18nValues = {};
+	cookieI18nValues.cookieDescription = "Nous utilisons des cookies pour personnaliser le contenu et vous offrir une expérience utilisateur améliorée. En poursuivant votre navigation sur ce site, vous acceptez l\\\x27utilisation de cookies. Veuillez consulter notre <a href=https:\/\/www.pwc.fr\/fr\/legal\/cookies.html>politique de cookies<\/a> pour plus de détails.";
+	cookieI18nValues.cookieAcceptButton = "Je comprends";           
+</script>                </div>
+
+    
+</div>
+
+    </div>
+
+    
+</section>
+    
+
+
+
+    
+</div>
+<div class="container responsivegrid">
+
+    
+    
+    
+    <div id="container-652e796ab0" class="cmp-container">
+        
+        <div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="title" class="cmp-container  page-section page-section--col-primary page-section--col-dark nomove fullwidth   videobghost  " data-width="1600" data-height="900" data-image="/content/dam/pwc/gx/en/brand-simplified/hero-images-1600/financial-services/damil-gettyimages-935644310-1600.jpg" data-wcmmode="false" data-parallax="false" data-videoParallax="false" data-videoId="videoelemented05b3f3-cf3d-b2f8-6be1-2c5030c5e0eb" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        <div class="title teaser hero-card-wrapper">
+
+    
+
+
+
+
+
+    <div class="dpe-component-wrapper hero-title-component hero-title-component--lg-h1">
+        <div class="hero-title hero-title-textpanel--compaign">
+            <div class="container">
+                <div class="row hero-title-row--compaign">
+                    <div class="textColumn col-sm-8">
+                        <div class="hero-title-textpanel">
+                            <h1>
+                                <span class="compaign-hlight__inner">
+                                    Développer une approche FinOps &amp; GreenOps
+                                </span>
+                            </h1>
+                            <p class="sub-heading">
+                                <span class="compaign-hlight__inner">
+                                    Unifiez vos données financières, pilotez vos coûts et améliorez la maîtrise de votre impact environnemental
+                                </span>    
+                            </p>
+                            
+                        </div>
+						
+							
+    
+<script src="../../../etc.clientlibs/pwc/components/content/social-share-v2/clientlibs.min.12c4056dce774faf1212da2ba4efeb15.js"></script>
+
+
+
+
+    <div role="img" aria-label="Copy link to clipboard" class="social-share-rebrand" tabindex="0">
+		<div class="social-share-rebrand-overlay-parent">
+		<span alt class="social-share-rebrand-icon"></span>
+		<span alt class="social-share-rebrand-overlay" aria-expanded="false">
+    		<span alt class="social-share-rebrand-arrow-icon"></span>
+    		<span class="social-share-rebrand-close" tabindex="0"></span>
+				<input id="social-share-input" value=""/>
+				<span href="#" role="button" class="btn btn--primary social-share-rebrand-copy" tabindex="0">Copier le lien</span>
+        		<span style="display:none;" class="social-share-rebrand-copy social-share-rebrand-copied">
+					<span class="social-share-rebrand-tick-icon"></span>
+					Link copied to clipboard
+    			</span>
+			</span>
+		</div>
+	</div>
+
+
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+		</div>             
+        
+    </section>
+
+</div>
+<div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="featured" class="cmp-container  page-section page-section--col-white  fullwidth   videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelement14578006-e35c-407e-8d8e-bc258bdcd69e" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        
+		</div>             
+        
+    </section>
+
+</div>
+<div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="overview" class="cmp-container  page-section page-section--col-light-grey     videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelementf56e8ace-fa08-74f9-c670-2af99136c800" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        <div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol2-longform  ">
+   
+      
+      <div class="parsys_column pwccol2-longform-c0">
+         
+
+    
+    
+    
+    <div id="container-73b0048885" class="cmp-container">
+        
+        <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <p>L’évolution des modes de travail a conduit de nombreuses entreprises à augmenter considérablement leur utilisation du <a href="../transformation-cloud.html">Cloud</a>. Certaines d'entre elles utilisent d’ailleurs plus de ressources qu'elles n'en ont réellement besoin, entraînant d'énormes dépassements de coûts.</p>
+<p>L'approche FinOps, contraction des termes finance et opération, vise à monitorer et optimiser les coûts en matière de Cloud computing, afin de faire correspondre l'utilisation aux besoins et le coût à la valeur. Elle doit être adoptée lors de la mise en place d’un projet de transformation Cloud afin de contrôler les coûts des nouvelles factures liées au Cloud. Mais aussi, lors du passage en Run pour s’assurer de l’optimisation des coûts sur le long terme et éviter les dérives.</p>
+<p>Quant à l’approche GreenOps, elle permet d’identifier les ressources non ou sous utilisées afin d’optimiser l’utilisation des ressources IT et de réduire l’empreinte carbone et environnementale des systèmes informatiques d’une entreprise.</p>
+
+    </div>
+
+
+    
+<script src="../../../etc.clientlibs/pwc/components/modernized/content/richtext/clientlibs-button.min.05014ed24e6422289f02e026aef427f0.js"></script>
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+      
+      <div class="parsys_column pwccol2-longform-c1">
+         
+
+    
+    
+    
+    <div id="container-4b491dcb99" class="cmp-container">
+        
+        <div class="image img-alignment-left">
+
+
+    
+
+<div class="asset-sharing-component image-asset ">
+     
+        
+              
+         <img class="js-lazy-loading mod__image_p image-component_background " data-image="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/technology/damil-gettyimages-909084732-670.jpg" alt="" data-emptytext="Image" style="height:auto; 
+                   padding-top:;
+               max-height:;"/>               
+    
+
+</div>
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+
+		</div>             
+        
+    </section>
+
+</div>
+<div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="navigation" class="cmp-container  page-section page-section--col-white  fullwidth   videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelemente6aa7467-fbae-f3c1-604b-867c4f33903e" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        <div class="secondary-navigation section">
+
+    
+
+
+
+
+
+</div>
+
+		</div>             
+        
+    </section>
+
+</div>
+<div class="container responsivegrid">
+
+    
+    
+    
+    <div id="container-0c6147c301" class="cmp-container">
+        
+        <div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="content-free-1-9832" class="cmp-container  page-section page-section--col-white     videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelementa6e20fc6-b258-7292-3bb2-ea458db9fc15" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        <div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol1-longform-left  ">
+   
+      
+      <div class="parsys_column pwccol1-longform-left-c0">
+         
+
+    
+    
+    
+    <div id="container-87539231ce" class="cmp-container">
+        
+        <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <h2>Mettre en place l’approche FinOps</h2>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+<div class="image img-alignment-center">
+
+
+    
+
+<div class="asset-sharing-component image-asset ">
+     
+        <img class="js-lazy-loading mod__image_p image-component_background " data-image="/fr/assets/images/2022/04/fr-france-svg-schema-expertise-cloud-2022.svg" alt="Schéma sur l&#39;amélioration continue et la mise à jour grâce aux feedbacks" width="1140" data-emptytext="Image" style="height:auto; 
+                   padding-top:;
+                   max-height:;"/>
+              
+                        
+    
+
+</div>
+
+</div>
+
+		</div>             
+        
+    </section>
+
+</div>
+<div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="content-free-1-cc64" class="cmp-container  page-section page-section--col-light-grey     videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelement23af71c4-07a3-25b0-db0c-1a7d2dc4418c" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        <div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol1-longform-left  ">
+   
+      
+      <div class="parsys_column pwccol1-longform-left-c0">
+         
+
+    
+    
+    
+    <div id="container-d8e715708a" class="cmp-container">
+        
+        <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <h2>FinOps et GreenOps : quels sont les trois avantages pour les entreprises&nbsp;?</h2>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+<div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol3-longform  ">
+   
+      
+      <div class="parsys_column pwccol3-longform-c0">
+         
+
+    
+    
+    
+    <div id="container-a3e831e38b" class="cmp-container">
+        
+        <div class="image img-alignment-center">
+
+
+    
+
+<div class="asset-sharing-component image-asset ">
+     
+        
+              
+         <img class="js-lazy-loading mod__image_p image-component_background " data-image="https://www.pwc.com/gx/en/brand-simplified/picto-images-132/orange-for-pwc-only/picto-announcement-orange.svg" alt="" data-emptytext="Image" style="height:auto; 
+                   padding-top:;
+               max-height:;"/>               
+    
+
+</div>
+
+</div>
+<div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <p><strong>Informer les parties prenantes</strong>, grâce à la simplification de factures, à l’usage et à l’automatisation du suivi financier à l’aide&nbsp;:</p>
+<ul>
+<li><p>de rapports mensuels envoyés automatiquement par mail&nbsp;;&nbsp;</p>
+</li>
+<li><p>de tableaux de bords compréhensibles prenant en compte les dimensions métiers sous-jacentes&nbsp;;</p>
+</li>
+<li><p>de la régularité et l’automatisation du suivi.&nbsp;</p>
+</li>
+</ul>
+<p>Alimenter les modèles d’analyses de l’empreinte carbone de vos usages afin de mettre en place une initiative GreenTech.</p>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+      
+      <div class="parsys_column pwccol3-longform-c1">
+         
+
+    
+    
+    
+    <div id="container-a00bf2bc8f" class="cmp-container">
+        
+        <div class="image img-alignment-center">
+
+
+    
+
+<div class="asset-sharing-component image-asset ">
+     
+        
+              
+         <img class="js-lazy-loading mod__image_p image-component_background " data-image="https://www.pwc.com/gx/en/brand-simplified/picto-images-132/orange-for-pwc-only/picto_database-cloud_orange.svg" alt="" data-emptytext="Image" style="height:auto; 
+                   padding-top:;
+               max-height:;"/>               
+    
+
+</div>
+
+</div>
+<div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <p><strong>Optimiser vos ressources Cloud</strong>, et ne déployer que celles nécessaires via&nbsp;:</p>
+<ul>
+<li><p>la prise en compte des besoins métiers dans le dimensionnement et déploiement des ressources Cloud&nbsp;;</p>
+</li>
+<li><p>la mise en place de politiques de balises et d’automatisation afin de s’assurer que 100&nbsp;% des ressources Cloud utilisées soient suivies par centre de coûts.</p>
+</li>
+</ul>
+<p>Et adapter votre infrastructure selon vos besoins d’utilisation en matière de ressources informatiques.</p>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+      
+      <div class="parsys_column pwccol3-longform-c2">
+         
+
+    
+    
+    
+    <div id="container-3ab73604b2" class="cmp-container">
+        
+        <div class="image img-alignment-center">
+
+
+    
+
+<div class="asset-sharing-component image-asset ">
+     
+        
+              
+         <img class="js-lazy-loading mod__image_p image-component_background " data-image="https://www.pwc.com/gx/en/brand-simplified/picto-images-132/orange-for-pwc-only/picto_officefurniture_orange.svg" alt="" data-emptytext="Image" style="height:auto; 
+                   padding-top:;
+               max-height:;"/>               
+    
+
+</div>
+
+</div>
+<div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <p><strong>Opérer votre parc informatique</strong>, grâce à&nbsp;:</p>
+<ul>
+<li><p>la compréhension approfondie des modèles de coûts des services IaaS, PaaS et SaaS utilisés&nbsp;;&nbsp;</p>
+</li>
+<li><p>l’utilisation d'alertes et de techniques de dégressivité des coûts.</p>
+</li>
+</ul>
+<p>Et limiter directement l’impact financier et environnemental de votre parc informatique.&nbsp;</p>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+
+		</div>             
+        
+    </section>
+
+</div>
+<div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="content-free-1-5d9d" class="cmp-container  page-section page-section--col-white     videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelement89031815-8750-237c-65db-8e3b2c4f07de" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        <div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol1-longform-left  ">
+   
+      
+      <div class="parsys_column pwccol1-longform-left-c0">
+         
+
+    
+    
+    
+    <div id="container-acf9c88574" class="cmp-container">
+        
+        <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <h2>Adopter une approche FinOps ou GreenOps avec PwC </h2>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+<div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol2-longform  ">
+   
+      
+      <div class="parsys_column pwccol2-longform-c0">
+         
+
+    
+    
+    
+    <div id="container-395fd54cf6" class="cmp-container">
+        
+        <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <p>Mieux comprendre vos dépenses et optimiser vos coûts : PwC vous accompagne dans la simplification de vos factures, l’optimisation de vos coûts et l’adaptation à une approche GreenOps.&nbsp;</p>
+<p><h3>Simplifiez votre facture</h3>
+</p>
+<p>Simplifiez votre facture pour mieux l’exploiter, en agrégeant les coûts des différents fournisseurs Cloud. La mise à disposition de rapports mensuels vous aidera à la fois à mieux comprendre vos factures et à facturer aux bonnes entités les coûts qui leurs sont liés.</p>
+<p><h3>Optimisez vos coûts</h3>
+</p>
+<p>Mettez en place des reporting hebdomadaires pour visualiser les coûts liés aux différents services et ainsi identifier les axes d’optimisation qui seront appliqués automatiquement : redimensionnement d’instances, extinction de services…</p>
+<p><h3>Adoptez une approche GreenOps</h3>
+</p>
+<p>Établissez un score sur les différents postes d'émissions de carbone.</p>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+      
+      <div class="parsys_column pwccol2-longform-c1">
+         
+
+    
+    
+    
+    <div id="container-e3b33413ed" class="cmp-container">
+        
+        <div class="image img-alignment-left">
+
+
+    
+
+<div class="asset-sharing-component image-asset ">
+     
+        
+              
+         <img class="js-lazy-loading mod__image_p image-component_background " data-image="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/governance/damil-gettyimages-596437505-670.jpg" alt="" data-emptytext="Image" style="height:auto; 
+                   padding-top:;
+               max-height:;"/>               
+    
+
+</div>
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+
+		</div>             
+        
+    </section>
+
+</div>
+<div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="content-free-1-ae92" class="cmp-container  page-section page-section--col-light-grey     videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelement7c801a1e-7b89-06a6-0bf0-a6fe2e1a41e3" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        <div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol1-longform-left  ">
+   
+      
+      <div class="parsys_column pwccol1-longform-left-c0">
+         
+
+    
+    
+    
+    <div id="container-1f8efe914a" class="cmp-container">
+        
+        <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <h2>Principes FinOps ou GreenOps&nbsp;: comment optimiser les coûts&nbsp;pour faire jusqu’à 30&nbsp;% d’économie ?</h2>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+<div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol2-longform  ">
+   
+      
+      <div class="parsys_column pwccol2-longform-c0">
+         
+
+    
+    
+    
+    <div id="container-5a68f95bae" class="cmp-container">
+        
+        <div class="image img-alignment-left">
+
+
+    
+
+<div class="asset-sharing-component image-asset ">
+     
+        
+              
+         <img class="js-lazy-loading mod__image_p image-component_background " data-image="https://www.pwc.com/gx/en/brand-simplified/teaser-images-670/technology/damil-gettyimages-571065857-670.jpg" alt="" data-emptytext="Image" style="height:auto; 
+                   padding-top:;
+               max-height:;"/>               
+    
+
+</div>
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+      
+      <div class="parsys_column pwccol2-longform-c1">
+         
+
+    
+    
+    
+    <div id="container-8d68be09b5" class="cmp-container">
+        
+        <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <ul>
+<li><p>Mettre en place des alertes et notifications pour suivre l’utilisation de vos ressources</p>
+</li>
+<li><p>Redimensionner ou éteindre les environnements de développement et de tests en fonction de leur utilisation, la nuit ou le week-end</p>
+</li>
+<li><p>Revoir vos politiques de stockage de données afin de les stocker dans les différents services de stockages résilient offerts par le <a href="../transformation-cloud.html">Cloud</a> plutôt que dans vos bases de données</p>
+</li>
+<li>Capitaliser sur les différents modes de réservation des ressources proposés par les fournisseurs de service cloud : instances réservées, provisionnement d’instances aux heures creuses pour effectuer de lourds calculs…</li>
+</ul>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+
+		</div>             
+        
+    </section>
+
+</div>
+<div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="content-free-1-ab75" class="cmp-container  page-section page-section--col-white     videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelemente70f3cf8-bd04-224d-6d03-78669f961b1c" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        <div class="columnControl">
+
+    
+
+
+<div class="parsys_column pwccol1-longform-left  ">
+   
+      
+      <div class="parsys_column pwccol1-longform-left-c0">
+         
+
+    
+    
+    
+    <div id="container-834b208aa8" class="cmp-container">
+        
+        <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <h2>Accompagnement d’un leader du secteur de l’énergie dans sa démarche FinOps</h2>
+<p>Un des leaders du secteur de l’énergie a choisi PwC France et Maghreb pour l’accompagner dans sa migration vers le Cloud public. Un objectif : gagner en agilité et en scalabilité.</p>
+
+    </div>
+
+
+    
+
+
+</div>
+
+        
+    </div>
+
+
+      </div>
+   
+</div>
+</div>
+<div class="summary-explorer-v2 tabs panelcontainer">
+
+
+
+<div class="summaryexplorerv2-heading__container">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-8 summaryexplorerv2-heading__sub-container">
+            <h2 class="summaryexplorerv2-heading"></h2>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="summaryexplorerv2 container cmp-tabs" data-cmp-is="tabs">
+   <div class="row summary-explorerv2__table-row">
+      <span class="left-chevron hidden"></span>
+      <span class="right-chevron"></span>
+      <div class="col-lg-4 summary-explorerv2__column summary-explorerv2__tabs-column mobile">
+         <ol role="tablist" class="cmp-tabs__tablist summary-explorerv2__link-listing" aria-multiselectable="false">
+            
+            <li role="tab" id="item1_summaryexplorerv2-fbc9" aria-controls="item1_summaryexplorerv2-fbc9_panel" class="cmp-tabs__tab cmp-tabs__tab--active" tabindex="0" data-cmp-hook-tabs="tab">FinOps : les attentes du client</li>
+         
+            
+            <li role="tab" id="item2_summaryexplorerv2-fbc9" aria-controls="item2_summaryexplorerv2-fbc9_panel" class="cmp-tabs__tab" tabindex="-1" data-cmp-hook-tabs="tab">L’approche différenciante de PwC</li>
+         
+            
+            <li role="tab" id="item1649080743549_summaryexplorerv2-fbc9" aria-controls="item1649080743549_summaryexplorerv2-fbc9_panel" class="cmp-tabs__tab" tabindex="-1" data-cmp-hook-tabs="tab">Les résultats de la mission</li>
+         </ol>
+      </div>
+      <div role="tabpanel" id="item1_summaryexplorerv2-fbc9_panel" aria-labelledby="item1_summaryexplorerv2-fbc9" tabindex="0" class="col-lg-8 summary-explorerv2__column cmp-tabs__tabpanel cmp-tabs__tabpanel--active" data-cmp-hook-tabs="tabpanel"><div class="longform-section parsys">
+<div class="component-name">
+   <h3>FinOps : les attentes du client</h3>
+   <h4></h4>
+</div>
+<section>
+   <div class="parsys"> 
+      <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <p>L’entreprise souhaitait un accompagnement complet pour définir et structurer sa démarche FinOps.&nbsp;</p>
+<ul>
+<li><p>Pré-migration : accompagnement dans la création de son business case, de son architecture cible et de son évaluation budgétaire&nbsp;</p>
+</li>
+<li><p>Post migration : accompagnement dans la gestion de ses dépenses Cloud pendant 6 mois</p>
+</li>
+</ul>
+
+    </div>
+
+
+    
+
+
+</div>
+
+
+   </div>
+</section>
+</div>
+</div>
+<div role="tabpanel" id="item2_summaryexplorerv2-fbc9_panel" aria-labelledby="item2_summaryexplorerv2-fbc9" tabindex="0" class="col-lg-8 summary-explorerv2__column cmp-tabs__tabpanel" data-cmp-hook-tabs="tabpanel"><div class="longform-section parsys">
+<div class="component-name">
+   <h3>L’approche différenciante de PwC</h3>
+   <h4></h4>
+</div>
+<section>
+   <div class="parsys"> 
+      <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <p>Ce qui nous a permis de faire la différence dans ce projet de transformation digitale et de mener à bien cette mission :</p>
+<h4>Pré-Migration</h4>
+<ul>
+<li><p>Fournir une analyse multicritère des scénarios, une évaluation budgétaire (TCO) et aider au choix des évolutions d'architecture</p>
+</li>
+<li><p>Définir une politique de taggage des ressources Cloud</p>
+</li>
+<li><p>Mettre en place d’une politique d’arrêt/redémarrage des machines</p>
+</li>
+<li><p>Accompagner dans la contractualisation auprès du Cloud Provider sélectionné</p>
+</li>
+</ul>
+<h4>Post-Migration<br>
+</h4>
+<ul>
+<li><p>Mettre en place une gouvernance FinOps et un comité FinOps</p>
+</li>
+<li><p>Définir un budget et des alertes</p>
+</li>
+<li><p>Mettre en place :&nbsp;</p>
+<ul>
+<li><p>un reporting temps réel via les outils de la plateforme du Cloud Provider</p>
+</li>
+<li><p>un reporting mensuel PowerBI adapté au C-level</p>
+</li>
+</ul>
+</li>
+<li><p>Fournir des revues, préconisations et priorisations hebdomadaires des optimisations FinOps à réaliser</p>
+</li>
+<li><p>Accompagner la souscription de réservation de services (arbre de décision et mise en place)</p>
+</li>
+<li><p>Partager les Best practices et fournir un coaching de qualité</p>
+</li>
+</ul>
+
+    </div>
+
+
+    
+
+
+</div>
+
+
+   </div>
+</section>
+</div>
+</div>
+<div role="tabpanel" id="item1649080743549_summaryexplorerv2-fbc9_panel" aria-labelledby="item1649080743549_summaryexplorerv2-fbc9" tabindex="0" class="col-lg-8 summary-explorerv2__column cmp-tabs__tabpanel" data-cmp-hook-tabs="tabpanel"><div class="longform-section parsys">
+<div class="component-name">
+   <h3>Les résultats de la mission</h3>
+   <h4></h4>
+</div>
+<section>
+   <div class="parsys"> 
+      <div class="text parbase section"><div></div>
+
+
+    
+
+    <div class="text-component">
+        <p>L’accompagnement apporté par l’équipe PwC a permis au client d’obtenir&nbsp;:</p>
+<ul>
+<li><p>une meilleure compréhension des coûts par environnement, par produit/service, et par jour ;</p>
+</li>
+<li><p>un paiement au plus juste des usages des ressources ;</p>
+</li>
+<li><p>une boucle de feedbacks plus rapide sur les investissements faits ;</p>
+</li>
+<li><p>une réduction additionnelle de 30 % de la facture mensuelle post migration grâce aux activités FinOps récurrentes ;</p>
+</li>
+<li><p>une utilisation du Cloud plus éco-responsable (démarrage/arrêt des services lorsque cela est nécessaire<span style="font-size: 1rem; letter-spacing: 0px;">).&nbsp;</span></p>
+</li>
+</ul>
+
+    </div>
+
+
+    
+
+
+</div>
+
+
+   </div>
+</section>
+</div>
+</div>
+
+   </div>
+   
+</div></div>
+
+		</div>             
+        
+    </section>
+
+</div>
+
+        
+    </div>
+
+</div>
+<div class="ixfsection experiencefragment"><div class="mod-ixf-page-section" data-id="cta-1"></div>
+
+
+	<section id="cta-1" style="height: auto" class="cmp-experiencefragment cmp-experiencefragment--vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops-cta_1 fullwidth page-section page-section--col-primary page-section--col-dark ">
+
+
+    
+    <div id="container-7761a3aa68" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="webtile section aem-GridColumn aem-GridColumn--default--12"><!-- SDI include (path: /content/experience-fragments/pwc/fr/fr/cta/vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops-cta_1/master/_jcr_content/root/webtile.dynamic.html/pwc/components/modernized/content/webtitle, resourceType: pwc/components/modernized/content/webtitle) -->
+<div></div>
+
+
+      
+      
+        <div class="dpe-component-wrapper cta-webtile">
+            <a href="../transformation-cloud.html" class="cta-webtile__link aa_cta_webtile_link" target="_self" cta-webtile-title="Transformation Cloud">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 col-md-push-2 col-sm-2 col-sm-push-1 hidden-xs hidden-sm cta-webtile__icon">
+                            
+                            
+                                <img src="../../../content/dam/pwc/network/icons/webtile/go-there-white.png" class="cta-webtile__icon-img" alt=""/>
+                            
+                        </div>
+                        <div class="col-md-7 col-md-push-2 col-sm-10 col-sm-push-1 cta-webtile__content">
+                            <p class="cta-webtile__title serif">En savoir plus sur le potentiel de la</p>
+                            <p class="cta-webtile__heading h3">Transformation Cloud</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</section>
+    
+
+
+
+    
+</div>
+<div class="section container responsivegrid">
+
+    
+    
+    
+	 
+	 
+    
+    
+    <section id="link-to-services" class="cmp-container  page-section page-section--col-white  fullwidth   videobghost  " data-wcmmode="false" data-parallax="true" data-videoParallax="false" data-videoId="videoelementb34b51e7-9571-9b37-d7a1-24302a42985a" data-videoAutoplay="false" data-videoLoop="false" style="height:;
+                    background-size:cover;                    
+                    background-position:center top; 
+                    background-image:; 
+                    background-color:;   
+			        ">
+
+      
+            
+        <div class="parsys sectionpar">
+        
+		</div>             
+        
+    </section>
+
+</div>
+<div class="ixfsection experiencefragment"><div class="mod-ixf-page-section" data-id="related-links"></div>
+
+
+	<section id="related-links" style="height: auto" class="cmp-experiencefragment cmp-experiencefragment--vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops fullwidth ">
+
+
+    
+    <div id="container-0409dfd2d0" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="relatedlist list aem-GridColumn aem-GridColumn--default--12"><!-- SDI include (path: /content/experience-fragments/pwc/fr/fr/related-content/vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops/master/_jcr_content/root/relatedlist.dynamic.html/pwc/components/modernized/content/relatedlist, resourceType: pwc/components/modernized/content/relatedlist) -->
+
+<div></div>
+
+    
+
+    
+    <div class="dpe-component-wrapper related-content">
+        <div class="container">
+            <h2 class="related-content__title h5">Pour aller plus loin</h2>
+            <div class="row" id="collection--content-experience-fragments-pwc-fr-fr-related-content-vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops-master-jcr-content-root-relatedlist">            
+               
+                    <article class="col-sm-3 related-content__item">
+                        <a href="../transformation-cloud.html" target="false" class="related-content__item-link" data-related-content-type="Page" data-related-content-name="Transformation Cloud" data-related-content-original-content="/content/experience-fragments/pwc/fr/fr/related-content/vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops/master">
+                            <img data-image="/fr/assets/images/2021/11/fr-france-670x377-hero-transformation-cloud.jpg.pwcimage.370.208.jpg" class="js-lazy-loading img-responsive  related-content__item-image" style="height:auto; 
+                                   padding-top:0%; 
+                                   max-height:0px;
+                                   width:370px;     
+                                   "/>
+                            <h3 class="h4 regular  related-content__item-heading">Transformation Cloud</h3>
+                            
+                        </a>
+                    </article>
+                
+                    <article class="col-sm-3 related-content__item">
+                        <a href="../conseil-en-developpement-durable.html" target="false" class="related-content__item-link" data-related-content-type="Page" data-related-content-name="Développement durable : au cœur de la stratégie des entreprises" data-related-content-original-content="/content/experience-fragments/pwc/fr/fr/related-content/vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops/master">
+                            <img data-image="/fr/assets/images/2022/09/fr-france-670x377-GettyImages-1225383258.jpg.pwcimage.370.208.jpg" class="js-lazy-loading img-responsive  related-content__item-image" style="height:auto; 
+                                   padding-top:0%; 
+                                   max-height:0px;
+                                   width:370px;     
+                                   "/>
+                            <h3 class="h4 regular  related-content__item-heading">Développement durable : au cœur de la stratégie des entreprises</h3>
+                            
+                        </a>
+                    </article>
+                
+                    <article class="col-sm-3 related-content__item">
+                        <a href="../technologie-et-performance.html" target="false" class="related-content__item-link" data-related-content-type="Page" data-related-content-name="Technologie : catalyseur de transformation et de compétitivité" data-related-content-original-content="/content/experience-fragments/pwc/fr/fr/related-content/vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops/master">
+                            <img data-image="/fr/assets/images/2021/09/the-new-equation/fr-france-670x377-GettyImages-1215346013.jpg.pwcimage.370.208.jpg" class="js-lazy-loading img-responsive  related-content__item-image" style="height:auto; 
+                                   padding-top:0%; 
+                                   max-height:0px;
+                                   width:370px;     
+                                   "/>
+                            <h3 class="h4 regular  related-content__item-heading">Technologie : catalyseur de transformation et de compétitivité</h3>
+                            
+                        </a>
+                    </article>
+                
+                    <article class="col-sm-3 related-content__item">
+                        <a href="../transformation-des-business-models.html" target="false" class="related-content__item-link" data-related-content-type="Page" data-related-content-name="Business models à l’épreuve des disruptions" data-related-content-original-content="/content/experience-fragments/pwc/fr/fr/related-content/vos-enjeux-transformation-cloud-developper-une-approche-finops-et-greenops/master">
+                            <img data-image="https://www.pwc.com.uy/es/acerca-de-nosotros/eventos/2019/ProximosEventos/670x377-gettyimages-952039658.jpg.pwcimage.370.208.jpg" class="js-lazy-loading img-responsive  related-content__item-image" style="height:auto; 
+                                   padding-top:0%; 
+                                   max-height:0px;
+                                   width:370px;     
+                                   "/>
+                            <h3 class="h4 regular  related-content__item-heading">Business models à l’épreuve des disruptions</h3>
+                            
+                        </a>
+                    </article>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script>
+var currentPagePath = "\/content\/experience\u002Dfragments\/pwc\/fr\/fr\/related\u002Dcontent\/vos\u002Denjeux\u002Dtransformation\u002Dcloud\u002Ddevelopper\u002Dune\u002Dapproche\u002Dfinops\u002Det\u002Dgreenops\/master";
+$(document).ready(function() {
+  $(".related-content__item-link").click(function(event) {
+    var contentLink = $(this).attr("href");
+    var contentType = contentLink.substring(contentLink.indexOf(".")+1,contentLink.length);
+    contentType = contentType == "html" ? "Page" : contentType;
+    var contentName = $(this).find(".related-content__item-heading").html();
+    createObject("content.relatedContentType",contentType);
+    createObject("content.relatedContentName",contentName);
+    createObject("content.originalContent",currentPagePath);
+  });
+});
+</script></div>
+
+    
+</div>
+
+    </div>
+
+    
+</section>
+    
+
+
+
+    
+</div>
+<div class="ixfsection experiencefragment"><div class="mod-ixf-page-section" data-id="contact"></div>
+
+
+	
+    
+
+
+
+    
+</div>
+<div class="ixfsection experiencefragment"><div class="mod-ixf-page-section" data-id="followUs"></div>
+
+
+	<section id="followUs" style="height: auto" class="cmp-experiencefragment cmp-experiencefragment--fr-fr fullwidth ">
+
+
+    
+    <div id="container-c9ece2bb5e" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="socialfollow aem-GridColumn aem-GridColumn--default--12">
+
+    
+
+
+<div class="socialfollow section">
+	<div id="socialfollow" class="socialfollowInner">
+		<span>Suivez-nous !</span>
+		
+		<a href="https://fr.linkedin.com/company/pwc-france" target="_blank" title="Linkedin Follow" class="socialfollow- Linkedin Follow">
+				<img src="../../../content/pwc/script/network/follow/follow_linkedin.png" alt="Linkedin Follow"/>
+			</a> 
+		
+		<a href="https://twitter.com/PwC_France" target="_blank" title="Twitter Follow" class="socialfollow- Twitter Follow">
+				<img src="../../../content/pwc/script/network/follow/follow_twitter.png" alt="Twitter Follow"/>
+			</a> 
+		
+		<a href="https://www.youtube.com/user/pwcfrance" target="_blank" title="SocialFollow_Youtube" class="socialfollow- Youtube Follow">
+				<img src="../../../content/pwc/script/network/follow/follow_youtube.png" alt="SocialFollow_Youtube"/>
+			</a> 
+		
+		<a href="https://www.instagram.com/pwcfrance/" target="_blank" title="Instagram Follow" class="socialfollow- Instagram Follow">
+				<img src="../../../content/pwc/script/network/follow/follow_instagram.png" alt="Instagram Follow"/>
+			</a> 
+		
+	</div>
+</div></div>
+
+    
+</div>
+
+    </div>
+
+    
+</section>
+    
+
+
+
+    
+</div>
+<div class="ixfsection experiencefragment"><div class="mod-ixf-page-section"></div>
+
+     
+	<section id="bottom-kick" style="height: auto" class="cmp-experiencefragment cmp-experiencefragment--vos-enjeux-transformation-cloud fullwidth " data-action="/content/pwc/fr/fr/vos-enjeux/transformation-cloud/developper-une-approche-finops-et-greenops" data-locale="fr_fr" data-thankustyle-d="false">
+
+
+    
+    <div id="container-48851ee59c" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="bottom-kick-isection aem-GridColumn aem-GridColumn--default--12"><!-- SDI include (path: /content/experience-fragments/pwc/fr/fr/bottom-kick/forms/vos-enjeux-transformation-cloud/master/_jcr_content/root/bottom_kick_isection.dynamic.html/pwc/components/modernized/content/bottom-kick-isection, resourceType: pwc/components/modernized/content/bottom-kick-isection) -->
+
+
+    
+
+
+	
+
+<div class="bk-parsys-wrapper container">
+    <div class="row ">
+
+<!--        Bottom-Kick Online Forms Par-->
+        
+<!--        Bottom-kick Contacts and List Par-->
+        <div class="col-md-12 online-par-disabled ">
+
+            <div>
+
+    
+    
+    
+    <div id="container-7c802d9dc3" class="cmp-container">
+        
+        <div class="rightrailcontact"><!-- SDI include (path: /content/experience-fragments/pwc/fr/fr/bottom-kick/forms/vos-enjeux-transformation-cloud/master/_jcr_content/root/bottom_kick_isection/contacts-par/rightrailcontact.dynamic.html/pwc/components/modernized/content/bottom-kick-isection, resourceType: pwc/components/modernized/content/rightrailcontact) -->
+
+
+    
+
+
+	
+
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/pwc/clientlibs/component-longform/rebrand-clientlib/rightrailcontcat.min.bfef22728715c18c96c34e427d9799ad.css" type="text/css">
+<script src="../../../etc.clientlibs/pwc/clientlibs/component-longform/rebrand-clientlib/rightrailcontcat.min.d41d8cd98f00b204e9800998ecf8427e.js"></script>
+
+
+
+	<div class="sectionpar">
+	    <section class="contactModule maxPadding" id="newrightrailcontacts_8717e0da-317e-4f91-91fe-efd7c9645ebc_root_bottom_kick_isection_contacts-par_rightrailcontact">
+	        <div class="rightrailcontact-component section">
+	            <div class="row">
+	                <div class="col-sm-12">
+	                    <h2 class="rightrailcontact-heading" id="scrollcontactheader" style="border:none;">Contactez-nous</h2>
+	                    <div class="contactCol-container">
+	                        
+	                            
+	                                
+
+    
+   
+    
+
+        
+
+        
+
+                
+
+                
+                    <div country="fr" divId="0" class="contactCol" style="display:block">
+                        <div class="noleftline">
+                            
+                                <img src="../../people/photos/fr-france-800x800-henri-chabrier.jpg.pwcimage.105.105.jpg" class="contact_image rightrails-profile-img brdOvrid" alt="Henri Chabrier"/>
+                            
+                            <div class="contact-content">
+                                <p class="contact-name">Henri Chabrier</p>
+                                <div class="contact-info">
+                                    <p>Associé responsable des activités Cloud, PwC France et Maghreb</p>
+                                    
+                                    <!--<sly data-sly-test="">
+                                        <p>Fax </p>
+                                    </sly>-->
+                                </div>
+                                <div class="contact-link">
+                                    
+                                            <a href="https://www.linkedin.com/in/henrichabrier/" target="_blank">
+                                                <img class="right-rails-img" src="data:image/gif;base64,R0lGODlhGAAYALMAAACJ0KDT7UCn3PD4/HC95RCQ01Cu3zCf2cDi84DE6P///5DM6yCY1mC14v///wAAACH5BAEHAA4ALAAAAAAYABgAAAReEMhJq7046827/xWRHCCVKMrAlBKCKgILnOkqN6O8FYJQaDQFwIVqvBSLTHB4bBowSyIKMXgFoC8migBgvBBYlFYo+YaF0on5Es2Wp+exGs7Opt8KcF18B6x1gIEbEQA7" alt='Linkedin Follow'/>
+                                            </a>
+                                        
+                                        
+                                        <a class="underline-link contact-email-link-aa" href="javascript:void(0);" onclick="openContactUrl('null','Henri','Chabrier','L2NvbnRlbnQvZGFtL3B3Yy9mci9mci9jb250ZW50LWZyYWdtZW50cy9jb250YWN0cy9oL2hlbnJpLWNoYWJyaWVy','false')" target="_self" data-expert-contact-us="Henri Chabrier"> Email
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                
+        
+
+        
+
+    
+
+	                            
+	                        
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    
+	        <input type="hidden" value="false" id="countryfilter"/>
+	        
+	        
+	            <input type="hidden" value="xx" id="currentLocation"/>
+	        
+	    
+	        
+			
+				<div class>
+	            	<div class="contactlink">
+	                	
+	                </div>
+	            </div>
+	         
+	    </section>
+	</div>
+
+    <script>
+        function openContactUrl(contactLink,firstName,lastName,encodedPath,hasPageLink) {
+        	var url = "";
+        	if("true" === hasPageLink){
+        	 url = "#\/fr\/fr\/content\/pwc\/global\/forms\/contactUsNew.html?style=pwc\x26territory=fr" + "&contactLink=" + contactLink;
+        	}
+        	else{
+        	url = "#\/fr\/fr\/content\/pwc\/global\/forms\/contactUsNew.html?style=pwc\x26territory=fr" +  "&cf=true" + "&contactLink=" + encodedPath;	
+        	}
+           
+            if(digitalData  && digitalData.page && digitalData.page.content.contentFullPath){
+        		var parentPagePath = digitalData.page.content.contentFullPath;
+        		parentPagePath = parentPagePath.split(".html")[0];
+        		if(!url.includes(parentPagePath)){
+        		url = url+"&parentPagePath="+parentPagePath;
+        		}
+        	}
+            createObject('contactUs.formState','origination');
+            createObject("contactUs.expertName",firstName+" "+lastName);
+            window.location.href = url;
+            return false;
+	    }
+	</script>
+
+    <script>
+        $(document).ready(function () {
+            var rightrailcontacts = "newrightrailcontacts_8717e0da-317e-4f91-91fe-efd7c9645ebc_root_bottom_kick_isection_contacts-par_rightrailcontact";
+            var countryhawkList = "countryhawkList_8717e0da-317e-4f91-91fe-efd7c9645ebc_root_bottom_kick_isection_contacts-par_rightrailcontact";
+            var displayMore = "displayMore_8717e0da-317e-4f91-91fe-efd7c9645ebc_root_bottom_kick_isection_contacts-par_rightrailcontact";
+            var displayLess = "displayLess_8717e0da-317e-4f91-91fe-efd7c9645ebc_root_bottom_kick_isection_contacts-par_rightrailcontact";
+            console.log($("countryHawkList ",'#' + countryhawkList));
+            var allContacts = $('#' + rightrailcontacts + ' div.contactCol');
+            var parentAllContacts = allContacts.parent();
+
+            var a = new Array();
+            $('#' + countryhawkList).children("option").each(function (x) {
+                test = false;
+                b = a[x] = $(this).val();
+                for (i = 0; i < a.length - 1; i++) {
+                    if (b == a[i])
+                        test = true;
+                }
+                if (test)
+                    $(this).remove();
+            });
+            $('#' + countryhawkList).html($('#' + countryhawkList + ' option').sort(function (x, y) {
+                return $(x).val() < $(y).val() ? -1 : 1;
+            }));
+
+			//changes by hemant
+			//Set filter to display all by default on load starts
+    		$("#"+countryhawkList).prop('selectedIndex', 0);
+            //Set filter to display all by default on load end
+
+            if ($("#countryfilter").val() == "true") {
+                var c = $("#currentLocation").val();
+                var countryExist = false;
+                $('#' + countryhawkList + ' option').each(function () {
+                    if (this.value.toLowerCase() == c.toLowerCase())
+                        countryExist = true;
+    
+                });
+                console.log('exist',countryExist);
+                if (countryExist == true) {
+                    if (c != "xx") //if geo is ON, c cannot be xx, if client request territory cannot be determined, then set c to "us"
+                    {
+                        /*$('#'+rightrailcontacts+' div.contact_layout[country!="'+ c.toLowerCase() + '"]').each(function(index) {
+                         $(this).hide();
+                         });
+                         var div_counter =0;
+                         $('#'+rightrailcontacts+' div.contact_layout[country="'+ c.toLowerCase() + '"]').each(function(index) {
+                         $(this).show();
+                         div_counter++;
+                         if(div_counter <=6)
+                         $(this).show();
+                         else
+                         $(this).hide();
+    
+                         });*/
+                        var contacts = $('#' + rightrailcontacts + ' div.contactCol');
+                        var count = 0;
+                        contacts.remove();
+                        allContacts.each(function () {
+    
+                            if ($(this).attr('country') == c.toLowerCase()) {
+
+                                parentAllContacts.append(this);
+                                count++;
+                            }
+    
+                        });
+                        $('#' + countryhawkList).val(c.toLowerCase());
+                    }
+                    else //if geo is OFF, then c is "xx"
+                    {
+                        $('#' + countryhawkList).val(' All'); //set territory dropdown to All
+                    }
+                }
+            }
+    
+            $('#' + countryhawkList).change(function () {
+                var country = $(this).val();
+                //console.log("ddl changed");
+                //alert('#'+ rightrailcontacts+ ' div.contact_layout[country="+ country + "]');
+                //leave the space before the All, it is needed for the sort.
+                /*if (country != " All") {
+                 $('#'+ rightrailcontacts+ ' div.contact_layout[country="'+ country + '"]').each(function(index) {
+                 $(this).show();
+                 });
+                 $('#'+ rightrailcontacts+ ' div.contact_layout[country!="'+ country + '"]').each(function(index) {
+                 $(this).hide();
+                 });
+                 } else {
+                 $('#'+ rightrailcontacts+' div.contact_layout').each(function(index) {
+                 $(this).show();
+                 });
+                 }*/
+                var contacts = $('#' + rightrailcontacts + ' div.contact_layout');
+                var count = 0;
+                contacts.remove();
+
+				//changes by hemant
+                //To fix the existing prod issue of filters start
+                parentAllContacts.empty();
+                //To fix the existing prod issue of filters end
+
+                if (country != " All") {
+                    allContacts.each(function () {
+    
+                        if ($(this).attr('country') == country) {
+                            parentAllContacts.append(this);
+                            count++;
+                        }
+    
+                    });
+                } else {
+                    allContacts.each(function () {
+                        parentAllContacts.append(this);
+                        count++;
+    
+                    });
+                }
+    
+    
+            });
+    
+            $('#' + displayMore).click(function (e) {
+                $('#' + rightrailcontacts + ' div').each(function (index) {
+                    $(this).show();
+                });
+                $('#' + displayMore).hide();
+                $('#' + displayLess).show();
+                return false;
+            });
+            $('#' + displayLess).click(function (e) {
+                $('#' + rightrailcontacts + ' div').each(function (index) {
+                    if (parseInt($(this).attr("divid")) > 6) {
+                        $(this).hide();
+                    }
+                });
+                $('#' + displayMore).show();
+                $('#' + displayLess).hide();
+                return false;
+            });
+    
+        });
+    </script>
+
+
+
+<script>
+	var parentcontactdiv = null;
+if (document.getElementById('onlineformstart') != null) {
+	var rendermode = "2";
+	if (rendermode == 2) {
+		var elem = document.getElementsByClassName("contactModule maxPadding");
+		var x = 0;
+		for (x = 0; x < elem.length; x++) {
+			parentcontactdiv = document.getElementById(elem[x].id).parentElement;
+			parentcontactdiv.className = 'section rightrailcontact';
+
+		}
+	}
+}
+</script>
+
+</div>
+
+        
+    </div>
+
+</div>
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+<div class="dpe-component-wrapper bottom-kick bottom-kick--closed">
+    <div class="bottom-kick-container pinned bottom-kick--hide">
+        <div class="bottom-kick__wrapper bottom-kick--invisible">
+            <div class="bottom-kick__bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button class="bottom-kick__bar-wrapper" aria-label="Contactez-nous">
+                                <span class="bottom-kick__bar-label" aria-hidden="true">Contactez-nous</span>
+                                
+                                <div class="bottom-kick__btn-wrapper">
+                                    <div class="bottom-kick__btn">
+                                        <span class="bottom-kick__btn-icon"></span>
+                                    </div>
+                                    <span class="bottom-kick__btn-arrow"></span>
+                                </div>
+                            </button>
+                            <span id="bottom-kick__btn-hide" class="bottom-kick__btn-hide" aria-label="Masquer">Masquer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="bottom-kick__content">
+
+            
+
+        </div>
+    </div>
+</div>
+<div class="bottom-kick__overlay"></div>
+
+
+<script>
+    $(".bk-parsys-wrapper").appendTo(".bottom-kick__content");
+    $(function() {
+        bottomKick({
+            scrollPosition: 'afterHero'
+        });
+    });
+    $(".bottom-kick__btn-wrapper").click(function () {
+        var spanEl = $(this).find("span.bottom-kick__btn-arrow")
+        if($(spanEl).hasClass("bottom-kick__btn-arrow--rotate")) {
+            createObject("page.bottomkick.panel", "close");
+        }
+        else {
+                createObject("page.bottomkick.panel", "open");
+        }
+    });
+    analyticsClickTrigger("#bottom-kick__btn-hide","page.bottomkick.panel","close");
+</script>
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</section>
+
+
+
+
+    
+</div>
+
+        
+    </div>
+
+</div>
+<div class="ixfsection experiencefragment"><div class="mod-ixf-page-section"></div>
+
+
+	<section id="footer" style="height: auto" class="cmp-experiencefragment cmp-experiencefragment--fr-fr fullwidth ">
+
+
+    
+    <div id="container-7b1ea17bc9" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="footer aem-GridColumn aem-GridColumn--default--12"><!-- SDI include (path: /content/experience-fragments/pwc/fr/fr/footer/fr-fr/master/_jcr_content/root/footer.dynamic.html/pwc/components/modernized/content/footer, resourceType: pwc/components/modernized/content/footer) -->
+<div></div>
+
+    
+
+
+
+
+
+    
+
+<!-- START Sitemap Footer -->
+<div class="dpe-component-wrapper glb-footer glb-footer__block--reduced ">
+    <div class="container">
+    <!-- START bottom breadcrumb -->
+    
+		<div class='breadcrumb-main-footer'>	</div>
+           	<script id="breadcrumb-template-footer" type="text/x-handlebars-template">
+	<div class="row">
+		<nav id="footerBreadcrumbWrapper" class="col-xs-12 simple-breadcrumb-component  simple-breadcrumb-component--dark-bg ">
+			<div class=" breadcrumb-component__scroll-pane">
+				<ul class="breadcrumb">
+				 {{#each breadcrumbs}}
+					<li>
+						<a href="{{this.linkURL}}">{{this.linkText}}</a>
+					</li>
+					 {{/each}}
+				</ul>
+			</div>
+			<div class="breadcrumb-component__scroll-fade breadcrumb-component__scroll-fade--left"></div>
+			<div class="breadcrumb-component__scroll-fade breadcrumb-component__scroll-fade--right"></div>
+		</nav>
+	</div>
+	</script>
+	
+    <!-- END bottom breadcrumbs -->
+    
+           
+	
+	<!-- start reduced Footer items -->
+	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 ">
+				<div class="glb-footer__block">
+					
+						<a class="serif glb-footer__link glb-footer__link--l1" href="../../vos-enjeux.html" aria-label="Vos enjeux">Vos enjeux</a>
+					
+						<a class="serif glb-footer__link glb-footer__link--l1" href="../../industries.html" aria-label="Votre secteur">Votre secteur</a>
+					
+						<a class="serif glb-footer__link glb-footer__link--l1" href="../../expertises.html" aria-label="Expertises">Expertises</a>
+					
+						<a class="serif glb-footer__link glb-footer__link--l1" href="../../expertises/conseil/technology/pwc-store.html" aria-label="Solutions digitales">Solutions digitales</a>
+					
+						<a class="serif glb-footer__link glb-footer__link--l1" href="../../qui-sommes-nous.html" aria-label="Qui sommes-nous ?">Qui sommes-nous ?</a>
+					
+						<a class="serif glb-footer__link glb-footer__link--l1" target="_blank" href="https://carrieres.pwc.fr/fr/" aria-label="Carrières">Carrières</a>
+					
+						<a class="serif glb-footer__link glb-footer__link--l1" target="_blank" href="https://letsgofrance.fr/" aria-label="#LetsgoFrance">#LetsgoFrance</a>
+					
+						<a class="serif glb-footer__link glb-footer__link--l1" href="../../alumni.html" aria-label="PwC Alumni">PwC Alumni</a>
+					
+				</div>
+			</div>
+		</div>
+	
+	<!-- end reduced Footer items -->
+	
+	<!-- START Copyright statement -->
+	<div class="row">
+		<div class="col-xs-12  ">
+			<div class="glb-footer__disclaimer">
+				<div class="row">
+					<div class="col-md-8 glb-footer__disclaimer-text">
+						<a id="slim-footer-logo" href="#" aria-label="slim-footer-logo" class="slim-footer-logo"></a>
+						<p>&copy;&nbsp;2012
+							
+							 - 2023 PwC. PricewaterhouseCoopers France et Maghreb. Tous droits réservés &quot;PwC&quot; fait référence au réseau PwC et/ou à une ou plusieurs de ses entités membres, dont chacune constitue une entité juridique distincte. Pour plus d'information, rendez-vous sur le site www.pwc.com/structure
+						</p>
+						<!-- optional disclaimer links -->
+						<ul class="glb-footer__disclaimer-links" id="pgFooter">
+							
+								
+									<li>
+										<a href="../../alerte-escroquerie-phishing.html">Alerte à la fraude</a>
+									</li>
+								
+									<li>
+										<a href="../../contactez-nous.html">Contactez-nous</a>
+									</li>
+								
+									<li>
+										<a href="../../legal/accessibilite.html">Déclaration d’accessibilité</a>
+									</li>
+								
+									<li>
+										<a href="../../legal/declaration-de-confidentialite.html">Déclaration de confidentialité</a>
+									</li>
+								
+									<li>
+										<a href="../../legal/informations-legales.html">Informations légales</a>
+									</li>
+								
+									<li>
+										<a href="../../legal/cookies.html">Information sur les cookies</a>
+									</li>
+								
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END Copyright statement -->
+
+	
+	</div>
+</div>
+<!-- END Sitemap Footer --></div>
+<div class="embedscript aem-GridColumn aem-GridColumn--default--12"><!-- SDI include (path: /content/experience-fragments/pwc/fr/fr/footer/fr-fr/master/_jcr_content/root/embedscript.dynamic.html/pwc/components/modernized/content/embedscript, resourceType: pwc/components/modernized/content/embedscript) -->
+
+    
+        
+        
+            <script type="text/javascript" src="../../../content/pwc/script/fr/fr/fr_add_cookie_settings_button.js"></script>
+        
+    
+
+
+    
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</section>
+    
+
+
+
+    
+</div>
+
+        
+    </div>
+
+</div>
+
+
+            </div>
+            
+    
+    
+    
+<script src="../../../etc.clientlibs/pwc/components/modernized/common/mod-clientlibs/modernization-navigation.min.738ae096e20a6eaff214525372c08c6b.js"></script>
+<script src="../../../etc.clientlibs/pwc/components/modernized/common/mod-clientlibs/components-colors.min.c0734c7181a606353e121067390a878a.js"></script>
+<script src="../../../etc.clientlibs/pwc/clientlibs/longform/script.min.6efa0d1363ebcfb49232d50cc54583a1.js"></script>
+<script src="../../../etc.clientlibs/pwc/clientlibs/clientlib-vue/vue-bundle.min.fbe20003cbe99d52f253ad324159f26a.js"></script>
+
+
+
+
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/pwc/clientlibs/clientlib-vue/vue-bundle.min.fd991f6a1908b7eb760720b679bc3b5f.css" type="text/css">
+
+
+
+<script>
+var getCookieByMatch = function(regex) {
+    var _cookies = document.cookie.split(/;\s*/),
+        _cookieArray = [],
+        i;
+    for (i = 0; i < _cookies.length; i++) {
+        if (_cookies[i].match(regex)) {
+            _cookieArray.push(_cookies[i]);
+        }
+    }
+    return _cookieArray;
+};
+
+function getUserMarketingID(value) {
+    const _regex = /^(.*)\|MCMID\|(\d+)\|(.*)/gm;
+    if ((_matchedArray = _regex.exec(value)) !== null && _matchedArray.length >= 3) {
+        return _matchedArray[2];
+    }
+}
+
+function setCookie(cname, cvalue, exdays, path) {
+    var expires = "expires=0"
+    if (exdays != 0) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        expires = "expires=" + d.toGMTString();
+    }
+    document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/;";
+}
+
+
+$( document ).ready(function() {
+    $.each(getCookieByMatch('AMCV_'), function(index, val) {
+		var cookie = val.split("=");
+        var userID = getUserMarketingID(decodeURIComponent(cookie[1]));
+			$('input[name="userMarketingID"]').each(function() {
+        	  $( this ).val(userID);
+        	});
+    });
+});
+</script>
+
+    
+
+    
+
+    
+    
+    
+
+            
+
+    </body>
+
+<!-- Mirrored from www.pwc.fr/fr/vos-enjeux/transformation-cloud/developper-une-approche-finops-et-greenops.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Jul 2023 23:47:26 GMT -->
+</html>
+

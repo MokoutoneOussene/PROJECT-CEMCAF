@@ -1,0 +1,25 @@
+/* CSS Document */
+
+#pwcfr-powerbi-iframe-responsivity_conteneur-l1{
+	text-align:center;
+	width:100%;
+}
+
+#pwcfr-powerbi-iframe-responsivity_conteneur-l2 {
+	position:relative;
+	background-color:#f2f2f2;
+	border:0px solid #f2f2f2;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+}
+
+
+#pwcfr-powerbi-iframe-responsivity_conteneur-l2 #pwcfr-powerbi-iframe-responsivity_iframe {
+    border:0px solid #f2f2f2;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0;
+	transform-origin:0% 0%;
+}

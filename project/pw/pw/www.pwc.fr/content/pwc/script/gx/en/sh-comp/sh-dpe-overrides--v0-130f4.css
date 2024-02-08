@@ -1,0 +1,21 @@
+/*	Global footer 
+********************/
+.glb-footer {
+  position: relative; }
+
+/*	end Global footer 
+********************/
+/*	Reference 
+********************/
+.reference.parbase.section {
+  margin: 0 !important; }
+
+/*	end Reference 
+********************/
+/*	Select elements (for territory selector) 
+********************/
+.bs-ui-sh-section select {
+  color: #2d2d2d; }
+
+/*	end Select elements (for territory selector) 
+********************/

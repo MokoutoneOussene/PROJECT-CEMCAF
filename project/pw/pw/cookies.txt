@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.pwc.com	TRUE	/us	FALSE	1999999999	pwc_uuid	f66b077f-e064-4fc8-93fb-5297ee52019c
+.fonts.net	TRUE	/	FALSE	1999999999	__cf_bm	cOVy8Q.4D5vfRovqMs55Vn43Fxb0_Y57msLdN3KaaBs-1688254637-0-AeaYFGng7MbDv56F3tojZAPgz0zB9y8XG2BFvmRs6cuwD+GzLeYVSwdzcZZWZ4MJebXNpdRTGzVX9a2ibpoYrHU=
+fast.fonts.net	TRUE	/	FALSE	1999999999	SameSite	None
+pwc.fr	TRUE	/	FALSE	1999999999	AKA_A2	A
+pwc.de	TRUE	/	FALSE	1999999999	AKA_A2	A
+strategyand.pwc.com	TRUE	/	FALSE	1999999999	AKA_A2	A
+www.pwc.fr	TRUE	/	FALSE	1999999999	JSESSIONID	node0163oe00lk6nxr1dvbob25ddr5s56467.node0
+pwc.nl	TRUE	/	FALSE	1999999999	AKA_A2	A
+

@@ -1,0 +1,1488 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ------------------------------------------------------- */
+/* --------------- Quick colours ------------------------- */
+/* ------------------------------------------------------- */
+
+.c3_chart, .c3_div_table_visible_data, div.c3_svg_chart, section.c3_section_3_tab_carousel, div.c3_chart small.c3_small_key ul li, div.c3_chart_svg {
+	/* Base colours */
+	--c3_yellow: #ffb600 !important;
+	--c3_tangerine: #eb8c00 !important;
+	--c3_orange: #d04a02 !important;
+	--c3_rose: #d93954 !important;
+	--c3_red: #e0301e !important;
+	--c3_lightgrey: #dedede !important;
+	--c3_grey: #7d7d7d !important;
+	--c3_mediumgrey: #464646 !important;
+	--c3_darkgrey: #2d2d2d !important;
+	--c3_black: #000000 !important;
+	--c3_white: #FFFFFF !important;
+	/* Additional data colours */
+	--c3_darkred1: #AA2417 !important;
+	--c3_darkred2: #741910 !important;
+	--c3_darkrose1: #A43E50 !important;
+	--c3_darkrose2: #6E2A35 !important;
+	--c3_darkorange1: #933401 !important;
+	--c3_darkorange2: #571F01 !important;
+	--c3_darktangerine1: #AE6800 !important;
+	--c3_darktangerine2: #714300 !important;
+    /* Further data colours BW */
+    --c3_lightrose1: #F7C8C4 !important;
+    --c3_lightyellow1: #FFDCA9 !important;
+    --c3_lightyellow2: #FFC83D !important;
+    --c3_darkyellow1: #EB8C00 !important;
+    
+}
+
+/* ------------------------------------------------------- */
+/* ------------- Hidden Data Tables ---------------------- */
+/* ------------------------------------------------------- */
+
+table.c3_table_data { display: none; }
+
+/* ------------------------------------------------------- */
+/* --------------- Outer Structures ---------------------- */
+/* ------------------------------------------------------- */
+
+div.c3_chart, div.c3_svg_chart {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-left: -25%;
+	margin-top: 40px;
+	width: 150%;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	div.c3_chart, div.c3_svg_chart {
+		margin-left: 0%;
+		width: calc(100% - 15px);
+	}
+}
+
+div.c3_chart h3, div.c3_div_table_visible_data h3, div.c3_svg_chart h3, div.c3_chart_svg h3 {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 200;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 2px solid var(--c3_black);
+	border-bottom: 1px dotted var(--c3_black);
+    margin-bottom: 7px;
+}
+
+div.c3_chart_svg {
+   margin-top: 30px; 
+margin-bottom: 30px;
+}
+
+div.c3_chart h4 {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+	clear: both;
+}
+
+div.c3_div_table_visible_data h3.c3_h3_sdg {
+	height: 120px;
+    line-height: 70px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    div.c3_div_table_visible_data h3.c3_h3_sdg {
+        background-position: right 0px bottom 10px;
+        height: 144px;
+        background-size: 100% auto;
+    }
+}
+
+div.c3_div_table_visible_data h3.c3_h3_sdg.c3_h3_sdg_principles { background-image: url("../../../../../../content/dam/pwc/gx/en/global-annual-review/2022/c3-sdg-principles.jpg"); }
+div.c3_div_table_visible_data h3.c3_h3_sdg.c3_h3_sdg_prosperity { background-image: url("../../../../../../content/dam/pwc/gx/en/global-annual-review/2022/c3-sdg-prosperity.jpg"); }
+div.c3_div_table_visible_data h3.c3_h3_sdg.c3_h3_sdg_planet { background-image: url("../../../../../../content/dam/pwc/gx/en/global-annual-review/2022/c3-sdg-planet.jpg"); }
+div.c3_div_table_visible_data h3.c3_h3_sdg.c3_h3_sdg_people { background-image: url("../../../../../../content/dam/pwc/gx/en/global-annual-review/2022/c3-sdg-people.jpg"); }
+
+div.c3_chart h3 strong, div.c3_div_table_visible_data h3 strong, div.c3_svg_chart h3 strong {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	padding-right: 300px;
+}
+
+div.c3_chart.c3_chart_toggle_none h3 strong {
+	padding-right: 0px;
+}
+
+@media only screen and (max-width: 650px) {
+	div.c3_chart h3 strong {
+		padding-right: 0px;
+	}
+}
+
+div.c3_div_table_visible_data h3.c3_h3_sdg strong {
+	line-height: 30px;
+}
+
+div.c3_chart div.c3_div_header_group {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	background-color: var(--c3_white);
+	z-index: 2;
+}
+
+div.c3_chart div.c3_div_header_group {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	background-color: var(--c3_white);
+	z-index: 2;
+}
+
+div.c3_no_bg_colour div.c3_div_header_group {
+	background-color: transparent !important;
+}
+
+div.c3_chart div.c3_div_header_group h3 {
+	background-color: var(--c3_white);
+}
+
+
+div.c3_chart select {
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: var(--c3_lightgrey);
+	border: 1px solid var(--c3_grey);
+	color: var(--c3_mediumgrey);
+}
+
+div.c3_chart a.c3_a_toggle_yq,
+div.c3_chart a.c3_a_toggle_ry {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	right: 0px;
+	height: 53px;
+	width: 300px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+div.c3_chart.c3_chart_toggle_none a.c3_a_toggle_yq,
+div.c3_chart.c3_chart_toggle_none a.c3_a_toggle_ry {
+	display: none;
+}
+
+@media only screen and (max-width: 650px) {
+	div.c3_chart a.c3_a_toggle_yq,
+	div.c3_chart a.c3_a_toggle_ry {
+		position: relative;
+		float: right;
+		clear: both;
+	}
+}
+
+div.c3_chart a.c3_a_toggle_yq span.c3_span_toggle_yq_year,
+div.c3_chart a.c3_a_toggle_ry span.c3_span_toggle_ry_year {
+	display: block;
+	position: absolute;
+	overflow: visible;
+	left: 0px;
+	top: 0px;
+	width: 120px;
+	height: 53px;
+	padding-right: 10px;
+	line-height: 53px;
+	font-size: 14px;
+	text-align: right;
+}
+
+div.c3_chart a.c3_a_toggle_ry span.c3_span_toggle_ry_year {
+	line-height: 16px;
+}
+
+div.c3_chart a.c3_a_toggle_ry span.c3_span_toggle_ry_year span {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	height: 32px;
+	margin-top: -15px;
+	line-height: 16px;
+}
+
+div.c3_chart a.c3_a_toggle_yq span.c3_span_toggle_yq_year::after,
+div.c3_chart a.c3_a_toggle_ry span.c3_span_toggle_ry_year::after {
+	content: "";
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	left: 100%;
+	top: 9px;
+	width: 80px;
+	height: 36px;
+	border: 2px solid var(--c3_black);
+	background-color: var(--c3_lightgrey);
+	border-radius: 20px;
+}
+
+div.c3_chart a.c3_a_toggle_yq span.c3_span_toggle_yq_quarter,
+div.c3_chart a.c3_a_toggle_ry span.c3_span_toggle_ry_quarter {
+	display: block;
+	position: absolute;
+	overflow: visible;
+	right: 0px;
+	top: 0px;
+	width: 100px;
+	height: 53px;
+	padding-left: 10px;
+	line-height: 53px;
+	font-size: 14px;
+	text-align: left;
+}
+
+div.c3_chart a.c3_a_toggle_yq span.c3_span_toggle_yq_quarter::before,
+div.c3_chart a.c3_a_toggle_ry span.c3_span_toggle_ry_quarter::before {
+	content: "";
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: -32px;
+    top: 13px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--c3_black);
+	transition: left 0.5s ease;
+}
+
+div.c3_chart a.c3_a_toggle_yq.c3_show_quarterly span.c3_span_toggle_yq_quarter::before,
+div.c3_chart a.c3_a_toggle_ry.c3_show_quarterly span.c3_span_toggle_ry_quarter::before {
+	left: -76px;	
+}
+
+@media only screen and (max-width: 650px) {
+	div.c3_chart h3 strong {
+		padding-right: 0px;
+	}
+}
+
+
+/* ------------------------------------------------------- */
+/* --------------- Bar Chart Containers ------------------ */
+/* ------------------------------------------------------- */
+
+div.c3_chart div.c3_div_bar_container {
+	display: block;
+	position: relative;
+	overflow: visible;
+	border-left: 1px solid var(--c3_grey);
+}
+
+div.c3_chart.c3_bar_trustgap div.c3_div_bar_container.c3_div_bar_container_stacked {
+	padding-bottom: 0px;
+}
+
+div.c3_chart div.c3_div_bar_container strong {
+	display: block;
+    position: absolute;
+    overflow: hidden;
+    font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-weight: 400;
+    font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+    width: 30px;
+	height: 30px;
+	top: 50%;
+	margin-top: -15px;
+    left: -30px;
+	color: var(--c3_grey);
+	opacity: 1;
+	transform: rotate(90deg);
+	transition: transform 0.5s ease, font-size 0.5s ease, opacity 0.25s linear;
+}
+
+@media only screen and (max-width: 600px) {
+	div.c3_chart div.c3_div_bar_container strong {
+		transform: rotate(0deg);
+		font-size: 12px;
+	}
+}
+
+div.c3_chart.c3_chart.c3_div_chart_year div.c3_div_bar_container strong  {
+	opacity: 0;
+}
+
+
+div.c3_chart div.c3_div_bar_container_series div.c3_div_chart_bar_actual {
+	display: block;
+	position: relative;
+	overflow: visible;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 14px;
+	margin-bottom: 10px;
+	width: 0%;
+	height: 20px;
+	line-height: 20px;
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual.c3_div_chart_bar_actual_colour_lightgrey {
+	/* border: 1px solid var(--c3_grey); */
+}
+
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual.c3_div_chart_bar_actual_colour_lightgrey {
+	border: 1px solid var(--c3_lightgrey);
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual {
+	display: block;
+	position: relative;
+	overflow: visible;
+	float: left;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 14px;
+	width: 0%;
+	height: 50%;
+	top: 25%;
+	line-height: 20px;
+	z-index: 2;
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_positioner {
+	display: block; 
+	position: absolute; 
+	overflow: visible; 
+	top: 0%; 
+	left: 100%; 
+	width: 30px; 
+	height: 100%;
+	opacity: 1;
+	transition: top 0.5s ease;
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_positioner.c3_div_popup_positioner_down {
+	top: 0% !important;
+    left: auto;
+    right: 0%;
+}
+
+div.c3_chart div.c3_div_bar_actual_popup_positioner_line {
+	display: none; 
+	position: absolute; 
+	overflow: visible;
+	width: 30px; 
+	height: 30px;
+	opacity: 1;
+	transition: top 0.5s ease;
+	z-index: 3;
+}
+
+div.c3_chart div.c3_div_bar_actual_popup_positioner_line.c3_div_popup_positioner_down {
+	transform-origin: top left;
+	/* transform: scale(-1); */
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_detail {
+	display: block; 
+	position: absolute; 
+	overflow: visible; 
+	width: auto; 
+	height: 30px; 
+	top: 50%; 
+	margin-top: -15px; 
+	line-height: 30px; 
+	left: 20px; 
+	background-color: var(--c3_white); 
+	border: 1px solid var(--c3_grey); 
+	text-align: center; 
+	padding-left: 10px; 
+	padding-right: 10px; 
+	font-size: 14px;
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual div.c3_div_popup_positioner_down div.c3_div_bar_actual_popup_detail {
+	right: 20px; 
+	left: auto; 
+}
+
+div.c3_chart div.c3_div_bar_actual_popup_detail_line {
+	display: block;
+    position: absolute;
+    overflow: visible;
+    width: auto;
+    height: 30px;
+    top: -20px;
+    margin-top: -15px;
+    line-height: 30px;
+    left: 0px;
+    background-color: var(--c3_white);
+    border: 1px solid var(--c3_grey);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    transform-origin: left center;
+    transform: rotate(-90deg);
+}
+
+div.c3_chart div.c3_div_popup_positioner_down div.c3_div_bar_actual_popup_detail_line {
+	left: auto;
+    right: 30px;
+    transform-origin: right center;
+    top: 1px;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 650px) {
+	div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_detail {
+		height: 20px;
+		margin-top: -10px; 
+		line-height: 20px; 
+		font-size: 12px;
+	}
+	div.c3_chart div.c3_div_bar_actual_popup_detail_line {
+		height: 20px;
+		margin-top: -10px; 
+		line-height: 20px; 
+		font-size: 12px;
+	}
+	div.c3_chart div.c3_div_popup_positioner_down div.c3_div_bar_actual_popup_detail_line {
+		top: 10px;
+	}
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_detail::after {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -20px;
+	top: 14px;
+	width: 20px;
+	height: 1px;
+	border-top: 1px dotted var(--c3_grey);
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual div.c3_div_popup_positioner_down div.c3_div_bar_actual_popup_detail::after {
+	left: 100%;
+}
+
+div.c3_chart div.c3_div_bar_actual_popup_detail_line::after {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -20px;
+	top: 14px;
+	width: 20px;
+	height: 1px;
+	border-top: 1px dotted var(--c3_grey);
+}
+
+div.c3_chart div.c3_div_popup_positioner_down div.c3_div_bar_actual_popup_detail_line::after {
+	left: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+	div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_detail::after {
+		top: 9px;
+	}
+	div.c3_chart div.c3_div_bar_actual_popup_detail_line::after {
+		top: 9px;
+	}
+}
+
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual {
+	height: 100%;
+	top: 0%;
+}
+
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked:nth-child(4n) div.c3_div_chart_bar_actual {
+	height: 75%;
+}
+
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked:nth-child(4n + 1) div.c3_div_chart_bar_actual {
+	height: 75%;
+	top: 25%;
+}
+
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked:nth-child(4n + 1) div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_positioner {
+	opacity: 1;
+}
+
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked:nth-child(4n + 2) div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_positioner,
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked:nth-child(4n + 3) div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_positioner,
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked:nth-child(4n) div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_positioner {
+	opacity: 0;
+}
+
+div.c3_chart.c3_div_chart_year div.c3_div_bar_container_stacked:nth-child(4n + 1) div.c3_div_chart_bar_actual div.c3_div_bar_actual_popup_positioner {
+	opacity: 1;
+	top: 200%;
+}
+
+div.c3_chart.c3_bar_globalsurvey div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual {
+	height: 60px;
+}
+
+div.c3_chart div.c3_div_bar_container_series div.c3_div_chart_bar_actual span {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 100%;
+	padding-left: 10px;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	opacity: 0;
+	transition: opacity 0.25s linear;
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual span {
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	top: 100%;
+	right: 0%;
+	padding-top: 5px;
+	padding-right: 5px;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 14px;
+	height: auto;
+	line-height: 14px;
+	border-right: 1px solid var(--c3_grey);
+	opacity: 0;
+	transition: opacity 0.25s linear;
+}
+
+div.c3_chart div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual span.c3_span_right {
+	right: auto;
+	left: 100%;
+	padding-left: 5px;
+	border-left: 1px solid var(--c3_grey);
+	border-right: none;
+}
+
+div.c3_chart.c3_bar_globalsurvey div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual span {
+	top: auto;
+	bottom: -13px;
+	right: 0%;
+	height: 60px;
+	padding-top: 0px;
+	padding-right: 0px;
+	font-size: 50px;
+	font-weight: 200;
+	line-height: 60px;
+	color: var(--c3_white);
+	border-right: none;
+}
+
+div.c3_chart.c3_bar_trustgap div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual span {
+	display: none;
+}
+
+div.c3_chart.c3_bar_globalsurvey div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual:nth-of-type(2) span {
+	display: block;
+	right: auto;
+	bottom: auto;
+	left: 100%;
+	top: -5px;
+	height: 24px;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--c3_black);
+	border: none;
+}
+
+div.c3_chart.c3_bar_globalsurvey div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual:nth-of-type(2) span::before {
+	content: "+";
+	font-weight: 700;
+	color: var(--c3_tangerine);
+}
+
+
+div.c3_chart.c3_inview div.c3_div_bar_container_series div.c3_div_chart_bar_actual span,
+div.c3_chart.c3_inview div.c3_div_bar_container_stacked div.c3_div_chart_bar_actual span {
+	opacity: 1;
+}
+
+div.c3_chart small.c3_small_key {
+	display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+div.c3_chart small.c3_small_key h4 {
+	display: block;
+    position: relative;
+    overflow: hidden;
+    font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+div.c3_chart.c3_bar small.c3_small_key h4 {
+	display: none;
+}
+
+div.c3_chart.c3_pie {
+    width: 100%;
+	margin-left: 0px;
+}
+
+div.c3_chart.c3_pie small.c3_small_key {
+	display: block;
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+}
+
+@media only screen and (max-width: 1000px) {
+	div.c3_chart.c3_pie small.c3_small_key {
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 0%;
+		float: none;
+	}
+}
+
+div.c3_chart small.c3_small_key ul {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+div.c3_chart small.c3_small_key ul li {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: auto;
+	height: 20px;
+	padding-left: 10px;
+	margin-right: 15px;
+	float: left;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	border-left: 20px solid #CCCCCC;
+	cursor: pointer;
+}
+
+div.c3_chart small.c3_small_key ul li:hover {
+	text-decoration: underline;
+}
+
+div.c3_chart small.c3_small_key ul li.selected {
+	font-weight: 700;
+}
+
+div.c3_chart small.c3_small_key ul li.c3_table_key_line {
+	padding-left: 30px;
+	border-left: none;
+}
+
+div.c3_chart small.c3_small_key ul li.c3_table_key_line::before {
+	content: "";
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	left: 0px;
+	top: 7.5px;
+	width: 20px;
+	height: 5px;
+	border-radius: 2.5px;
+	background-color: var(--c3_red);
+}
+
+div.c3_chart.c3_pie small.c3_small_key ul li {
+	display: block;
+    position: relative;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    padding-left: 10px;
+    margin-right: 15px;
+    font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    border-left: 30px solid #CCCCCC;
+    float: none;
+    transition: font-weight 0.25s ease;
+    cursor: pointer;
+}
+
+div.c3_chart.c3_pie small.c3_small_key ul li::before {
+	content: "";
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    width: 35px;
+    height: 50px;
+    background-color: var(--c3_white);
+}
+
+div.c3_chart.c3_pie small.c3_small_key ul li.c3_selected {
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+	div.c3_chart.c3_pie small.c3_small_key ul li {
+		float: left;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	div.c3_chart small.c3_small_key ul li {
+		float: none !important;
+	}
+}
+
+div.c3_chart small.c3_small_source {
+	display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+    font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+div.c3_chart.c3_pie small.c3_small_source {
+	display: block;
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-weight: 400;
+    font-size: 14px;
+    float: left;
+}
+
+@media only screen and (max-width: 1000px) {
+	div.c3_chart.c3_pie small.c3_small_source {
+		margin-left: 0%;
+		float: none;
+	}
+}
+
+/* ------------------------------------------------------- */
+/* --------------- Rotators and Positioners -------------- */
+/* ------------------------------------------------------- */
+
+div.c3_chart div.c3_div_bar_positioner {
+	display: block;
+	position: relative;
+	overflow: visible;
+	width: 100%;
+	height: 0px;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-top: 50%;
+	z-index: 1;
+}
+
+div.c3_chart div.c3_div_bar_rotator {
+	display: block;
+    position: absolute;
+    overflow: visible;
+    top: 100%;
+    left: 50px;
+    width: 50%;
+    height: calc(200% - 50px - 50px);
+    transform-origin: top left;
+    transform: rotate(-90deg);
+	z-index: 2;
+	transition: width 1s ease;
+}
+
+div.c3_chart div.c3_div_yaxis_left {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 50%;
+	text-align: left;
+	height: auto;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+div.c3_chart div.c3_div_yaxis_right {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 50%;
+	text-align: right;
+	height: auto;
+	line-height: 20px;
+	font-size: 14px;
+	padding-right: 15px;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------- Row Groups --------------------- */
+/* ------------------------------------------------------- */
+
+div.c3_chart ul.c3_ul_row_groups {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 50px;
+	width: calc(100% - 50px - 50px);
+	height: calc(100% + 60px);
+	border-left: solid 1px var(--c3_lightgrey);
+	border-top: solid 1px var(--c3_lightgrey);
+	z-index: 1;
+}
+
+div.c3_chart ul.c3_ul_row_groups li {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	height: 100%;
+	border-right: solid 1px var(--c3_lightgrey);
+}
+
+div.c3_chart ul.c3_ul_row_groups li span {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	text-align: center;
+	font-size: 14px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 30px;
+	transition: bottom 0.5s ease;
+}
+
+div.c3_chart.c3_chart.c3_div_chart_year ul.c3_ul_row_groups li span {
+	bottom: 20px;	
+}
+
+div.c3_chart div.c3_div_vertical_axis_left {
+	display: block;
+	position: absolute;
+	overflow: visible;
+	top: 0px;
+	width: 1px;
+	height: 100%;
+	border-right: 1px dotted var(--c3_lightgrey);
+	z-index: 1;
+}
+
+div.c3_chart div.c3_div_vertical_axis_left span {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	font-size: 14px;
+	top: -40px;
+	left: -15px;
+	width: 30px;
+	height: 30px;
+	text-align: right;
+	line-height: 30px;
+	transform: rotate(90deg);
+}
+
+div.c3_chart div.c3_div_vertical_axis_right {
+	display: block;
+    position: absolute;
+    overflow: visible;
+    left: 50px;
+    width: calc(100% - 50px - 50px);
+    height: 1px;
+    /* border-bottom: 1px dotted var(--c3_lightgrey); */
+    z-index: 1;
+}
+
+div.c3_chart div.c3_div_vertical_axis_right span {
+	display: block;
+    position: absolute;
+    overflow: hidden;
+    font-size: 14px;
+    top: -15px;
+    left: calc(100% + 10px);
+    width: 40px;
+    height: 30px;
+    text-align: left;
+}
+
+div.c3_chart div.c3_div_vertical_axis_right_quarterly,
+div.c3_chart div.c3_div_vertical_axis_right_yearly {
+	transition: opacity 0.25s linear;
+}
+
+div.c3_chart.c3_div_chart_year div.c3_div_vertical_axis_right_quarterly,
+div.c3_chart.c3_div_chart_rolling_year div.c3_div_vertical_axis_right_quarterly,
+div.c3_chart div.c3_div_vertical_axis_right_yearly {
+	opacity: 0;
+}
+
+div.c3_chart div.c3_div_vertical_axis_right_quarterly,
+div.c3_chart.c3_div_chart_year div.c3_div_vertical_axis_right_yearly,
+div.c3_chart.c3_div_chart_rolling_year div.c3_div_vertical_axis_right_yearly {
+	opacity: 1;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------- Line Chart --------------------- */
+/* ------------------------------------------------------- */
+
+div.c3_chart svg.c3_svg_line_chart {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 50px;
+	width: calc(100% - 50px - 50px);
+	height: 100%;
+	z-index: 3;
+}
+
+div.c3_chart svg.c3_svg_line_chart line {
+	stroke-width: 5px;
+	stroke-linecap: round;
+}
+
+@media only screen and (max-width: 650px) {
+	div.c3_chart svg.c3_svg_line_chart line {
+		stroke-width: 2px;
+	}
+}
+
+div.c3_chart svg.c3_svg_line_chart line.c3_svg_line_animated {
+	animation: dash 0.1s linear forwards;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+div.c3_chart svg.c3_svg_line_chart line.c3_svg_line_animated_reverse,
+div.c3_chart.c3_div_chart_year svg.c3_svg_line_chart line,
+div.c3_chart.c3_div_chart_rolling_year svg.c3_svg_line_chart line {
+	stroke-dashoffset: 0 !important;
+	animation: dashreverse 0.5s linear forwards;
+}
+
+@keyframes dashreverse {
+	from { stroke-width: 5; }
+  	to { stroke-width: 0; }
+}
+
+div.c3_chart svg.c3_svg_line_chart_year {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 50px;
+	width: calc(100% - 50px - 50px);
+	height: 100%;
+	z-index: 3;
+}
+
+div.c3_chart svg.c3_svg_line_chart_year line {
+	stroke-width: 5px;
+	stroke-linecap: round;
+}
+
+@media only screen and (max-width: 650px) {
+	div.c3_chart svg.c3_svg_line_chart_year line {
+		stroke-width: 2px;
+	}
+}
+
+div.c3_chart.c3_div_chart_year svg.c3_svg_line_chart_year line.c3_svg_line_animated {
+	animation: dashyear 0.4s linear forwards;
+}
+
+div.c3_chart.c3_div_chart_rolling_year svg.c3_svg_line_chart_year line.c3_svg_line_animated {
+	animation: dashyear 0.1s linear forwards;
+}
+
+@keyframes dashyear {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+div.c3_chart.c3_div_chart_year svg.c3_svg_line_chart_year line.c3_svg_line_animated_reverse,
+div.c3_chart.c3_div_chart_rolling_year svg.c3_svg_line_chart_year line.c3_svg_line_animated_reverse {
+	stroke-dashoffset: 0 !important;
+	animation: dashreverseyear 0.4s linear forwards;
+}
+
+@keyframes dashreverseyear {
+	from { stroke-width: 5; }
+  	to { stroke-width: 0; }
+}
+
+/* ------------------------------------------------------- */
+/* ----------------- 3 tab carousel ---------------------- */
+/* ------------------------------------------------------- */
+
+section.c3_section_3_tab_carousel {
+	display: block;
+    position: relative;
+    overflow: hidden;
+    margin-left: -25%;
+    margin-top: 40px;
+    width: 150%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	section.c3_section_3_tab_carousel {
+		margin-left: 0%;
+		width: calc(100% - 15px);
+	}
+}
+
+section.c3_section_3_tab_carousel div.c3_chart {
+	display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0%;
+    margin-top: 0px;
+    width: 33.333%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+	margin-right: 0%;
+}
+
+section.c3_section_3_tab_carousel div.c3_chart:nth-of-type(3) { margin-right: 0%; }
+
+section.c3_section_3_tab_carousel h3 {
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+section.c3_section_3_tab_carousel nav {
+	display: block;
+    position: relative;
+    overflow: hidden;
+	width: 100%;
+}
+
+section.c3_section_3_tab_carousel nav ul {
+	display: block;
+    position: relative;
+    overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+section.c3_section_3_tab_carousel nav ul li {
+	display: block;
+    position: relative;
+    overflow: hidden;
+	width: 33.333%;
+	float: left;
+	margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+	section.c3_section_3_tab_carousel nav ul li {
+		width: 100%;
+		border: 1px solid var(--c3_white);
+	}
+}
+
+section.c3_section_3_tab_carousel nav ul li a {
+	display: block;
+    position: relative;
+    overflow: hidden;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	border-right: 1px solid var(--c3_white);
+	background-color: var(--c3_lightgrey);
+}
+
+section.c3_section_3_tab_carousel nav ul li a.c3_selected {
+	color: var(--c3_white);
+	font-weight: 700;
+	background-color: var(--c3_black);
+}
+
+section.c3_section_3_tab_carousel div.c3_div_carousel_scroller {
+	display: block;
+    position: relative;
+    overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+section.c3_section_3_tab_carousel div.c3_div_carousel_container {
+	display: block;
+    overflow: hidden;
+	width: 300%;
+	height: auto;
+}
+
+/* ------------------------------------------------------- */
+/* ------------- Visible Data Tables --------------------- */
+/* ------------------------------------------------------- */
+
+div.c3_div_table_visible_data {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: -25%;
+	width: 150%;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	overflow-x: auto;
+}
+
+div.c3_div_table_visible_data.c3_div_table_visible_data_narrow {
+	margin-left: 0%;
+	width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+	div.c3_div_table_visible_data { width: calc(100% - 0px); margin-left: 0px; }
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data { 
+	display: table;
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    div.c3_div_table_visible_data > table.c3_table_visible_data { 
+        min-width: 800px;
+    }
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data a {
+	text-decoration: underline;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data a:hover {
+	color: var(--c3_rose);
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data thead tr { 
+	background-color: var(--c3_rose) !important;
+	color: var(--c3_white);
+	border-bottom: 1px solid #ffffff;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data thead tr:nth-of-type(2) { 
+	background-color: var(--c3_grey) !important;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tbody tr { 
+	border-bottom: 1px solid #ffffff;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tbody tr.c3_tr_inner_header_1 {
+	background-color: var(--c3_rose) !important;
+	color: var(--c3_white);
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tbody tr.c3_tr_inner_header_2 {
+	background-color: var(--c3_grey) !important;
+	color: var(--c3_white);
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tbody tr.c3_tr_inner_header_3 {
+	background-color: var(--c3_lightgrey) !important;
+	color: var(--c3_black);
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data thead th, table.c3_table_visible_data tbody td { 
+	padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+table.c3_table_visible_data tbody td:nth-last-of-type(4) {
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data thead th:nth-of-type(1), div.c3_div_table_visible_data table.c3_table_visible_data tbody td:nth-of-type(1), 
+div.c3_div_table_visible_data table.c3_table_visible_data thead th:nth-of-type(2), div.c3_div_table_visible_data table.c3_table_visible_data tbody td:nth-of-type(2),
+div.c3_div_table_visible_data table.c3_table_visible_data thead th:nth-of-type(3), div.c3_div_table_visible_data table.c3_table_visible_data tbody td:nth-of-type(3) {
+	width: 15%;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data thead th:nth-of-type(4), table.c3_table_visible_data tbody td:nth-of-type(4) {
+	width: 55%;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tr:nth-child(odd) {
+    background-color: #ebebeb;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tbody ul {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tbody ul li {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	padding-left: 20px;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data tbody ul li::before {
+	content: "";
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 15px;
+	height: 15px;
+	background-color: var(--c3_rose);
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data div.c3_div_table_hide {
+	display: none;
+	position: relative;
+	overflow: hidden;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data a.c3_a_table_show_more {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+	color: var(--c3_black);
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 700;
+	text-decoration: none;
+	padding-left: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data a.c3_a_table_show_more::before {
+	content: "";
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	background-color: var(--c3_white);
+	border-top: solid 9px var(--c3_rose);
+	border-bottom: solid 9px var(--c3_rose);
+	border-right: solid 3px var(--c3_rose);
+	border-left: solid 3px var(--c3_rose);
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data a.c3_a_table_show_more::after {
+	content: "";
+    position: absolute;
+    overflow: visible;
+    top: 3px;
+    left: 9px;
+    width: 2px;
+    height: 14px;
+    transform-origin: center center;
+	transform: scaleY(1);
+    background-color: var(--c3_white);
+	transition: transform 0.25s ease;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data a.c3_a_table_show_more.c3_selected::after {
+	content: "";
+    position: absolute;
+    overflow: visible;
+    top: 2px;
+    left: 9px;
+    width: 2px;
+    height: 16px;
+    transform-origin: center center;
+	transform: scaleY(0);
+    background-color: var(--c3_white);
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data a.c3_a_table_show_more span:nth-of-type(2) {
+	display: none;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner tr:first-of-type th {
+	width: 100%;
+}
+
+div.c3_div_table_visible_data div.c3_table_scroll_horizontal {
+	display: grid;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data table {
+	overflow: auto;
+}
+
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_10col td,
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_10col th { width: 10% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_10col td:nth-last-of-type(4),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_10col th:nth-last-of-type(4) { font-weight: 400; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_10col td:nth-last-of-type(10),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_10col th:nth-last-of-type(10) { font-weight: 700; }
+
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col td:nth-last-of-type(1),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col th:nth-last-of-type(1) { width: 10%; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col td:nth-last-of-type(2),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col th:nth-last-of-type(2) { width: 10%; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col td:nth-last-of-type(3),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col th:nth-last-of-type(3) { width: 10%; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col td:nth-last-of-type(4),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col th:nth-last-of-type(4) { width: 10%; font-weight: 400; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col td:nth-last-of-type(5),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col th:nth-last-of-type(5) { width: 10%; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col td:nth-last-of-type(6),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col th:nth-last-of-type(6) { width: 25%; font-weight: 400; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col td:nth-last-of-type(7),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_7col th:nth-last-of-type(7) { width: 25%; font-weight: 700; }
+
+div.c3_div_table_visible_data table.c3_table_visible_data_6col td:nth-last-of-type(1),
+div.c3_div_table_visible_data table.c3_table_visible_data_6col th:nth-last-of-type(1) { width: 10% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data_6col td:nth-last-of-type(2),
+div.c3_div_table_visible_data table.c3_table_visible_data_6col th:nth-last-of-type(2) { width: 10% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data_6col td:nth-last-of-type(3),
+div.c3_div_table_visible_data table.c3_table_visible_data_6col th:nth-last-of-type(3) { width: 10% !important; font-weight: 400 !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data_6col td:nth-last-of-type(4),
+div.c3_div_table_visible_data table.c3_table_visible_data_6col th:nth-last-of-type(4) { width: 10% !important; font-weight: 400 !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data_6col td:nth-last-of-type(5),
+div.c3_div_table_visible_data table.c3_table_visible_data_6col th:nth-last-of-type(5) { width: 10% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data_6col td:nth-last-of-type(6),
+div.c3_div_table_visible_data table.c3_table_visible_data_6col th:nth-last-of-type(6) { width: 50% !important; }
+
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col td:nth-last-of-type(1),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col th:nth-last-of-type(1) { width: 10% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col td:nth-last-of-type(2),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col th:nth-last-of-type(2) { width: 10% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col td:nth-last-of-type(3),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col th:nth-last-of-type(3) { width: 40% !important; font-weight: 400; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col td:nth-last-of-type(4),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col th:nth-last-of-type(4) { width: 40% !important; font-weight: 400; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col td:nth-last-of-type(5),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_5col th:nth-last-of-type(5) { width: 40% !important; font-weight: 700; }
+
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col td:nth-last-of-type(1),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col th:nth-last-of-type(1) { width: 10% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col td:nth-last-of-type(2),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col th:nth-last-of-type(2) { width: 10% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col td:nth-last-of-type(3),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col th:nth-last-of-type(3) { width: 40% !important; font-weight: 400; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col td:nth-last-of-type(4),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col th:nth-last-of-type(4) { width: 40% !important; }
+
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col_even td:nth-last-of-type(1),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col_even th:nth-last-of-type(1) { width: 25% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col_even td:nth-last-of-type(2),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col_even th:nth-last-of-type(2) { width: 25% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col_even td:nth-last-of-type(3),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col_even th:nth-last-of-type(3) { width: 25% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col_even td:nth-last-of-type(4),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_4col_even th:nth-last-of-type(4) { width: 25% !important; }
+
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_3col td:nth-last-of-type(1),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_3col th:nth-last-of-type(1) { width: 20% !important; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_3col td:nth-last-of-type(2),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_3col th:nth-last-of-type(2) { width: 20% !important; font-weight: 400; }
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_3col td:nth-last-of-type(3),
+div.c3_div_table_visible_data table.c3_table_visible_data table.c3_table_visible_data_inner_3col th:nth-last-of-type(3) { width: 60% !important; font-weight: 700; }
+
+div.c3_div_table_visible_data table.c3_table_visible_data th { font-weight: 700 !important; }
+
+div.c3_div_table_visible_data small {
+	display: block;
+	overflow: hidden;
+	font-family: "PwC Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    img.c3_mobilegraphic_0, img.c3_mobilegraphic_1, img.c3_mobilegraphic_2 {
+        width: 300% !important;
+        display: block !important;
+        margin-bottom: 0px !important;
+    }
+
+    img.c3_mobilegraphic_1 {
+        margin-left: -100%;
+    }
+
+    img.c3_mobilegraphic_2 {
+        margin-left: -200%;
+    }
+
+}
+

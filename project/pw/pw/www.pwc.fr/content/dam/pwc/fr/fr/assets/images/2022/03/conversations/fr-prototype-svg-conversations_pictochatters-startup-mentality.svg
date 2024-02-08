@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 132 132" style="enable-background:new 0 0 132 132;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#EB8C00;}
+	.st2{fill:#FFFFFF;}
+</style>
+<script  xmlns="">(function() {
+		window.addEventListener(&apos;message&apos;, function(event) {
+			if (
+				event.data &amp;&amp;
+				event.data.id &amp;&amp;
+				typeof event.data.id.startsWith === &apos;function&apos; &amp;&amp;
+				event.data.id.startsWith(&apos;adobeExperienceCloudDebuggerContentMessagingIdentifier-&apos;)
+			) {
+				event.stopImmediatePropagation();
+			}
+		},
+		{capture: true});
+	})();
+	</script>
+<script  xmlns="">(function() {
+			const contentScriptEventTrigger = function(data) {
+				window.postMessage({ id:&apos;adobeExperienceCloudDebuggerContentMessagingIdentifier-1&apos;, data: data });
+			}
+			const DATA_LAYER_LOCAL_STORAGE_KEY =
+  &quot;com.adobe.experiencePlatformDebugger.dataLayer.key&quot;;
+const dataLayerKey = window.localStorage.getItem(DATA_LAYER_LOCAL_STORAGE_KEY);
+
+if (dataLayerKey) {
+  // sindresorhus/on-change
+  // MIT - License
+  // https://github.com/sindresorhus/on-change
+  const PATH_SEPARATOR = &quot;.&quot;;
+  const TARGET = Symbol(&quot;target&quot;);
+  const UNSUBSCRIBE = Symbol(&quot;unsubscribe&quot;);
+
+  const isPrimitive = value =&gt;
+    value === null ||
+    (typeof value !== &quot;object&quot; &amp;&amp; typeof value !== &quot;function&quot;);
+
+  const isBuiltinWithoutMutableMethods = value =&gt;
+    value instanceof RegExp || value instanceof Number;
+
+  const isBuiltinWithMutableMethods = value =&gt; value instanceof Date;
+
+  const concatPath = (path, property) =&gt; {
+    let ret = path;
+    if (property &amp;&amp; property.toString) {
+      if (path) {
+        ret += PATH_SEPARATOR;
+      }
+
+      ret += property.toString();
+    }
+
+    return ret;
+  };
+
+  const walkPath = (path, callback) =&gt; {
+    let index;
+    let remainingPath = path;
+    while (remainingPath) {
+      index = remainingPath.indexOf(PATH_SEPARATOR);
+
+      if (index === -1) {
+        index = remainingPath.length;
+      }
+
+      callback(remainingPath.slice(0, index));
+
+      remainingPath = remainingPath.slice(index + 1);
+    }
+  };
+
+  const shallowClone = value =&gt; {
+    if (Array.isArray(value)) {
+      return value.slice();
+    }
+
+    return { ...value };
+  };
+
+  const onChange = (object, updateDataLayer, options = {}) =&gt; {
+    const proxyTarget = Symbol(&quot;ProxyTarget&quot;);
+    let inApply = false;
+    let changed = false;
+    let applyPath;
+    let applyPrevious;
+    let isUnsubscribed = false;
+    const equals = options.equals || Object.is;
+    let propCache = new WeakMap();
+    let pathCache = new WeakMap();
+    let proxyCache = new WeakMap();
+    let boundUpdateDataLayer;
+
+    const handleChange = (path, property, previous, value) =&gt; {
+      if (isUnsubscribed) {
+        return;
+      }
+
+      if (!inApply) {
+        boundUpdateDataLayer(concatPath(path, property), value, previous);
+        return;
+      }
+
+      if (
+        inApply &amp;&amp;
+        applyPrevious &amp;&amp;
+        previous !== undefined &amp;&amp;
+        value !== undefined &amp;&amp;
+        property !== &quot;length&quot;
+      ) {
+        let item = applyPrevious;
+
+        if (path !== applyPath) {
+          const appliedPath = path.replace(applyPath, &quot;&quot;).slice(1);
+
+          walkPath(appliedPath, key =&gt; {
+            item[key] = shallowClone(item[key]);
+            item = item[key];
+          });
+        }
+
+        item[property] = previous;
+      }
+
+      changed = true;
+    };
+
+    const getOwnPropertyDescriptor = (target, property) =&gt; {
+      let props = propCache ? propCache.get(target) : undefined;
+
+      if (props) {
+        return props;
+      }
+
+      props = new Map();
+      propCache.set(target, props);
+
+      let prop = props.get(property);
+      if (!prop) {
+        prop = Reflect.getOwnPropertyDescriptor(target, property);
+        props.set(property, prop);
+      }
+
+      return prop;
+    };
+
+    const invalidateCachedDescriptor = (target, property) =&gt; {
+      const props = propCache ? propCache.get(target) : undefined;
+
+      if (props) {
+        props.delete(property);
+      }
+    };
+
+    const buildProxy = (value, path) =&gt; {
+      if (isUnsubscribed) {
+        return value;
+      }
+
+      pathCache.set(value, path);
+
+      let proxy = proxyCache.get(value);
+
+      if (proxy === undefined) {
+        proxy = new Proxy(value, handler);
+        proxyCache.set(value, proxy);
+      }
+
+      return proxy;
+    };
+
+    const unsubscribe = target =&gt; {
+      isUnsubscribed = true;
+      propCache = null;
+      pathCache = null;
+      proxyCache = null;
+
+      return target;
+    };
+
+    const ignoreChange = property =&gt;
+      isUnsubscribed ||
+      (options.ignoreSymbols === true &amp;&amp; typeof property === &quot;symbol&quot;);
+
+    const handler = {
+      get(target, property, receiver) {
+        if (property === proxyTarget || property === TARGET) {
+          return target;
+        }
+
+        if (property === UNSUBSCRIBE &amp;&amp; pathCache.get(target) === &quot;&quot;) {
+          return unsubscribe(target);
+        }
+
+        const value = Reflect.get(target, property, receiver);
+        if (
+          isPrimitive(value) ||
+          isBuiltinWithoutMutableMethods(value) ||
+          property === &quot;constructor&quot; ||
+          options.isShallow === true
+        ) {
+          return value;
+        }
+
+        // Preserve invariants
+        const descriptor = getOwnPropertyDescriptor(target, property);
+        if (descriptor &amp;&amp; !descriptor.configurable) {
+          if (descriptor.set &amp;&amp; !descriptor.get) {
+            return undefined;
+          }
+
+          if (descriptor.writable === false) {
+            return value;
+          }
+        }
+
+        return buildProxy(value, concatPath(pathCache.get(target), property));
+      },
+
+      set(target, property, value, receiver) {
+        const proxyTargetValue =
+          value &amp;&amp; value[proxyTarget] !== undefined
+            ? value[proxyTarget]
+            : value;
+
+        const ignore = ignoreChange(property);
+        const previous = ignore
+          ? null
+          : Reflect.get(target, property, receiver);
+        const result = Reflect.set(
+          target[proxyTarget] || target,
+          property,
+          proxyTargetValue
+        );
+
+        if (!ignore &amp;&amp; !equals(previous, proxyTargetValue)) {
+          handleChange(
+            pathCache.get(target),
+            property,
+            previous,
+            proxyTargetValue
+          );
+        }
+
+        return result;
+      },
+
+      defineProperty(target, property, descriptor) {
+        const result = Reflect.defineProperty(target, property, descriptor);
+
+        if (!ignoreChange(property)) {
+          invalidateCachedDescriptor(target, property);
+
+          handleChange(
+            pathCache.get(target),
+            property,
+            undefined,
+            descriptor.value
+          );
+        }
+
+        return result;
+      },
+
+      deleteProperty(target, property) {
+        if (!Reflect.has(target, property)) {
+          return true;
+        }
+
+        const ignore = ignoreChange(property);
+        const previous = ignore ? null : Reflect.get(target, property);
+        const result = Reflect.deleteProperty(target, property);
+
+        if (!ignore) {
+          invalidateCachedDescriptor(target, property);
+
+          handleChange(pathCache.get(target), property, previous);
+        }
+
+        return result;
+      },
+
+      apply(target, thisArg, argumentsList) {
+        const compare = isBuiltinWithMutableMethods(proxyTargetThisArg);
+
+        const proxyTargetThisArg = compare ? thisArg[proxyTarget] : thisArg;
+
+        if (!inApply) {
+          inApply = true;
+
+          if (compare) {
+            applyPrevious = proxyTargetThisArg.valueOf();
+          }
+
+          if (
+            Array.isArray(proxyTargetThisArg) ||
+            toString.call(proxyTargetThisArg) === &quot;[object Object]&quot;
+          ) {
+            applyPrevious = shallowClone(proxyTargetThisArg[proxyTarget]);
+          }
+
+          applyPath = pathCache.get(target);
+          applyPath = applyPath.slice(
+            0,
+            Math.max(applyPath.lastIndexOf(PATH_SEPARATOR), 0)
+          );
+
+          const result = Reflect.apply(
+            target,
+            proxyTargetThisArg,
+            argumentsList
+          );
+
+          inApply = false;
+
+          if (
+            changed ||
+            (compare &amp;&amp; !equals(applyPrevious, proxyTargetThisArg.valueOf()))
+          ) {
+            handleChange(
+              applyPath,
+              &quot;&quot;,
+              applyPrevious,
+              proxyTargetThisArg[proxyTarget] || proxyTargetThisArg
+            );
+            applyPrevious = null;
+            changed = false;
+          }
+
+          return result;
+        }
+
+        return Reflect.apply(target, proxyTargetThisArg, argumentsList);
+      }
+    };
+
+    const proxy = buildProxy(object, &quot;&quot;);
+    boundUpdateDataLayer = updateDataLayer.bind(proxy);
+
+    return proxy;
+  };
+
+  onChange.target = proxy =&gt; proxy[TARGET] || proxy;
+  onChange.unsubscribe = proxy =&gt; proxy[UNSUBSCRIBE] || proxy;
+
+  let proxy;
+  let previousDataLayer;
+
+  function _serialize(dataLayer) {
+    try {
+      return JSON.stringify({ ...dataLayer }, null, 2);
+    } catch (e) {
+      return JSON.stringify(dataLayer, null, 2);
+    }
+  }
+
+  function _notify(dataLayer) {
+    contentScriptEventTrigger({
+      data: {
+        dataLayer
+      },
+      timestamp: Date.now(),
+      timeSincePageLoad: window.performance.now()
+    });
+  }
+
+  function onDataLayerUpdate() {
+    const dataLayer = _serialize(this);
+
+    if (previousDataLayer !== dataLayer) {
+      previousDataLayer = dataLayer;
+      _notify(dataLayer);
+    }
+  }
+
+  function onDataLayerSet(newDataLayer) {
+    const dataLayer = _serialize(newDataLayer);
+    if (!previousDataLayer || previousDataLayer !== dataLayer) {
+      previousDataLayer = dataLayer;
+      _notify(dataLayer);
+    }
+  }
+
+  Object.defineProperty(window, dataLayerKey, {
+    get() {
+      return proxy;
+    },
+    set(newDataLayer) {
+      onDataLayerSet(newDataLayer);
+      proxy = onChange(newDataLayer, onDataLayerUpdate);
+    },
+    enumerable: true,
+    configurable: true
+  });
+
+  const oldObjectDefine = Object.defineProperty.bind(Object);
+  Object.defineProperty = (obj, prop, descriptor) =&gt; {
+    if (prop === dataLayerKey) {
+      console.debug(
+        &quot;Data layer being overwritten by Object.defineProperty(). Falling back to polling...&quot;
+      );
+
+      function pollForChanges() {
+        const dataLayer = _serialize(window[dataLayerKey]);
+        if (previousDataLayer !== dataLayer) {
+          previousDataLayer = dataLayer;
+          _notify(dataLayer);
+        }
+        window.requestAnimationFrame(pollForChanges);
+      }
+
+      window.requestAnimationFrame(pollForChanges);
+    }
+    return oldObjectDefine(obj, prop, descriptor);
+  };
+}
+
+		})();
+	</script>
+<script  xmlns="">(function() {
+			const contentScriptEventTrigger = function(data) {
+				window.postMessage({ id:&apos;adobeExperienceCloudDebuggerContentMessagingIdentifier-2&apos;, data: data });
+			}
+			// https://github.com/adobe/alloy/wiki/Monitoring-Hooks
+
+// This script is run within an immediately executed function, so variables declared here
+// are local to this script only.
+const orgIdsByInstanceName = {};
+
+window.__alloyMonitors = window.__alloyMonitors || [];
+window.__alloyMonitors.push({
+  onBeforeNetworkRequest(data) {
+    setTimeout(() =&gt; {
+      contentScriptEventTrigger({
+        name: &quot;onAlloyNetworkRequest&quot;,
+        data: {
+          ...data,
+          orgId: orgIdsByInstanceName[data.instanceName]
+        }
+      });
+    });
+  },
+  onNetworkResponse(data) {
+    // There are fields in data that don&apos;t serialize well, so we only include parsedBody
+    setTimeout(() =&gt; {
+      contentScriptEventTrigger({
+        name: &quot;onAlloyNetworkResponse&quot;,
+        data: {
+          parsedBody: data.parsedBody,
+          orgId: orgIdsByInstanceName[data.instanceName]
+        }
+      });
+    });
+  },
+  onNetworkError(data) {
+    setTimeout(() =&gt; {
+      contentScriptEventTrigger({ name: &quot;onAlloyNetworkError&quot;, data });
+    });
+  },
+  onInstanceConfigured(data) {
+    // We keep a cache of orgIdsByInstanceNames here because the response to getLibraryInfo
+    // may happen after a network request already occurred.
+    orgIdsByInstanceName[data.instanceName] = data.config.orgId;
+    setTimeout(() =&gt; {
+      window[data.instanceName](&quot;getLibraryInfo&quot;).then(response =&gt; {
+        // The configuration section uses debugEnabled to know the initial state
+        const debugEnabledSessionStorage = window.sessionStorage.getItem(
+          `com.adobe.alloy.instance.${data.instanceName}.debug`
+        );
+        const debugEnabled =
+          debugEnabledSessionStorage === &quot;true&quot; ||
+          (data.config.debugEnabled &amp;&amp; debugEnabledSessionStorage === null);
+
+        contentScriptEventTrigger({
+          name: &quot;onInstanceConfigured&quot;,
+          data: {
+            libraryInfo: response.libraryInfo,
+            namespace: data.instanceName,
+            edgeConfigId: data.config.edgeConfigId,
+            edgeDomain: data.config.edgeDomain,
+            orgId: data.config.orgId,
+            debugEnabled
+          }
+        });
+      });
+    });
+  }
+});
+
+		})();
+	</script>
+<script  xmlns="">(function() {
+			const contentScriptEventTrigger = function(data) {
+				window.postMessage({ id:&apos;adobeExperienceCloudDebuggerContentMessagingIdentifier-3&apos;, data: data });
+			}
+			/**
+ * Hooks into both DTM&apos;s and Launch&apos;s logging mechanisms in order to capture all log messages and
+ * send them to the UI to display to the user
+ */
+function notifyContentScript(log) {
+  contentScriptEventTrigger({
+    data: log,
+    timestamp: Date.now(),
+    timeSincePageLoad: window.performance.now()
+  });
+}
+
+window._satellite = window._satellite || {};
+window._satellite.override = window._satellite.override || {};
+
+// Hook into _satellite in order to capture DTM logs
+if (window.Object &amp;&amp; window.Object.defineProperty) {
+  window.Object.defineProperty(
+    window._satellite.override,
+    &quot;adobe.aepDebugger.dtmInitHook&quot;,
+    {
+      enumerable: true,
+      get() {
+        onSatelliteInit();
+        return &quot;&quot;;
+      },
+      set() {}
+    }
+  );
+}
+
+function onSatelliteInit() {
+  // This function will run when DTM is loaded on the page. We use it to hook into DTM logs
+  const _satellite = window._satellite;
+  if (_satellite.Logger) {
+    _satellite.Logger.keepLimit = 9999;
+  }
+
+  // override notify
+  // Reason: we want to intercept messages that go through here
+  // without worrying about limits or messing anything up internally
+  const originalNotify = _satellite.notify;
+  _satellite.notify = (message, level) =&gt; {
+    const logLevel = [&quot;log&quot;, &quot;log&quot;, &quot;log&quot;, &quot;info&quot;, &quot;warn&quot;, &quot;error&quot;];
+
+    // call original
+    originalNotify(message, level);
+
+    const log = {
+      solution: &quot;dtm&quot;,
+      solutions: [&quot;dtm&quot;],
+      level: logLevel[level] || &quot;log&quot;,
+      message: &quot;&quot;
+    };
+
+    // make sure that we have a message
+    if (message &amp;&amp; typeof message === &quot;string&quot;) {
+      // only add it
+      log.message = message;
+
+      // check to see what solution it came from
+      if (message.indexOf(&quot;Adobe Analytics:&quot;) !== -1) {
+        log.solutions.push(&quot;analytics&quot;);
+      } else if (message.indexOf(&quot;Test &amp; Target:&quot;) !== -1) {
+        log.solutions.push(&quot;target&quot;);
+      } else if (message.indexOf(&quot;Visitor ID:&quot;) !== -1) {
+        log.solutions.push(&quot;visitorService&quot;);
+      } else if (message.indexOf(&quot;AdLens:&quot;) !== -1) {
+        log.solutions.push(&quot;mediaOptimizer&quot;);
+      }
+    }
+    notifyContentScript(log);
+  };
+}
+
+function _overrideConsoleLogFunction(prefix, solution, level) {
+  const originalFunction = console[level];
+  console[level] = (...args) =&gt; {
+    const argsAsArray = Array.prototype.slice.call(args);
+    originalFunction.apply(console, argsAsArray);
+    const mappedArgs = argsAsArray.map(arg =&gt; {
+      let result = &quot;&quot;;
+      if (arg &amp;&amp; typeof arg.toString === &quot;function&quot;) {
+        result = arg.toString();
+      }
+      if (!result || result === &quot;[object Object]&quot;) {
+        try {
+          result = JSON.stringify(arg);
+        } catch (e) {
+          return &quot;&quot;;
+        }
+      }
+      return result;
+    });
+
+    const message = mappedArgs.join(&quot; &quot;);
+
+    if (typeof message === &quot;string&quot;) {
+      if (message.indexOf(prefix) === 0) {
+        const log = {
+          solution,
+          solutions: [solution],
+          level,
+          message,
+          searchIndex: message,
+          params: mappedArgs
+        };
+
+        // check to see what solution it came from
+        if (message.indexOf(&quot;[Adobe Analytics]&quot;) !== -1) {
+          log.solutions.push(&quot;analytics&quot;);
+        } else if (message.indexOf(&quot;[Adobe Target]&quot;) !== -1) {
+          log.solutions.push(&quot;target&quot;);
+        } else if (message.indexOf(&quot;[Experience Cloud ID Service]&quot;) !== -1) {
+          log.solutions.push(&quot;visitorService&quot;);
+        } else if (message.indexOf(&quot;[Adobe Media Optimizer]&quot;) !== -1) {
+          log.solutions.push(&quot;mediaOptimizer&quot;);
+        }
+        notifyContentScript(log);
+      }
+    }
+  };
+}
+
+/**
+ * Overrides the various console.* methods in order to intercept messages that
+ * are sent to the console by launch. A message was sent be launch if it starts
+ * with the rocket emoji 🚀. Note that this is a somewhat brittle solution
+ * since if the emoji ever changes this integration will break. However this
+ * is the only solution that works for now.
+ *
+ * Any messages that are not prefixed with the rocket emoji are ignored and passed
+ * through to the original console function
+ */
+function _overrideConsoleForLaunch() {
+  const prefix = &quot;\uD83D\uDE80&quot;;
+  [&quot;error&quot;, &quot;info&quot;, &quot;log&quot;, &quot;warn&quot;].forEach(
+    _overrideConsoleLogFunction.bind(null, prefix, &quot;launch&quot;)
+  );
+}
+
+/**
+ * Intercepts console messages made by alloy (prefixed with [alloy]) and notifies content script about each one.
+ * Note that this is a brittle solution and should not be used long term.
+ *
+ * Ideally there will be some debugging hooks built into alloy itself that we can connect to
+ */
+function _overrideConsoleForAlloy() {
+  window.__alloyNS = [];
+  const originalPush = window.__alloyNS.push;
+  window.__alloyNS.push = (namespace, ...rest) =&gt; {
+    [&quot;error&quot;, &quot;info&quot;, &quot;log&quot;, &quot;warn&quot;].forEach(
+      _overrideConsoleLogFunction.bind(null, `[${namespace}]`, &quot;alloy&quot;)
+    );
+
+    originalPush.apply(
+      window.__alloyNS,
+      Array.prototype.slice.call([namespace, ...rest])
+    );
+  };
+}
+
+/**
+ * Overrides console.debug and console.warn methods in order to intercept messages that
+ * are sent to the console by at.js. A message was sent be at.js if it starts
+ * with &quot;AT:&quot;.
+ *
+ * Note that this is a somewhat brittle solution
+ * since if the prefix ever changes this integration will break. However this
+ * is the only solution that works for now, since at.js does not have any debugging hooks.
+ * If this ever breaks, the first place to look is at the logger implementation in at.js
+ * to see if they changed the prefix or started using different console functions. Check
+ * https://git.corp.adobe.com/TnT/atjs-library-v2/blob/master/src/delivery/monitoring/logger/helper.js
+ *
+ * Any messages that are not prefixed with &quot;AT:&quot; are ignored and passed
+ * through to the original console function
+ */
+function _overrideConsoleForAtJs() {
+  const prefix = &quot;AT:&quot;;
+  [&quot;debug&quot;, &quot;warn&quot;].forEach(
+    _overrideConsoleLogFunction.bind(null, prefix, &quot;target&quot;)
+  );
+}
+
+_overrideConsoleForLaunch();
+_overrideConsoleForAlloy();
+_overrideConsoleForAtJs();
+
+// Once the page has finished loading, remove _satellite if both DTM and Launch were not found
+window.addEventListener(&quot;load&quot;, () =&gt; {
+  if (!_hasDtm() &amp;&amp; !_hasLaunch()) {
+    delete window._satellite;
+  }
+});
+
+/**
+ * @returns {boolean} whether launch is present on the page
+ */
+function _hasLaunch() {
+  return !!(window._satellite &amp;&amp; window._satellite._container);
+}
+
+/**
+ * @returns {boolean} whether DTM is present on the page
+ */
+function _hasDtm() {
+  return !!(window._satellite &amp;&amp; window._satellite.configurationSettings);
+}
+
+		})();
+	</script>
+<script  xmlns="">(function() {
+			const contentScriptEventTrigger = function(data) {
+				window.postMessage({ id:&apos;adobeExperienceCloudDebuggerContentMessagingIdentifier-4&apos;, data: data });
+			}
+			window.___target_traces = window.___target_traces || [];
+const originalPush = window.___target_traces.push;
+
+window.___target_traces.push = function targetTracePush(trace) {
+  contentScriptEventTrigger({ trace });
+  originalPush.call(this, trace);
+};
+
+		})();
+	</script>
+<path class="st0" d="M0,0v132h132V0H0z M5.6,126.4V5.6h120.8v120.8H5.6z"/>
+<path d="M84.4,72.8v-8.6c0-14.5-2.9-34.4-16.6-46.7L66,15.9l-1.8,1.6C50.5,29.7,47.7,49.6,47.7,64.2v8.7L33.2,83.6v16.7h65.5V83.6
+	L84.4,72.8z M47.7,94.9h-9.1v-8.6l9.1-6.8C47.7,79.5,47.7,94.9,47.7,94.9z M79.1,94.9H68.8v-9.1c0-5.8,0-11.7,0-11.7h-5.4
+	c0,6.8,0,16.3,0,20.7H53V64.2c0-12.7,2.3-29.9,13-40.9c10.7,11,13,28.2,13,40.9L79.1,94.9z M93.4,94.9h-9.1V79.5l9,6.8L93.4,94.9z"
+	/>
+<path d="M66,45.4c-6.2,0-11.3,5.1-11.3,11.3S59.8,68,66,68s11.3-5.1,11.3-11.3S72.3,45.4,66,45.4L66,45.4z"/>
+<rect x="63.4" y="105.4" class="st1" width="5.4" height="21"/>
+<rect x="47.6" y="105.4" class="st1" width="5.4" height="14.6"/>
+<rect x="79.1" y="105.4" class="st1" width="5.4" height="14.6"/>
+<rect x="93.4" y="105.4" class="st1" width="5.4" height="7.7"/>
+<rect x="33.2" y="105.4" class="st1" width="5.4" height="7.7"/>
+<circle class="st2" cx="66" cy="56.8" r="5.9"/>
+</svg>
